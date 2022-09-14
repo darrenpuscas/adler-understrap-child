@@ -1,0 +1,604 @@
+//
+// Global CSS
+//
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    padding-right: var(--bs-gutter-x,1.5rem);
+    padding-left: var(--bs-gutter-x,1.5rem);
+}
+.wrapper {
+    padding: 0;
+}
+* {
+box-sizing: border-box;
+}
+p {
+    font-size: 15px;
+    line-height: 1.6;
+    padding-bottom: 0.6em;
+}
+h1.entry-title {
+    padding-bottom: 0.3em;
+    text-transform: uppercase;
+    color: $primary;
+}
+// 
+// Menu
+//
+.nav-link {
+    padding: 0.3rem 1rem;
+}
+.navbar-expand-md .navbar-nav .nav-link {
+    margin-left: 1.5rem;
+
+}
+#menu-item-27 a {
+    color: $white;
+    background-color: $secondary;
+    border: 1px solid $primary;
+    border-radius: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+// 
+// Standard CSS (the main, multi-use styles on Adler site)
+//
+.standard-main-header {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-bottom: 0.2em;
+    color: $primary;
+    h1 {
+        line-height: 1;
+        font-weight: 900;
+    }
+}
+.standard-sub-statement {
+padding-bottom: 1em;
+}
+.standard-text {
+
+}
+
+.standard-intro {
+   
+}
+.standard-intro-headline {
+    text-align: center;
+    padding-bottom: $spacer * 2.5;
+}
+.standard-intro-substatement {
+    text-align: center;
+    padding-bottom: $spacer * 1.5;
+    h4 {
+    font-weight: 400;
+    }
+}
+.standard-course {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 2em;
+    p{
+        padding-right: 2em;
+        margin-bottom: 0;
+    }
+}
+.standard-faq {
+    padding-bottom: 1.5em;
+}
+.cert-button {
+    align-self:flex-end;
+}
+
+
+// Header CSS
+//
+.navbar-dark .navbar-nav .nav-link {
+    color: $primary;
+    text-transform: uppercase;
+}
+
+.navbar-dark .navbar-nav a {
+    font-weight: 100;
+}
+.home .navbar-dark .navbar-nav .nav-link {
+    color: $white;
+}
+.bg-header-color {
+background-color: $tertiary;
+}
+.page-template-programs .bg-header-color, .page-template-default .bg-header-color, .page-template-standard-masthead .bg-header-color {
+    background-color: $white;
+}
+.page-template-homepage .bg-header-color {
+    background-color: $primary;
+}
+//
+// Footer CSS
+//
+#wrapper-footer {
+    background-color: $blue;
+}
+.footer-sections {
+ 
+    gap: 10px;
+    padding: 4em 0;
+    justify-content: space-between;
+    ul{
+        padding-left: 0;
+    }
+}
+@media screen and (min-width: 768px) {
+    .footer-sections {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    ul {
+        padding-left: 2em;
+    }
+}
+.footer-resources, .footer-signup {
+    color: $white;
+}
+.footer-signup, .footer-signup h4 {
+font-weight: 100;
+}
+.footer-resources {
+    margin-top: 2em;
+}
+@media screen and (min-width: 768px) {
+.footer-resources {
+    display: flex;
+    gap: 60px;
+    margin-top: 2em;
+}
+}
+.footer-resources ul {
+    list-style-type: none;
+}
+.footer-resources2 .testbbb, .footer-resources3 .testbbb {
+    color: $yellow;
+    font-size: 13px;
+}
+.footer-resources h6, .footer-resources li {
+    text-transform: uppercase;
+}
+.footer-resources li {
+    font-size: 10px;
+    padding-bottom: 5px;
+}
+.footer-social {
+    display: flex;
+    gap: 0 20px;
+}
+.footer-facebook img, .footer-twitter img  {
+    width: 100%;
+    height: auto;
+}
+.footer-facebook {
+    width: 10px;
+    height: 33px;
+}
+.footer-twitter {
+    width: 24px;
+    height: 33px;
+}
+//
+// General form controls (plus a few specific high-level interventions)
+//
+
+$input-color:                           $body-color !default;
+$input-border-color:                    $gray-400 !default;
+.form-control {
+    background-color: transparent;
+}
+
+//
+// Homepage CSS
+//
+@media screen and (min-width: 768px) {
+    .home-masthead-content {
+    }
+    .home-masthead-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        place-items: center;
+        min-height: 80vh;
+    }
+}
+.home-masthead-image, .home-masthead-text {
+    grid-row: 1 / 2;   
+}
+
+.home-masthead-image {
+    grid-column: 1 / 13; 
+}
+@media screen and (min-width: 768px) {
+    .home-masthead-image {
+        grid-column: 8 / 13; 
+    }
+}
+.home-masthead-text {
+    padding-top: 1.4em;
+    padding-bottom: 2em;
+    grid-column: 1 / 13; 
+}
+@media screen and (min-width: 768px) {
+.home-masthead-text {
+    grid-column: 1 / 11; 
+    z-index: 999;
+    padding-top: 3em;
+}
+}
+.whyadler-container .btn-primary {
+    width: 100%;
+}
+.whyadler-container h2 {
+    padding-bottom: 0.3em;
+}
+.whyadler-container li {
+    font-size: 1rem;
+    line-height: 1.1;
+}
+.whyadler-container li {
+    font-size: 1.1rem;
+    line-height: 1.1;
+}
+@media screen and (min-width: 768px) {
+.whyadler-container li::marker {
+    font-size: 30px;
+}
+}
+.whyadler-container .btn {
+    margin-top: 2em;
+    text-transform: uppercase;
+}
+
+#home-masthead, #home-infoboxes {
+    background-color: $primary;
+}
+.main-statement, .sub-statement {
+    color: $white;
+    -webkit-text-stroke: 1px $primary;
+}
+.main-statement h1 {
+    font-weight: 700;
+    font-size: 1.6rem;
+        line-height: 1.1;
+        padding-bottom: 1em;
+}
+@media screen and (min-width: 768px) {
+    .main-statement h1 {
+        font-size: 3rem;
+        line-height: 1.1;
+        padding-bottom: 0.8em;
+       
+    }
+}
+.sub-statement h3 {
+    font-size: 1.2rem;
+    padding-bottom: 1.2em;
+}
+@media screen and (min-width: 768px) {
+    .sub-statement h3 {
+        font-size: 1.6rem;
+        padding-bottom: 1.2em;
+    }
+}
+.home-masthead-text .btn-primary {
+    text-transform: uppercase;
+    width: 100%;
+}
+@media screen and (min-width: 768px) {
+    .home-masthead-text .btn-primary {
+        width: 66.66%;
+    }
+}
+.home-infoboxes-area {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+}
+@media screen and (min-width: 1024px) {
+    .home-infoboxes-area {
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+}
+.home-infoboxes-container:after {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width: 33%; /* Change this to whatever width you want. */
+    border-bottom: 2px solid $white;
+    padding-bottom: 4em;
+}
+.home-infoboxes-container:before {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width: 33%; /* Change this to whatever width you want. */
+    border-top: 2px solid $white;
+    padding-top: 4em;
+}
+.home-infobox {
+    background-color: $tertiary;
+    padding: 2em 1.5em;
+    border-radius: 24px;
+    display: grid;
+    justify-items: center;
+    color: $primary;
+    h5 {
+        padding-bottom: 0.4em;
+        font-size: 1.0rem;
+    }
+    li {
+        justify-self: start;
+      }     
+}
+@media screen and (min-width: 768px) {
+    .home-infobox {
+        padding: 5em 3em;
+        border-radius: 24px;
+
+        h5 {
+            padding-bottom: 0.4em;
+            font-size: 1.2rem;
+        }    
+    }
+}
+@media screen and (min-width: 1024px) {
+    .home-infobox {
+        padding: 5em 3em;
+        border-radius: 24px;
+
+        h5 {
+            padding-bottom: 0.4em;
+            font-size: 1.2rem;
+        }    
+    }
+}
+.home-infobox-image {
+    width: 48px;
+    height: 40px;
+    img {
+        width: 100%;
+        height: auto;
+      }
+
+}
+.home-infobox .btn-secondary {
+    margin: 0 auto;
+}
+
+.home-infobox-image {
+    margin-bottom: 1.5em;
+    
+}
+//
+// Various Pages
+//
+.certification-masthead-content, .indiv-programs-masthead-content, .standard-masthead-content {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+@media screen and (min-width: 565px) {
+    .certification-masthead-content, .indiv-programs-masthead-content, .standard-masthead-content {
+        grid-template-columns: 2fr 1fr;
+        column-gap: 60px;
+    }
+}
+
+//
+// Certification Page
+//
+#certification-masthead, #certification-2 {
+ background-color: $tertiary;   
+}
+.certification-course-content {
+    display: grid;
+    grid-template-columns: 1fr;
+   
+
+}
+@media screen and (min-width: 768px) {
+    .certification-course-content {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+    }
+}
+//
+// Programs Page
+//
+.programs-main-header, .programs-text {
+    text-align: center;
+}
+.programs-course-content {
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+
+@media screen and (min-width: 768px) {
+    .programs-course-content {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .programs-course-content {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 20px;
+    }
+}
+@media screen and (min-width: 1220px) {
+    .programs-course-content {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+    }
+}
+.programs-course {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: $extra-light-blue;
+    border: 1px solid $primary;
+    border-radius: 12px;
+    margin-bottom: 1em;
+}
+@media screen and (min-width: 768px) {
+    .programs-course {
+        grid-template-columns: 5fr 2fr;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .programs-course {
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (min-width: 1220px) {
+    .programs-course {
+        grid-template-columns: 5fr 4fr;
+    }
+}
+.programs-course-image {
+    display: none;
+}
+@media screen and (min-width: 768px) {
+    .programs-course-image {
+        display: block;
+    }
+}
+.programs-course-mobile-image {
+    display: block;
+}
+@media screen and (min-width: 768px) {
+    .programs-course-mobile-image {
+        display: none;
+    }
+}
+.programs-details {
+    border-top: 1px solid $primary;
+    padding-top: 1em;
+}
+.programs-course-text {
+    padding: 2em 3em 1em 1.5em;
+    p {
+        line-height: 1.3;
+    }
+    li{
+        padding-bottom: 0.2em;
+    }
+}
+//
+// Standard with menu + Page Menu (the menu that is at the top of the standard page with menu).
+//
+.standard-with-menu {
+    background-color: $tertiary;
+}
+.page-menu-area {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    ul{
+        padding-left: 0;
+        list-style-type: none;
+    }
+    a {
+        text-decoration: none;
+    }
+}
+//
+// Individual Programs pages
+//
+#indiv-programs-masthead, #indiv-programs-faq-main {
+    background-color: $tertiary;
+    color: $primary;
+}
+.indiv-programs-course-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    color: $primary;
+}
+@media screen and (min-width: 768px) {
+    .indiv-programs-course-content {
+      
+        grid-template-columns: 1fr 1fr;
+        column-gap: 60px;
+    }
+}
+.indiv-programs-additional-course-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 30px;
+    color: $primary;
+}
+@media screen and (min-width: 768px) {
+.indiv-programs-additional-course-content {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+}
+.indiv-course-timing {
+    padding-bottom: 0.6em;
+}
+.indiv-course-cost {
+    padding-bottom: 0.6em;
+}
+.indiv-course-details {
+    padding-bottom: 0.6em;
+}
+.indiv-course-details p {
+    line-height: 1.4;
+}
+.indiv-course-titlearea {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.8em;
+    gap: 0 12px;
+    align-items: center;
+    h6 {
+        margin-bottom: 0;
+        margin-top: 2px;
+    }
+    
+}
+.indiv-course-titlearea img {
+    width: 30px;
+    height: 30px;
+}
+
+//
+// Buttons
+//
+.btn-primary {
+    @include button-variant($yellow,$white,$white);
+    border-radius: 0.5rem;
+    padding-left: 2.8em;
+    padding-right: 2.8em;
+    border: $primary solid 1px;
+}
+.btn-secondary {
+    @include button-variant($white,$primary,$primary);
+    border-radius: 0.5rem;
+    padding-left: 2.8em;
+    padding-right: 2.8em;
+    border: $primary solid 1px;
+}
+.programs-button {
+width:100%;
+display:block;
+}
+//
+// Lists
+//
+li {
+    font-size: 16px;
+    padding-bottom: 1em;
+}
+li::marker {
+ color: $secondary;   
+}
+
+

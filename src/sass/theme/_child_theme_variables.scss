@@ -2,6 +2,33 @@
 // To overwrite a Bootstrap variable you don´t have to touch the Bootstrap folder.
 // Just copy a variable from src/sass/assets/bootstrap5/_variables.scss, paste it here and edit the value.
 
+$headings-font-family: 'Avenir Next', sans-serif;
+$font-family-sans-serif: 'Calibri', sans-serif;
 
-$purple: #5533ff; // Thats a sample how you could change a BootStrap variable.
-$primary: $purple;  // Once we've changed the value, we'll also make it the primary brand color.
+$blue: #1C3A53; // Thats a sample how you could change a BootStrap variable.
+$primary: $blue;  // Once we've changed the value, we'll also make it the primary brand color.
+$yellow: #EFAC30;
+$secondary: $yellow;
+$light-blue: #E9F4FF;
+$tertiary: $light-blue;
+$extra-light-blue: #f5f9fd;
+
+$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+$font-size-sm:                $font-size-base * .875 !default;
+$font-size-lg:                $font-size-base * 1.25 !default;
+
+$h1-font-size:                $font-size-base * 3.75 !default;
+$h2-font-size:                $font-size-base * 2.75 !default;
+$h3-font-size:                $font-size-base * 2 !default;
+$h4-font-size:                $font-size-base * 1.5 !default;
+$h5-font-size:                $font-size-base * 1.25 !default;
+$h6-font-size:                $font-size-base !default;
+
+//
+// Buttons
+//
+$input-btn-padding-y: 0.6em;
+$input-btn-padding-x: 0.9em;
+$input-btn-font-size: 14px;
+
+$headings-font-weight: 700 !default;

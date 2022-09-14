@@ -36,7 +36,7 @@ $grays: (
 // fusv-enable
 
 // scss-docs-start color-variables
-$blue:    #0d6efd !default;
+$blue:    #1C3A53 !default;
 $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
 $pink:    #d63384 !default;
@@ -380,6 +380,10 @@ $spacers: (
   3: $spacer,
   4: $spacer * 1.5,
   5: $spacer * 3,
+  6: $spacer * 4.5,
+  7: $spacer * 6,
+  8: $spacer * 7.5,
+  9: $spacer * 9,
 ) !default;
 
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;
@@ -637,7 +641,7 @@ $display-font-sizes: (
   6: 2.5rem
 ) !default;
 
-$display-font-weight: 300 !default;
+$display-font-weight: 900 !default;
 $display-line-height: $headings-line-height !default;
 // scss-docs-end display-headings
 
