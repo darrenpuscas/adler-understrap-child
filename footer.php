@@ -36,8 +36,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 								</div>
 							</form>
 							<div class="footer-social">
-								<div class="footer-facebook"><img src="http://adlerup.local/wp-content/uploads/2022/08/facebook.png"></div>
-								<div class="footer-twitter"><img src="http://adlerup.local/wp-content/uploads/2022/08/twitter.png"></div>
+								<div class="footer-facebook"><img src="http://adlerup.local/wp-content/uploads/facebook.png"></div>
+								<div class="footer-twitter"><img src="http://adlerup.local/wp-content/uploads/twitter.png"></div>
 							</div>
 						</div>
 					
