@@ -38,7 +38,7 @@ if ( is_front_page() ) {
 <p>All courses within the program require 40 hours of study. Students may choose to end their training after Level 1, or progress onward to one of three streams in Level 2. Upon completion of each course, students will have obtained strong academic foundations and skills-based knowledge, as well as a toolkit of worksheets available for duplication to use in their practice. Please note that to be eligible for Level 2, students must have completed Level 1 (or an approved equivalent, see below). The cost for each course is $895 + HST and these must be completed within a maximum of 12 weeks. </p>
 									</div>	
 									<div class="indiv-programs-masthead-image masthead-section">
-										<img src="http://adlerup.local/wp-content/uploads/2022/07/grad-image.png" class="cerfification-masthead" alt="">
+										<img src="http://adlerup.local/wp-content/uploads/grad-image.png" class="cerfification-masthead" alt="">
 									</div>
 								</div>
 							</div>
@@ -54,7 +54,7 @@ if ( is_front_page() ) {
 								</div>
 								<div class="indiv-programs-course-content standard-course-content pb-4 col-md-10 col-lg-10 offset-md-1 col-sm-12"> 
 									<div class="indiv-programs-course-image certification-course-section">
-										<img src="http://adlerup.local/wp-content/uploads/2022/07/grad-image.png" class="cerfification-masthead" alt="">
+										<img src="http://adlerup.local/wp-content/uploads/grad-image.png" class="cerfification-masthead" alt="">
 									</div>
 									<div class="">
 										<div class="indiv-programs-course standard-course">
@@ -81,7 +81,7 @@ if ( is_front_page() ) {
 								<div class="indiv-programs-additional-course-content standard-course-content pt-2 pt-md-5 pb-2 pb-md-5 col-md-10 col-lg-10 offset-md-1 col-sm-12"> 
 										<div class="indiv-programs-additional-course standard-course">
 											<div class="indiv-course-titlearea">
-												<img src="http://adlerup.local/wp-content/uploads/2022/08/noun-leaf.png">
+												<img src="http://adlerup.local/wp-content/uploads/noun-leaf.png">
 												<h6 class="indiv-course-title text-uppercase">STREAM A: CBT With Mental Health and Addiction</h6>
 											</div>	
 											<div class="indiv-course-timing">40 Hours of Study - Maximum of 12 Weeks</div>
@@ -91,7 +91,7 @@ if ( is_front_page() ) {
 										</div>
 										<div class="indiv-programs-additional-course standard-course">
 											<div class="indiv-course-titlearea">
-												<img src="http://adlerup.local/wp-content/uploads/2022/08/noun-leaf.png">
+												<img src="http://adlerup.local/wp-content/uploads/noun-leaf.png">
 												<h6 class="indiv-course-title text-uppercase">STREAM B: CBT With Complex Mental Health</h6>
 											</div>
 											<div class="indiv-course-timing">40 Hours of Study - Maximum of 12 Weeks</div>
@@ -102,7 +102,7 @@ if ( is_front_page() ) {
 
 										<div class="indiv-programs-additional-course standard-course">
 											<div class="indiv-course-titlearea">
-												<img src="http://adlerup.local/wp-content/uploads/2022/08/noun-leaf.png">
+												<img src="http://adlerup.local/wp-content/uploads/noun-leaf.png">
 												<h6 class="indiv-course-title text-uppercase">STREAM C: CBT with Families, Children and Youth</h6>
 											</div>
 											<div class="indiv-course-timing">40 Hours of Study - Maximum of 12 Weeks</div>

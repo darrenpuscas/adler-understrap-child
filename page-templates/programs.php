@@ -35,7 +35,7 @@ if ( is_front_page() ) {
 										<div class="programs-main-header standard-main-header display-1"><h1>Our Programs and Courses</h1></div>
 										<div class="programs-text standard-text"><p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</p></div>
 										<div class="programs-course-mobile-image programs-course-section">
-											<img src="http://adlerup.local/wp-content/uploads/2022/07/grad-image.png" class="cerfification-masthead" alt="">
+											<img src="http://adlerup.local/wp-content/uploads/grad-image.png" class="cerfification-masthead" alt="">
 										</div>
 									</div>	
 								</div>
@@ -64,7 +64,7 @@ if ( is_front_page() ) {
 
 									</div>
 									<div class="programs-course-image programs-course-section">
-										<img src="http://adlerup.local/wp-content/uploads/2022/09/cert-smiling.png" class="cerfification-masthead" alt="">
+										<img src="http://adlerup.local/wp-content/uploads/cert-smiling.png" class="cerfification-masthead" alt="">
 									</div>
 								</div>	
 								
@@ -83,7 +83,7 @@ if ( is_front_page() ) {
 
 									</div>
 									<div class="programs-course-image programs-course-section">
-										<img src="http://adlerup.local/wp-content/uploads/2022/09/cert-smiling.png" class="cerfification-masthead" alt="">
+										<img src="http://adlerup.local/wp-content/uploads/cert-smiling.png" class="cerfification-masthead" alt="">
 									</div>
 								</div>
 
@@ -102,7 +102,7 @@ if ( is_front_page() ) {
 
 									</div>
 									<div class="programs-course-image programs-course-section">
-										<img src="http://adlerup.local/wp-content/uploads/2022/09/cert-smiling.png" class="cerfification-masthead" alt="">
+										<img src="http://adlerup.local/wp-content/uploads/cert-smiling.png" class="cerfification-masthead" alt="">
 									</div>
 								</div>
 
@@ -121,7 +121,7 @@ if ( is_front_page() ) {
 
 									</div>
 									<div class="programs-course-image programs-course-section">
-										<img src="http://adlerup.local/wp-content/uploads/2022/09/cert-smiling.png" class="cerfification-masthead" alt="">
+										<img src="http://adlerup.local/wp-content/uploads/cert-smiling.png" class="cerfification-masthead" alt="">
 									</div>
 								</div>
 										

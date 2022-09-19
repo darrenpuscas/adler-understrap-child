@@ -36,7 +36,7 @@ if ( is_front_page() ) {
 										<button class="btn btn-primary">Learn more about Adler</button>							
 									</div>	
 									<div class="home-masthead-image masthead-section">
-										<img src="http://adlerup.local/wp-content/uploads/2022/07/grad-image.png" class="home-masthead" alt="">
+										<img src="http://adlerup.local/wp-content/uploads/grad-image.png" class="home-masthead" alt="">
 									</div>
 								</div>
 							</div>
@@ -68,7 +68,7 @@ if ( is_front_page() ) {
 							<div class="row">
 								<div class="home-infoboxes-area col-xsm-12 col-sm-10 col-lg-10 offset-lg-1 offset-sm-1">
 									<article class="home-infobox home-infobox1">
-										<div class="home-infobox-image home-infobox-icon1"><img src="http://adlerup.local/wp-content/uploads/2022/07/news-icon.png" alt=""></div>
+										<div class="home-infobox-image home-infobox-icon1"><img src="http://adlerup.local/wp-content/uploads/news-icon.png" alt=""></div>
 										<h5>News</h5>
 										<li>News story number 1 News story number 1 News story number 1</li>
 										<li>News Story #2 News Story #2 News Story #2 News Story #2</li>
@@ -77,7 +77,7 @@ if ( is_front_page() ) {
 									</article>
 									
 									<article class="home-infobox home-infobox2">
-										<div class="home-infobox-image home-infobox-icon3"><img src="http://adlerup.local/wp-content/uploads/2022/08/event-icon.png" alt=""></div>
+										<div class="home-infobox-image home-infobox-icon3"><img src="http://adlerup.local/wp-content/uploads/event-icon.png" alt=""></div>
 										<h5>Events</h5>
 										<li>News story number 1 News story number 1 News story number 1</li>
 										<li>News Story #2 News Story #2 News Story #2 News Story #2</li>
@@ -87,7 +87,7 @@ if ( is_front_page() ) {
 										<button class="btn btn-secondary">More Events</button>
 									</article>
 									<article class="home-infobox home-infobox3">
-										<div class="home-infobox-image home-infobox-icon4"><img src="http://adlerup.local/wp-content/uploads/2022/08/contact-icon.png" alt=""></div>
+										<div class="home-infobox-image home-infobox-icon4"><img src="http://adlerup.local/wp-content/uploads/contact-icon.png" alt=""></div>
 										<h5>Contact Adler</h5>
 										<li></li>
 										<li></li>

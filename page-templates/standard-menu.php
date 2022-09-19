@@ -53,7 +53,7 @@ if ( is_front_page() ) {
 										</div>	
 									</div>	
 									<div class="standard-masthead-image masthead-section">
-										<img src="http://adlerup.local/wp-content/uploads/2022/07/grad-image.png" class="cerfification-masthead" alt="">
+										<img src="http://adlerup.local/wp-content/uploads/grad-image.png" class="cerfification-masthead" alt="">
 									</div>
 								</div>	
 							</div>
