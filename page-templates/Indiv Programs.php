@@ -59,9 +59,9 @@ if ( is_front_page() ) {
 
 						<div class="indiv-programs-course-container standard-course-container container-xl pt-6">
 							<div class="row">
-								<div class="indiv-programs1-intro standard-intro masthead-section">
+								<section class="indiv-programs1-intro standard-intro masthead-section">
 									<div class="indiv-programs-intro-headline standard-intro-headline display-3"><h3>CBT Courses</h3></div>
-								</div>
+								</section>
 								<div class="indiv-programs-course-content standard-course-content pb-4 col-md-10 col-lg-10 offset-md-1 col-sm-12"> 
 									<section class="indiv-programs-course-image certification-course-section">
 										<img src="http://adlerup.local/wp-content/uploads/grad-image.png" class="cerfification-masthead" alt="">
