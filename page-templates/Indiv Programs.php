@@ -18,6 +18,17 @@ if ( is_front_page() ) {
 }
 ?>
 
+<?php
+function console_log($output, $with_script_tags = true) {
+    $js_code = 'console.log(' . json_encode($output, JSON_HEX_TAG) . 
+');';
+    if ($with_script_tags) {
+        $js_code = '<script>' . $js_code . '</script>';
+    }
+    echo $js_code;
+}
+?>
+
 <div id="full-width-page-wrapper" class="wrapper">
 
 			<div class="col-md-12 content-area" id="primary">
@@ -44,7 +55,8 @@ if ( is_front_page() ) {
 										<?php $image = get_field('prog_overview_image');
 											if( !empty( $image ) ): ?>
     										<img src="<?php echo esc_url($image['url']); ?>" class="cerfification-masthead" alt="<?php echo esc_attr($image['alt']); ?>" />
-											<?php endif; ?>
+												<?php endif; ?>
+												<?= console_log($image); ?>
 									</section>
 								</div><!-- end masthead content -->
 							</div><!-- end row -->
@@ -68,13 +80,13 @@ if ( is_front_page() ) {
 								<!-- Box 1 -->
 								<?php $box1 = get_field('prog_box_1'); ?>
 									<section class="indiv-programs-course-image certification-course-section">
+									<?= console_log($box1); ?>
 										<img src="<?php echo esc_url( $box1['image']['url'] ); ?>" class="cerfification-masthead" alt="">
 									</section>
 										<section class="indiv-programs-course standard-course">
 											<h5 class="text-uppercase"><?php echo $box1['title'] ?></h5>
 											<p><?php echo $box1['text'] ?></p>
-											<?php echo 'URL Field'; echo $box1['button_url'] ?>
-											<a href="<?php esc_url( $box1['button_url'] ) ?>" class="btn btn-primary"><?php echo box1['button'] ?></a>
+											<a href="<?php echo esc_url( $box1['button_url'] ) ?>" class="btn btn-primary"><?php echo $box1['button'] ?></a>
 										</section>
 								</div><!-- end column -->
 							</div><!-- end row -->
@@ -87,9 +99,10 @@ if ( is_front_page() ) {
 							<div class="row">
 								<div class="indiv-programs-additional-course-content standard-course-content pt-2 pt-md-5 pb-2 pb-md-5 col-md-10 col-lg-10 offset-md-1 col-sm-12"> 
 										<section class="indiv-programs-additional-course standard-course">
+											<?php $box2 = get_field('prog_box_2'); ?>
 											<div class="indiv-course-titlearea">
-												<img src="http://adlerup.local/wp-content/uploads/noun-leaf.png">
-												<h6 class="indiv-course-title text-uppercase">STREAM A: CBT With Mental Health and Addiction</h6>
+												<img src="<?php echo esc_url( $box2['image']['url'] ); ?>">
+												<h6 class="indiv-course-title text-uppercase"><?php echo $box2['title']; ?></h6>
 											</div>	
 											<div class="indiv-course-timing">40 Hours of Study - Maximum of 12 Weeks</div>
 											<div class="indiv-course-cost">$895 + HST</div>
