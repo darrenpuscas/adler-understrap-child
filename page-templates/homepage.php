@@ -10,7 +10,7 @@
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
-get_header();
+get_header( 'home' );
 $container = get_theme_mod( 'understrap_container_type' );
 
 if ( is_front_page() ) {
@@ -36,6 +36,7 @@ if ( is_front_page() ) {
 										<button class="btn btn-primary">Learn more about Adler</button>							
 									</div>	
 									<div class="home-masthead-image masthead-section">
+	
 										<img src="http://adlerup.local/wp-content/uploads/2022/07/grad-image.png" class="home-masthead" alt="">
 									</div>
 								</div>
@@ -66,34 +67,44 @@ if ( is_front_page() ) {
 					<section id="home-infoboxes">
 						<div class="home-infoboxes-container container-xl pt-6 pb-4">
 							<div class="row">
-								<div class="home-infoboxes-area col-xsm-12 col-sm-10 col-lg-10 offset-lg-1 offset-sm-1">
+								<div class="home-infoboxes-area col-xsm-12 col-sm-12 col-lg-12 offset-lg-0">
 									<article class="home-infobox home-infobox1">
-										<div class="home-infobox-image home-infobox-icon1"><img src="http://adlerup.local/wp-content/uploads/2022/07/news-icon.png" alt=""></div>
-										<h5>News</h5>
-										<li>News story number 1 News story number 1 News story number 1</li>
-										<li>News Story #2 News Story #2 News Story #2 News Story #2</li>
-										<li>And now a third story And now a fourth story And now a fourth story</li>
-										<button class="btn btn-secondary">More News and Announcements</button>
+
+										<div class="infobox-textarea">
+											<div class="home-infobox-title">
+												<div class="home-infobox-image home-infobox-icon1"><img src="http://adlerup.local/wp-content/uploads/2022/07/news-icon.png" alt=""></div>
+												<h3>News</h3>
+											</div>
+											<li>News story number 1 News story number 1 News story number 1</li>
+											<li>News Story #2 News Story #2 News Story #2 News Story #2</li>
+											<li>And now a third story And now a fourth story And now a fourth story</li>
+										</div>	
+										<button class="btn btn-secondary">More News</button>
 									</article>
 									
 									<article class="home-infobox home-infobox2">
-										<div class="home-infobox-image home-infobox-icon3"><img src="http://adlerup.local/wp-content/uploads/2022/08/event-icon.png" alt=""></div>
-										<h5>Events</h5>
-										<li>News story number 1 News story number 1 News story number 1</li>
-										<li>News Story #2 News Story #2 News Story #2 News Story #2</li>
-										<li>And now a third story</li>
-										<li>And now a fourth story And now a fourth story And now a fourth story</li>
-										<li>News Story #5</li>
+
+										<div class="infobox-textarea">
+											<div class="home-infobox-title">
+												<div class="home-infobox-image home-infobox-icon3"><img src="http://adlerup.local/wp-content/uploads/2022/08/event-icon.png" alt=""></div>
+												<h3>Events</h3>
+											</div>
+											<li>News story number 1 News story number 1 News story number 1</li>
+											<li>News Story #2 News Story #2 News Story #2 News Story #2</li>
+											<li>And now a third story</li>
+										</div>
 										<button class="btn btn-secondary">More Events</button>
 									</article>
 									<article class="home-infobox home-infobox3">
-										<div class="home-infobox-image home-infobox-icon4"><img src="http://adlerup.local/wp-content/uploads/2022/08/contact-icon.png" alt=""></div>
-										<h5>Contact Adler</h5>
-										<li></li>
-										<li></li>
-										<li></li>
-										<li></li>
-										<li></li>
+										<div class="infobox-textarea">
+											<div class="home-infobox-title">
+												<div class="home-infobox-image home-infobox-icon4"><img src="http://adlerup.local/wp-content/uploads/2022/08/contact-icon.png" alt=""></div>
+												<h3>Contact Adler</h3>
+											</div>
+											<li></li>
+											<li></li>
+											<li></li>
+										</div>	
 										<button class="btn btn-secondary">Important Documents</button>
 									</article>
 								</div>

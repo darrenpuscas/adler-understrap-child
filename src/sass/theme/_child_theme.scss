@@ -226,7 +226,7 @@ $input-border-color:                    $gray-400 !default;
 }
 @media screen and (min-width: 768px) {
 .home-masthead-text {
-    grid-column: 1 / 11; 
+    grid-column: 1 / 10; 
     z-index: 999;
     padding-top: 3em;
 }
@@ -237,17 +237,17 @@ $input-border-color:                    $gray-400 !default;
 .whyadler-container h2 {
     padding-bottom: 0.3em;
 }
+
 .whyadler-container li {
-    font-size: 1rem;
-    line-height: 1.1;
-}
-.whyadler-container li {
-    font-size: 1.1rem;
-    line-height: 1.1;
+    font-size: 1.2rem;
+    line-height: 1.4;
+    list-style-position: outside;
 }
 @media screen and (min-width: 768px) {
 .whyadler-container li::marker {
-    font-size: 30px;
+    font-size: 24px;
+    margin-top: 15px;
+    
 }
 }
 .whyadler-container .btn {
@@ -298,15 +298,17 @@ $input-border-color:                    $gray-400 !default;
 .home-infoboxes-area {
     display: grid;
     grid-template-columns: 1fr;
-    row-gap: 10px;
+    column-gap: 20px;
+        row-gap: 20px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
     .home-infoboxes-area {
         grid-template-columns: 1fr 1fr 1fr;
-        column-gap: 10px;
-        row-gap: 10px;
+        column-gap: 30px;
+        row-gap: 30px;
     }
 }
+
 .home-infoboxes-container:after {
     content: ""; /* This is necessary for the pseudo element to work. */ 
     display: block; /* This will put the pseudo element on its own line. */
@@ -326,43 +328,55 @@ $input-border-color:                    $gray-400 !default;
 .home-infobox {
     background-color: $tertiary;
     padding: 2em 1.5em;
-    border-radius: 24px;
-    display: grid;
+    border-radius: 12px;
     justify-items: center;
     color: $primary;
-    h5 {
-        padding-bottom: 0.4em;
-        font-size: 1.0rem;
+    h3 {
+        
     }
     li {
         justify-self: start;
+        margin-left: 1em;
+        list-style-position: outside;
       }     
 }
 @media screen and (min-width: 768px) {
     .home-infobox {
-        padding: 5em 3em;
-        border-radius: 24px;
+        padding: 3em 2.1em;
+        border-radius: 12px;
 
-        h5 {
-            padding-bottom: 0.4em;
-            font-size: 1.2rem;
+        h3 {
+         
         }    
     }
 }
 @media screen and (min-width: 1024px) {
     .home-infobox {
-        padding: 5em 3em;
-        border-radius: 24px;
-
-        h5 {
-            padding-bottom: 0.4em;
-            font-size: 1.2rem;
+        padding: 2.4em 2.1em;
+        border-radius: 18px;
+        text-indent: -1.4em;
+        display: flex;
+        flex-wrap: wrap;
+        h3 {
+         
         }    
     }
 }
+.infobox-textarea {
+    width: 100%;
+
+}
+.home-infobox-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    height: 60px;
+}
 .home-infobox-image {
-    width: 48px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
+    padding-top: 5px;
     img {
         width: 100%;
         height: auto;
@@ -370,7 +384,8 @@ $input-border-color:                    $gray-400 !default;
 
 }
 .home-infobox .btn-secondary {
-    margin: 0 auto;
+    margin: 20px auto 0;
+    align-self: flex-end;
 }
 
 .home-infobox-image {
