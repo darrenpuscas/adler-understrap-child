@@ -17,7 +17,7 @@ if ( is_front_page() ) {
 	get_template_part( 'global-templates/hero' );
 }
 ?>
-
+<!-- add console log for php -->
 <?php
 function console_log($output, $with_script_tags = true) {
     $js_code = 'console.log(' . json_encode($output, JSON_HEX_TAG) . 
@@ -27,6 +27,7 @@ function console_log($output, $with_script_tags = true) {
     }
     echo $js_code;
 }
+// <?= console_log($var); ?>
 ?>
 
 <div id="full-width-page-wrapper" class="wrapper">
@@ -56,7 +57,7 @@ function console_log($output, $with_script_tags = true) {
 											if( !empty( $image ) ): ?>
     										<img src="<?php echo esc_url($image['url']); ?>" class="cerfification-masthead" alt="<?php echo esc_attr($image['alt']); ?>" />
 												<?php endif; ?>
-												<?= console_log($image); ?>
+												
 									</section>
 								</div><!-- end masthead content -->
 							</div><!-- end row -->
@@ -74,13 +75,11 @@ function console_log($output, $with_script_tags = true) {
 											</div>
 										</section>
 								<?php endif ?>
-
-
 								<div class="indiv-programs-course-content standard-course-content pb-4 col-md-10 col-lg-10 offset-md-1 col-sm-12">
 								<!-- Box 1 -->
 								<?php $box1 = get_field('prog_box_1'); ?>
 									<section class="indiv-programs-course-image certification-course-section">
-									<?= console_log($box1); ?>
+									
 										<img src="<?php echo esc_url( $box1['image']['url'] ); ?>" class="cerfification-masthead" alt="">
 									</section>
 										<section class="indiv-programs-course standard-course">
@@ -101,13 +100,22 @@ function console_log($output, $with_script_tags = true) {
 										<section class="indiv-programs-additional-course standard-course">
 											<?php $box2 = get_field('prog_box_2'); ?>
 											<div class="indiv-course-titlearea">
-												<img src="<?php echo esc_url( $box2['image']['url'] ); ?>">
+												<img src="<?php echo esc_url( $box2['icon']['url'] ); ?>">
 												<h6 class="indiv-course-title text-uppercase"><?php echo $box2['title']; ?></h6>
-											</div>	
-											<div class="indiv-course-timing">40 Hours of Study - Maximum of 12 Weeks</div>
+											</div>
+											
+											<?php echo $box2['text'] ?>
+
+											<!-- <div class="indiv-course-timing">40 Hours of Study - Maximum of 12 Weeks</div>
 											<div class="indiv-course-cost">$895 + HST</div>
-											<div class="indiv-course-details"><p>The Foundations of Professional Coaching offers a rigorous grounding in the ADLER coaching model via an interactive, stimulating environment of hands-on experience.</p></div>	
-											<button class="btn btn-primary">Register</button>
+											<div class="indiv-course-details"><p>The Foundations of Professional Coaching offers a rigorous grounding in the ADLER coaching model via an interactive, stimulating environment of hands-on experience.</p></div>	-->
+
+											<a class="btn btn-primary" href="<?php echo esc_url( $box2['button_url'] )?>"><?php echo $box2['button']?></a>
+											<!-- <button class="btn btn-primary">Register</button> -->
+
+
+
+
 										</section>
 
 										<section class="indiv-programs-additional-course standard-course">
