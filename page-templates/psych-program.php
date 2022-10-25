@@ -147,7 +147,7 @@ function console_log($output, $with_script_tags = true) {
 						<div class="indiv-programs-additonal-container standard-course-container container-xl pt-3 pb-3 pt-8 pb-6">
 							<div class="row">
 								<section>
-									<!-- here should be text -->
+								<h3><?php the_field('prog_table_section_title'); ?></h3>
 								<?php the_field('prog_before_table'); ?>
 
 								<!-- table inside a repeater field -->
@@ -157,6 +157,7 @@ function console_log($output, $with_script_tags = true) {
 									// Check if rows exists.
 									if( have_rows('prog_info_tables') ):
 
+
 											// Loop through rows.
 											while( have_rows('prog_info_tables') ) : the_row();
 
@@ -165,21 +166,16 @@ function console_log($output, $with_script_tags = true) {
 													// Do something...
 													$table = get_sub_field( 'prog_info_table' );
 
-													if ( ! empty ( $table ) ) {
-														echo 'in main if statement';
+													if ( ! empty ( $table ) ): ?>
+													 <h3><?php the_sub_field('table_name</h3>'); ?></h3>
 				
-															echo '<table border="0">';
+														<?php	echo '<table border="1">';
 				
 																	if ( ! empty( $table['caption'] ) ) {
 																		echo 'in caption if';
 				
 																			echo '<caption>' . $table['caption'] . '</caption>';
 																	}
-				
-																	//echo '</tbody>';
-				
-															//echo '</table>'; 
-				
 															if ( ! empty( $table['header'] ) ) {
 																echo 'in header if';
 															echo '<thead>';
@@ -196,7 +192,7 @@ function console_log($output, $with_script_tags = true) {
 																	echo '</tr>';
 				
 															echo '</thead>';
-															}
+														}
 															//end header if
 				
 															echo '<tbody>';
@@ -216,7 +212,8 @@ function console_log($output, $with_script_tags = true) {
 															} 
 															echo '</tbody>';
 															echo '</table>'; 
-														} 
+														endif;
+													//end table if
 				
 											// End Repeater loop.
 											endwhile;
