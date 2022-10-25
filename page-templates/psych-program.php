@@ -1,8 +1,8 @@
 <?php
 /**
- * Template Name: Individual Program
+ * Template Name: Psych Program
  *
- * Template for the individual program pages.
+ * Template for the Psych Program pages.
  *
  * @package Understrap
  */
@@ -127,6 +127,37 @@ function console_log($output, $with_script_tags = true) {
 								</div><!-- end column -->
 							</div><!-- end row -->
 						</div><!-- end container -->
+					</article>
+
+
+					<article class="indiv-programs-additional-light">
+						<div class="indiv-programs-additonal-container standard-course-container container-xl pt-3 pb-3 pt-8 pb-6">
+							<div class="row">
+								<section>
+								<?php $image = get_field('prog_program_map_image');
+									if( !empty( $image ) ): ?>
+										<img src="<?php echo esc_url($image['url']); ?>" class="" alt="<?php echo esc_attr($image['alt']); ?>" />
+									<?php endif; ?>
+								</section>
+							</div>
+						</div>
+					</article>
+
+					<article class="indiv-programs-additional">
+						<div class="indiv-programs-additonal-container standard-course-container container-xl pt-3 pb-3 pt-8 pb-6">
+							<div class="row">
+								<section>
+									text 
+									Est sunt velit esse irure quis. Sint velit ipsum magna voluptate aute veniam tempor irure. Eiusmod fugiat consectetur aute nostrud incididunt mollit officia deserunt consectetur quis quis do. Aute reprehenderit occaecat officia reprehenderit nostrud proident aliquip proident ea cillum. Anim est sint labore exercitation enim exercitation cupidatat consectetur. Sunt ea enim elit occaecat nisi do. Cupidatat consectetur elit cillum magna aute aliquip occaecat nulla nisi incididunt qui esse duis.
+
+									Ad aliquip aute non incididunt amet laboris ex culpa irure elit anim non cillum. Aliqua irure aliquip esse sint excepteur proident tempor aute enim eu do. Enim in mollit nisi sunt dolor aliqua occaecat voluptate anim nostrud voluptate mollit. Aute velit ea officia velit Lorem aute veniam id occaecat culpa do non irure.
+
+									Adipisicing deserunt tempor culpa labore qui. Id sit duis officia adipisicing. Duis incididunt laboris aliquip aliqua minim culpa do ullamco ut. Enim veniam duis officia pariatur sit id proident laborum deserunt consequat mollit quis. Eiusmod eu quis voluptate mollit consectetur adipisicing qui qui proident consectetur aute dolore occaecat. Cupidatat labore sint enim sunt. Et aute tempor qui culpa incididunt eu ipsum.
+
+									Amet excepteur magna eu irure laborum. Labore minim dolor laborum irure. Velit excepteur non adipisicing fugiat deserunt fugiat enim nisi.
+								</section>
+							</div>
+						</div>
 					</article>
 
 					<article id="indiv-programs-faq-main">
