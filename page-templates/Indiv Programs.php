@@ -93,7 +93,6 @@ function console_log($output, $with_script_tags = true) {
 					</article>
 
 					<article id="indiv-programs-additional">
-
 						<div class="indiv-programs-additional standard-course-container container-xl">
 							<div class="row">
 								<div class="indiv-programs-additional-course-content standard-course-content pt-2 pt-md-5 pb-2 pb-md-5 col-md-10 col-lg-10 offset-md-1 col-sm-12"> 
@@ -103,41 +102,28 @@ function console_log($output, $with_script_tags = true) {
 												<img src="<?php echo esc_url( $box2['icon']['url'] ); ?>">
 												<h6 class="indiv-course-title text-uppercase"><?php echo $box2['title']; ?></h6>
 											</div>
-											
 											<?php echo $box2['text'] ?>
-
-											<!-- <div class="indiv-course-timing">40 Hours of Study - Maximum of 12 Weeks</div>
-											<div class="indiv-course-cost">$895 + HST</div>
-											<div class="indiv-course-details"><p>The Foundations of Professional Coaching offers a rigorous grounding in the ADLER coaching model via an interactive, stimulating environment of hands-on experience.</p></div>	-->
-
 											<a class="btn btn-primary" href="<?php echo esc_url( $box2['button_url'] )?>"><?php echo $box2['button']?></a>
-											<!-- <button class="btn btn-primary">Register</button> -->
-
-
-
-
 										</section>
 
 										<section class="indiv-programs-additional-course standard-course">
+											<?php $box3 = get_field('prog_box_3'); ?>
 											<div class="indiv-course-titlearea">
-												<img src="http://adlerup.local/wp-content/uploads/noun-leaf.png">
-												<h6 class="indiv-course-title text-uppercase">STREAM B: CBT With Complex Mental Health</h6>
+											<img src="<?php echo esc_url( $box3['icon']['url'] ); ?>">
+												<h6 class="indiv-course-title text-uppercase"><?php echo $box3['title']; ?></h6>
 											</div>
-											<div class="indiv-course-timing">40 Hours of Study - Maximum of 12 Weeks</div>
-											<div class="indiv-course-cost">$895 + HST</div>
-											<div class="indiv-course-details"><p>The Foundations of Professional Coaching offers a rigorous grounding in the ADLER coaching model via an interactive, stimulating environment of hands-on experience.</p></div>	
-											<button class="btn btn-primary">Register</button>
+											<?php echo $box3['text'] ?>
+											<a class="btn btn-primary" href="<?php echo esc_url( $box3['button_url'] )?>"><?php echo $box3['button']?></a>
 										</section>
 
 										<section class="indiv-programs-additional-course standard-course">
+											<?php $box4 = get_field('prog_box_4'); ?>
 											<div class="indiv-course-titlearea">
-												<img src="http://adlerup.local/wp-content/uploads/noun-leaf.png">
-												<h6 class="indiv-course-title text-uppercase">STREAM C: CBT with Families, Children and Youth</h6>
+											<img src="<?php echo esc_url( $box4['icon']['url'] ); ?>">
+												<h6 class="indiv-course-title text-uppercase"><?php echo $box4['title']; ?></h6>
 											</div>
-											<div class="indiv-course-timing">40 Hours of Study - Maximum of 12 Weeks</div>
-											<div class="indiv-course-cost">$895 + HST</div>
-											<div class="indiv-course-details"><p>The Foundations of Professional Coaching offers a rigorous grounding in the ADLER coaching model via an interactive, stimulating environment of hands-on experience.</p></div>	
-											<button class="btn btn-primary">Register</button>
+											<?php echo $box4['text'] ?>
+											<a class="btn btn-primary" href="<?php echo esc_url( $box4['button_url'] )?>"><?php echo $box4['button']?></a>
 										</section>
 								</div><!-- end column -->
 							</div><!-- end row -->
