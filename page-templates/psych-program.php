@@ -147,14 +147,87 @@ function console_log($output, $with_script_tags = true) {
 						<div class="indiv-programs-additonal-container standard-course-container container-xl pt-3 pb-3 pt-8 pb-6">
 							<div class="row">
 								<section>
-									text 
-									Est sunt velit esse irure quis. Sint velit ipsum magna voluptate aute veniam tempor irure. Eiusmod fugiat consectetur aute nostrud incididunt mollit officia deserunt consectetur quis quis do. Aute reprehenderit occaecat officia reprehenderit nostrud proident aliquip proident ea cillum. Anim est sint labore exercitation enim exercitation cupidatat consectetur. Sunt ea enim elit occaecat nisi do. Cupidatat consectetur elit cillum magna aute aliquip occaecat nulla nisi incididunt qui esse duis.
+									<!-- here should be text -->
+								<?php the_field('prog_before_table'); ?>
 
-									Ad aliquip aute non incididunt amet laboris ex culpa irure elit anim non cillum. Aliqua irure aliquip esse sint excepteur proident tempor aute enim eu do. Enim in mollit nisi sunt dolor aliqua occaecat voluptate anim nostrud voluptate mollit. Aute velit ea officia velit Lorem aute veniam id occaecat culpa do non irure.
+								<!-- table inside a repeater field -->
 
-									Adipisicing deserunt tempor culpa labore qui. Id sit duis officia adipisicing. Duis incididunt laboris aliquip aliqua minim culpa do ullamco ut. Enim veniam duis officia pariatur sit id proident laborum deserunt consequat mollit quis. Eiusmod eu quis voluptate mollit consectetur adipisicing qui qui proident consectetur aute dolore occaecat. Cupidatat labore sint enim sunt. Et aute tempor qui culpa incididunt eu ipsum.
+								<?php
 
-									Amet excepteur magna eu irure laborum. Labore minim dolor laborum irure. Velit excepteur non adipisicing fugiat deserunt fugiat enim nisi.
+									// Check if rows exists.
+									if( have_rows('prog_info_tables') ):
+
+											// Loop through rows.
+											while( have_rows('prog_info_tables') ) : the_row();
+
+													// Load sub field value.
+													//$sub_value = get_sub_field('sub_field');
+													// Do something...
+													$table = get_sub_field( 'prog_info_table' );
+
+													if ( ! empty ( $table ) ) {
+														echo 'in main if statement';
+				
+															echo '<table border="0">';
+				
+																	if ( ! empty( $table['caption'] ) ) {
+																		echo 'in caption if';
+				
+																			echo '<caption>' . $table['caption'] . '</caption>';
+																	}
+				
+																	//echo '</tbody>';
+				
+															//echo '</table>'; 
+				
+															if ( ! empty( $table['header'] ) ) {
+																echo 'in header if';
+															echo '<thead>';
+				
+																	echo '<tr>';
+				
+																			foreach ( $table['header'] as $th ) {
+				
+																					echo '<th>';
+																							echo $th['c'];
+																					echo '</th>';
+																			}
+				
+																	echo '</tr>';
+				
+															echo '</thead>';
+															}
+															//end header if
+				
+															echo '<tbody>';
+				
+															foreach ( $table['body'] as $tr ) {
+																	echo 'for each body';
+																	echo '<tr>';
+				
+																			foreach ( $tr as $td ) {
+				
+																					echo '<td>';
+																							echo $td['c'];
+																					echo '</td>';
+																			}
+				
+																	echo '</tr>'; 
+															} 
+															echo '</tbody>';
+															echo '</table>'; 
+														} 
+				
+											// End Repeater loop.
+											endwhile;
+
+									// No value in table repeater.
+									else :
+											// Do something...
+											echo 'no table date entered';
+									endif; ?>
+								
+								<?php the_field('prog_after_table'); ?>
 								</section>
 							</div>
 						</div>
