@@ -28,7 +28,6 @@ function console_log($output, $with_script_tags = true) {
     echo $js_code;
 }
 // <?= console_log($var); ?>
-?>
 
 <div id="full-width-page-wrapper" class="wrapper">
 
