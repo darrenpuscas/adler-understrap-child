@@ -13,3 +13,8 @@ dist-product
 npm-debug.log
 
 /vendor/
+
+working.html
+
+js/
+css/
