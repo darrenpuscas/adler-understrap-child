@@ -234,10 +234,11 @@ function console_log($output, $with_script_tags = true) {
 						<div class="indiv-programs-faq-container container-xl pt-3 pb-3 pt-8 pb-6">
 							<div class="row">
 								<section class="indiv-programs-faq standard-faq col-md-8 col-lg-8 offset-md-2 col-sm-12">
-									<!-- <h5 class="text-uppercase">What is unique about the ADLER School of Professional Coaching?</h5>
-									<p>With locations around the world, ADLER offers a globally respected, in-depth coach training program and model that can be applied to virtually any coaching situation. We prepare our coaches to use depth of knowledge and best practices in coaching, while finding their own unique style and voice as a coach. ADLER takes the lead in providing coach training that is grounded in theory, informed by research, and is at the forefront of defining professionalism in coaching.  At ADLER we believe that a combination of six criteria makes our Coach Training Programs unique and effective: depth, breadth, applied learning, experiencing your own coaching, in-person contact, and quality of trainers and mentors. We are committed to high quality training. Our faculty of top coaches draws on extensive experience with coaching and coach training to create a solid foundation for this fast growing profession, as well as to provide rich experiential learning in proven coaching techniques, making us a leader in the field of coach training.</p> -->
+									<!-- need to add repeater field -->
 									<details>
-										<summary class="text-uppercase"><h5>What is Unique About the Adler School of Professional Coaching?</h5></summary>
+										<summary class="text-uppercase">What is Unique About the Adler School of Professional Coaching?</summary>
+
+
 										With locations around the world, ADLER offers a globally respected, in-depth coach training program and model that can be applied to virtually any coaching situation. We prepare our coaches to use depth of knowledge and best practices in coaching, while finding their own unique style and voice as a coach. ADLER takes the lead in providing coach training that is grounded in theory, informed by research, and is at the forefront of defining professionalism in coaching. At ADLER we believe that a combination of six criteria makes our Coach Training Programs unique and effective: depth, breadth, applied learning, experiencing your own coaching, in-person contact, and quality of trainers and mentors. We are committed to high quality training. Our faculty of top coaches draws on extensive experience with coaching and coach training to create a solid foundation for this fast growing profession, as well as to provide rich experiential learning in proven coaching techniques, making us a leader in the field of coach training.
 									</details>
 								</section>
