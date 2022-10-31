@@ -48,7 +48,7 @@ $navbar_type       = get_theme_mod( 'understrap_navbar_type', 'collapse' );
 		
 
 		<a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" itemprop="url">
-			<img src="http://adlerup.local/wp-content/uploads/2022/10/ADLER-logo-white-e1666192467985.png" class="home-masthead" alt="">
+			<img src="http://adlerup.local/wp-content/uploads/ADLER-logo-537x120-removebg-preview-2.png" class="home-masthead" alt="">
 		</a>
 
 
