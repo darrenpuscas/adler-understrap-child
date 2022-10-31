@@ -150,7 +150,7 @@ function console_log($output, $with_script_tags = true) {
 								<h3><?php the_field('prog_table_section_title'); ?></h3>
 								<?php the_field('prog_before_table'); ?>
 
-								<!-- table inside a repeater field -->
+								<!-- table inside a repaeater field -->
 
 								<?php
 
@@ -164,20 +164,19 @@ function console_log($output, $with_script_tags = true) {
 													// Load sub field value.
 													//$sub_value = get_sub_field('sub_field');
 													// Do something...
-													$table = get_sub_field( 'prog_info_table' );
 
+													$table = get_sub_field( 'prog_info_table' );
 													if ( ! empty ( $table ) ): ?>
-													 <h3><?php the_sub_field('table_name</h3>'); ?></h3>
+														<h4><?php the_sub_field('table_name'); ?></h4>
 				
-														<?php	echo '<table border="1">';
+														<?php	echo '<table class="table table-striped" border="1">';
 				
 																	if ( ! empty( $table['caption'] ) ) {
-																		echo 'in caption if';
-				
+																	
 																			echo '<caption>' . $table['caption'] . '</caption>';
 																	}
 															if ( ! empty( $table['header'] ) ) {
-																echo 'in header if';
+																
 															echo '<thead>';
 				
 																	echo '<tr>';
@@ -198,7 +197,7 @@ function console_log($output, $with_script_tags = true) {
 															echo '<tbody>';
 				
 															foreach ( $table['body'] as $tr ) {
-																	echo 'for each body';
+																	
 																	echo '<tr>';
 				
 																			foreach ( $tr as $td ) {
@@ -234,33 +233,39 @@ function console_log($output, $with_script_tags = true) {
 						<div class="indiv-programs-faq-container container-xl pt-3 pb-3 pt-8 pb-6">
 							<div class="row">
 								<section class="indiv-programs-faq standard-faq col-md-8 col-lg-8 offset-md-2 col-sm-12">
-									<!-- need to add repeater field -->
-									<details>
-										<summary class="text-uppercase">What is Unique About the Adler School of Professional Coaching?</summary>
+									<h5><?php the_field('psych_faq_title'); ?></h5>
+									<?php
+										// Check if rows exists.
+										if( have_rows('psych_faq') ):
 
+												// Loop through rows.
+												while( have_rows('psych_faq') ) : the_row();
 
-										With locations around the world, ADLER offers a globally respected, in-depth coach training program and model that can be applied to virtually any coaching situation. We prepare our coaches to use depth of knowledge and best practices in coaching, while finding their own unique style and voice as a coach. ADLER takes the lead in providing coach training that is grounded in theory, informed by research, and is at the forefront of defining professionalism in coaching. At ADLER we believe that a combination of six criteria makes our Coach Training Programs unique and effective: depth, breadth, applied learning, experiencing your own coaching, in-person contact, and quality of trainers and mentors. We are committed to high quality training. Our faculty of top coaches draws on extensive experience with coaching and coach training to create a solid foundation for this fast growing profession, as well as to provide rich experiential learning in proven coaching techniques, making us a leader in the field of coach training.
-									</details>
-								</section>
-								<section class="indiv-programs-faq standard-faq col-md-8 col-lg-8 offset-md-2 col-sm-12">
-								<h5 class="text-uppercase">What is Coaching</h5>
-								<p>With locations around the world, ADLER offers a globally respected, in-depth coach training program and model that can be applied to virtually any coaching situation. We prepare our coaches to use depth of knowledge and best practices in coaching, while finding their own unique style and voice as a coach.
-								ADLER takes the lead in providing coach training that is grounded in theory, informed by research, and is at the forefront of defining professionalism in coaching.  At ADLER we believe that a combination of six criteria makes our Coach Training Programs unique and effective: depth, breadth, applied learning, experiencing your own coaching, in-person contact, and quality of trainers and mentors.
-								We are committed to high quality training. Our faculty of top coaches draws on extensive experience with coaching and coach training to create a solid foundation for this fast growing profession, as well as to provide rich experiential learning in proven coaching techniques, making us a leader in the field of coach training.</p>
-								</section>	
-								<section class="indiv-programs-faq standard-faq col-md-8 col-lg-8 offset-md-2 col-sm-12">
-									<h5 class="text-uppercase">Why ADLER?</h5>
-									<p>At ADLER, we see coaching as a profession that distinguishes itself by helping people discover how to bring their choices and actions more inline with their unique “best self” This in turn helps them to connect more creatively with a deeper human desire to make contributions for the betterment of society. Our hope and intention is to train coaches who also see their work as a creative response to this noble challenge.</p>
-								</section>	
-								<section class="indiv-programs-faq standard-faq col-md-8 col-lg-8 offset-md-2 col-sm-12">
-									<h5 class="text-uppercase">Our Facility</h5>
-									<p>ADLER coaching faculty are ICF accredited, practicing professional coaches. They draw on their experiences with both coaching and training to develop sound foundations for this fast-growing profession to provide up-to-date practical techniques. Our faculty are part of what makes the coaching program at ADLER a true leader in the realm of coach training.</p>
-								</section>	
+														// Load sub field value.
+														$question = get_sub_field('question');
+														$answer = get_sub_field('answer'); 
+										?>
+											<section class="indiv-programs-faq standard-faq col-md-8 col-lg-8 offset-md-2 col-sm-12">
+												<details>
+													<summary><?php echo $question ?></summary>
+													<?php echo $answer; ?>
+												</details>
+											</section>
+
+										<?php
+									// End Repeater loop.
+									endwhile;
+
+									// No value in table repeater.
+									else :
+											// Do something...
+											echo 'no faqs';
+									endif; ?>
+
 							</div><!-- end row -->
 						</div><!-- end container -->
 					</article>
 					
-
 				</main><!-- #main -->
 
 			</div><!-- #primary -->
