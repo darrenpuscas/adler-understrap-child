@@ -34,7 +34,7 @@ if ( is_front_page() ) {
 									</div>	
 									<div class="home-masthead-image masthead-section">
 	
-										<img src="http://adlerup.local/wp-content/grad-image.png" class="home-masthead" alt="">
+										<img src="http://adlerup.local/wp-content/uploads/grad-image.png" class="home-masthead" alt="">
 									</div>
 								</div>
 							</div>
@@ -69,7 +69,7 @@ if ( is_front_page() ) {
 
 										<div class="infobox-textarea">
 											<div class="home-infobox-title">
-												<div class="home-infobox-image home-infobox-icon1"><img src="http://adlerup.local/wp-content/news-icon.png" alt=""></div>
+												<div class="home-infobox-image home-infobox-icon1"><img src="http://adlerup.local/wp-content/uploads/news-icon.png" alt=""></div>
 												<h3>News</h3>
 											</div>
 											<li>News story number 1 News story number 1 News story number 1</li>
@@ -83,7 +83,7 @@ if ( is_front_page() ) {
 
 										<div class="infobox-textarea">
 											<div class="home-infobox-title">
-												<div class="home-infobox-image home-infobox-icon3"><img src="http://adlerup.local/wp-content/event-icon.png" alt=""></div>
+												<div class="home-infobox-image home-infobox-icon3"><img src="http://adlerup.local/wp-content/uploads/event-icon.png" alt=""></div>
 												<h3>Events</h3>
 											</div>
 											<li>News story number 1 News story number 1 News story number 1</li>
@@ -95,7 +95,7 @@ if ( is_front_page() ) {
 									<article class="home-infobox home-infobox3">
 										<div class="infobox-textarea">
 											<div class="home-infobox-title">
-												<div class="home-infobox-image home-infobox-icon4"><img src="http://adlerup.local/wp-content/contact-icon.png" alt=""></div>
+												<div class="home-infobox-image home-infobox-icon4"><img src="http://adlerup.local/wp-content/uploads/contact-icon.png" alt=""></div>
 												<h3>Contact Adler</h3>
 											</div>
 											<li></li>
