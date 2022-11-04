@@ -65,7 +65,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 								<ul>
 									<li class="testbbb">Resources</li>
 									<li>GSAEC</li>
-									<li>Library of Psychology</li>
+									<li>Something Else!!!!</li>
 									<li>Find a coach</li>
 								</ul>
 							</div>
