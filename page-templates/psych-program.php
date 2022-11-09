@@ -17,18 +17,6 @@ if ( is_front_page() ) {
 	get_template_part( 'global-templates/hero' );
 }
 ?>
-<!-- add console log for php -->
-<?php
-function console_log($output, $with_script_tags = true) {
-    $js_code = 'console.log(' . json_encode($output, JSON_HEX_TAG) . 
-');';
-    if ($with_script_tags) {
-        $js_code = '<script>' . $js_code . '</script>';
-    }
-    echo $js_code;
-}
-// <?= console_log($var); ?>
-
 <div id="full-width-page-wrapper" class="wrapper">
 
 			<div class="col-md-12 content-area" id="primary">

@@ -27,6 +27,18 @@ $navbar_type       = get_theme_mod( 'understrap_navbar_type', 'collapse' );
 	<?php wp_head(); ?>
 </head>
 
+<!-- add console log for php -->
+<?php
+function console_log($output, $with_script_tags = true) {
+    $js_code = 'console.log(' . json_encode($output, JSON_HEX_TAG) . 
+');';
+    if ($with_script_tags) {
+        $js_code = '<script>' . $js_code . '</script>';
+    }
+    echo $js_code;
+}
+// <?= console_log($var); ?>
+
 <body <?php body_class(); ?> <?php understrap_body_attributes(); ?>>
 <?php do_action( 'wp_body_open' ); ?>
 <div class="site" id="page">
@@ -45,10 +57,11 @@ $navbar_type       = get_theme_mod( 'understrap_navbar_type', 'collapse' );
 
 	<div class="<?php echo esc_attr( $container ); ?> container-xxl">
 
-		
-
+		<?php $logo = get_field('home_logo', 'option'); ?>
+		<?= console_log($logo); ?>
 		<a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" itemprop="url">
-			<img src="http://adlerup.local/wp-content/uploads/ADLER-logo-537x120-removebg-preview-2.png " class="home-masthead" alt="">
+		<img class="home-masthead" src="<?php echo esc_url($logo['url']);?>" alt="<?php echo esc_attr($logo['alt']);?>">
+			<!-- <img src="http://adlerup.local/wp-content/uploads/ADLER-logo-white.png" class="home-masthead" alt=""> -->
 		</a>
 
 
