@@ -51,16 +51,18 @@ if ( is_front_page() ) {
 							<div class="programs-course-content standard-course-content pt-2 pt-md-6 pb-6 col-sm-12"> 
 								<div class="programs-course">
 									<div class="programs-course-text standard-course-text">
-										<h4 class="text-uppercase">Master of Psychology (MPsy)</h5>
-										<p>ADLER’s Master of Psychology degree* prepares students for registration as a Psychological Associate with the Ontario College of Psychologists, in clinical and counselling practice areas. The MPsy degree provides students with the knowledge, skills, and attitudes necessary in preparing them to offer psychological services in a variety of diagnostic, therapeutic, and assessment settings.</p>	
-										<div class="programs-details">
-											<h6 class="programs-details-title">ADLER MPsy Courses:</h6>
-											<ul>
-												<li>SED UT PERSPICIATIS</li>
-												<li>NEQUE PORRO ENIM IPSAM</li>
-											</ul>
-										</div>
-										<button class="btn btn-primary programs-button">Learn more</button>
+										<div class="programs-course-text-inner">
+											<h4 class="text-uppercase">Master of Psychology (MPsy)</h5>
+											<p>ADLER’s Master of Psychology degree* prepares students for registration as a Psychological Associate with the Ontario College of Psychologists, in clinical and counselling practice areas. The MPsy degree provides students with the knowledge, skills, and attitudes necessary in preparing them to offer psychological services in a variety of diagnostic, therapeutic, and assessment settings.</p>	
+											<div class="programs-details">
+												<h6 class="programs-details-title">ADLER MPsy Courses:</h6>
+												<ul>
+													<li>SED UT PERSPICIATIS</li>
+													<li>NEQUE PORRO ENIM IPSAM</li>
+												</ul>
+											</div>
+											<button class="btn btn-primary programs-button">Learn more</button>
+										</div>	
 
 									</div>
 									<div class="programs-course-image programs-course-section">
@@ -70,16 +72,18 @@ if ( is_front_page() ) {
 								
 								<div class="programs-course">
 									<div class="programs-course-text standard-course-text">
-										<h4 class="text-uppercase">Master of Psychology (MPsy)</h5>
-										<p>ADLER’s Master of Psychology degree* prepares students for registration as a Psychological Associate with the Ontario College of Psychologists, in clinical and counselling practice areas. The MPsy degree provides students with the knowledge, skills, and attitudes necessary in preparing them to offer psychological services in a variety of diagnostic, therapeutic, and assessment settings.</p>	
-										<div class="programs-details">
-											<h6 class="programs-details-title">ADLER MPsy Courses:</h6>
-											<ul>
-												<li>SED UT PERSPICIATIS</li>
-												<li>NEQUE PORRO ENIM IPSAM</li>
-											</ul>
-										</div>
-										<button class="btn btn-primary programs-button">Learn more</button>
+										<div class="programs-course-text-inner">
+											<h4 class="text-uppercase">Master of Psychology (MPsy)</h5>
+											<p>ADLER’s Master of Psychology degree* prepares students for registration as a Psychological Associate with the Ontario College of Psychologists, in clinical and counselling practice areas. The MPsy degree provides students with the knowledge, skills, and attitudes necessary in preparing them to offer psychological services in a variety of diagnostic, therapeutic, and assessment settings.</p>	
+											<div class="programs-details">
+												<h6 class="programs-details-title">ADLER MPsy Courses:</h6>
+												<ul>
+													<li>SED UT PERSPICIATIS</li>
+													<li>NEQUE PORRO ENIM IPSAM</li>
+												</ul>
+											</div>
+											<button class="btn btn-primary programs-button">Learn more</button>
+										</div>	
 
 									</div>
 									<div class="programs-course-image programs-course-section">
@@ -89,16 +93,18 @@ if ( is_front_page() ) {
 
 								<div class="programs-course">
 									<div class="programs-course-text standard-course-text">
-										<h4 class="text-uppercase">Master of Psychology (MPsy)</h5>
-										<p>ADLER’s Master of Psychology degree* prepares students for registration as a Psychological Associate with the Ontario College of Psychologists, in clinical and counselling practice areas. The MPsy degree provides students with the knowledge, skills, and attitudes necessary in preparing them to offer psychological services in a variety of diagnostic, therapeutic, and assessment settings.</p>	
-										<div class="programs-details">
-											<h6 class="programs-details-title">ADLER MPsy Courses:</h6>
-											<ul>
-												<li>SED UT PERSPICIATIS</li>
-												<li>NEQUE PORRO ENIM IPSAM</li>
-											</ul>
-										</div>
-										<button class="btn btn-primary programs-button">Learn more</button>
+										<div class="programs-course-text-inner">
+											<h4 class="text-uppercase">Master of Psychology (MPsy)</h5>
+											<p>ADLER’s Master of Psychology degree* prepares students for registration as a Psychological Associate with the Ontario College of Psychologists, in clinical and counselling practice areas. The MPsy degree provides students with the knowledge, skills, and attitudes necessary in preparing them to offer psychological services in a variety of diagnostic, therapeutic, and assessment settings.</p>	
+											<div class="programs-details">
+												<h6 class="programs-details-title">ADLER MPsy Courses:</h6>
+												<ul>
+													<li>SED UT PERSPICIATIS</li>
+													<li>NEQUE PORRO ENIM IPSAM</li>
+												</ul>
+											</div>
+											<button class="btn btn-primary programs-button">Learn more</button>
+										</div>	
 
 									</div>
 									<div class="programs-course-image programs-course-section">
@@ -108,16 +114,18 @@ if ( is_front_page() ) {
 
 								<div class="programs-course">
 									<div class="programs-course-text standard-course-text">
-										<h4 class="text-uppercase">Master of Psychology (MPsy)</h5>
-										<p>ADLER’s Master of Psychology degree* prepares students for registration as a Psychological Associate with the Ontario College of Psychologists, in clinical and counselling practice areas. The MPsy degree provides students with the knowledge, skills, and attitudes necessary in preparing them to offer psychological services in a variety of diagnostic, therapeutic, and assessment settings.</p>	
-										<div class="programs-details">
-											<h6 class="programs-details-title">ADLER MPsy Courses:</h6>
-											<ul>
-												<li>SED UT PERSPICIATIS</li>
-												<li>NEQUE PORRO ENIM IPSAM</li>
-											</ul>
+										<div class="programs-course-text-inner">
+											<h4 class="text-uppercase">Master of Psychology (MPsy)</h5>
+											<p>ADLER’s Master of Psychology degree* prepares students for registration as a Psychological Associate with the Ontario College of Psychologists, in clinical and counselling practice areas. The MPsy degree provides students with the knowledge, skills, and attitudes necessary in preparing them to offer psychological services in a variety of diagnostic, therapeutic, and assessment settings.</p>	
+											<div class="programs-details">
+												<h6 class="programs-details-title">ADLER MPsy Courses:</h6>
+												<ul>
+													<li>SED UT PERSPICIATIS</li>
+													<li>NEQUE PORRO ENIM IPSAM</li>
+												</ul>
+											</div>
+											<button class="btn btn-primary programs-button">Learn more</button>
 										</div>
-										<button class="btn btn-primary programs-button">Learn more</button>
 
 									</div>
 									<div class="programs-course-image programs-course-section">
