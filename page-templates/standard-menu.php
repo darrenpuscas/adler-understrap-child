@@ -20,7 +20,7 @@ if ( is_front_page() ) {
 
 <div id="full-width-page-wrapper" class="wrapper">
 
-			<div class="col-md-12 content-area" id="primary">
+			<div class="content-area" id="primary">
 
 				<main class="site-main" id="main" role="main">
 
@@ -28,16 +28,16 @@ if ( is_front_page() ) {
 						
 						<div class="container-xl">
 							<div class="row">
-								<div class="menu-section masthead-section why-adler-masthead-content pt-6 pb-6 col-lg-12 offset-lg-0">
+								<div class="menu-section masthead-section why-adler-masthead-content pt-4 pt-md-6 pb-4 pb-md-3 col-md-10 offset-md-1">
 									<div class="page-menu">
-										<header class="entry-header">
+										<header class="entry-header why-adler-title">
 											<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 										</header><!-- .entry-header -->
 										<div class="page-menu-area">
 
-											<div class="page-menu-one page-tab-menu mb-0 pt-4 pb-4">
-												<h4 class="pb-2">What we are about</h4>
-												<ul class="nav nav-tabs" id="myTab" role="tablist">
+											<div class="page-menu-one page-tab-menu mb-0 pt-3 pt-sm-3 pb-4 pt-md-2 pb-md-2">
+												<div><h3 class="pb-2 pb-sm-1 pb-md-1">What we are about</h3></div>
+												<ul class="nav nav-tabs pt-2 pt-md-2" id="myTab" role="tablist">
 													<li class="nav-item" role="presentation">    
 														<div class="nav-link active" id="about-adler-tab" data-bs-toggle="tab" data-bs-target="#about-adler" type="button" role="tab" aria-controls="about-adler" aria-selected="true"><h6>About Adler</h6></button>
 													</li>
@@ -65,9 +65,9 @@ if ( is_front_page() ) {
 												</div>
 											</div>
 
-											<div class="page-menu-two page-tab-menu mb-0 pt-4 pb-4">
-												<h4 class="pb-2">Who we are</h4>
-												<ul class="nav nav-tabs" id="myTab" role="tablist">
+											<div class="page-menu-two page-tab-menu pb-0 pt-3 pt-sm-3 pb-5 pt-md-5 pb-md-4">
+												<h3 class="pb-2 pb-sm-1 pb-md-1">Who we are</h3>
+												<ul class="nav nav-tabs pt-2 pt-md-2" id="myTab" role="tablist">
 													<li class="nav-item" role="presentation">    
 														<div class="nav-link active" id="faculty-adler-tab" data-bs-toggle="tab" data-bs-target="#faculty-adler" type="button" role="tab" aria-controls="faculty-adler" aria-selected="true"><h6>Our Faculty and Facilitators</h6></button>
 													</li>
