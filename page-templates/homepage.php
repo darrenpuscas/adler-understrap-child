@@ -28,13 +28,20 @@ if ( is_front_page() ) {
 							<div class="row">
 								<div class="home-masthead-content col-md-10 offset-md-1">
 									<div class="home-masthead-text masthead-section">
-										<div class="main-statement display-1"><h1>Are you looking to become a professional in human systems and services?</h1></div>
-										<div class="sub-statement display-3"><h3>We are a graduate professional school offering a variety of academic programs which prepare students to provide services in the areas of mental health and wellbeing.</h3></div>
-										<button class="btn btn-primary">Learn more about Adler</button>							
+										<div class="main-statement display-1">
+										<?php $masthead = get_field('home_masthead'); ?> 
+											<h1><?php echo $masthead['text'];?>masthead text </h1>
+										</div>
+										<div class="sub-statement display-3"><h3><?php echo $masthead['sub_text'];?></h3></div>
+										<a href="<?php echo $masthead['button_url']; ?>" target="_blank" rel="noopener noreferrer">
+											<span class="btn btn-primary"><?php echo $masthead['button']; ?></span>							
+										</a>
 									</div>	
 									<div class="home-masthead-image masthead-section">
-	
-										<img src="http://adlerup.local/wp-content/uploads/grad-image.png" class="home-masthead" alt="">
+										<?php $masthead = get_field('home_masthead');
+										if( $masthead ): ?>							
+												<img class="home-masthead" src="<?php echo esc_url( $masthead['image']['url'] ); ?>" alt="<?php echo esc_attr( $masthead['image']['alt'] ); ?>" />
+										<?php endif; ?>
 									</div>
 								</div>
 							</div>
@@ -45,31 +52,45 @@ if ( is_front_page() ) {
 						<div class="whyadler-container container-xl pt-6 pb-6 pt-md-7 pb-md-7 pt-lg-8 pb-lg-8">
 							<div class="row">
 								<div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2 col-sm-12">
-									<h2 class="text-uppercase">Why Adler?</h2>
-									<ul>
-										<li>A hands-on, applied approach characterizes all of our courses and programs</li>
-										<li>Our instructors are all practitioners, bringing their professional experience into the classroom, as well as training in the field</li>
-										<li>Our objective is to ensure students successfully secure employment or to assist them in their goal of developing further in the job they have</li>
-										<li>We have a compact student body, enabling us to develop individualized courses and training</li>
-										<li>We provide the option of taking individual graduate courses to retrain, upgrade, or remediate for registration or certification</li>
-										<li>ADLER programs and courses reflect current professional standards, and our students are informed about the latest changes in legislation or accreditation</li>
-										<li>We’ve developed weekend and intensive schedules that are ideal for working adults, with a curriculum built on the principles of adult education</li>
-										<li>We offer the only graduate program in Psychology that is tailored for individuals from a non- traditional psychology background</li>
-									</ul>
-									<button class="btn btn-primary">Learn more about why you should choose Adler</button>
+									<h2 class="text-uppercase"><?php the_field('home_heading');?></h2>
+								<?php the_field('home_bullets'); ?>
+									<a class="btn btn-primary" href="<?php the_field('home_button_url');?>"><?php the_field('home_button');?></a>
 								</div>	
 							</div>
 						</div>	
-					</section>
+					</section>						
+				<?php if( have_rows('home_box') ): ?>			
 					<section id="home-infoboxes">
 						<div class="home-infoboxes-container container-xl pt-6 pb-4">
 							<div class="row">
 								<div class="home-infoboxes-area col-xsm-12 col-sm-12 col-lg-12 offset-lg-0">
+									<?php while( have_rows('home_box') ): the_row();
+									//vars
+									//$image = get_sub_field('image');
+									?>
 									<article class="home-infobox home-infobox1">
-
 										<div class="infobox-textarea">
 											<div class="home-infobox-title">
-												<div class="home-infobox-image home-infobox-icon1"><img src="http://adlerup.local/wp-content/uploads/news-icon.png" alt=""></div>
+												<div class="home-infobox-image home-infobox-icon1">								
+											<!-- use the repeater subfield vars
+											<li>
+													<?php //echo wp_get_attachment_image( $image, 'full' ); ?>
+													<p><?php //the_sub_field('caption'); ?></p>
+											</li> -->
+												</div>
+											</div>
+										</div>
+									</article>
+									<?php endwhile; ?>			
+								</div>
+							</div>			
+						</div>
+					</section>
+				<?php endif; ?>
+
+
+									
+													<img src="http://adlerup.local/wp-content/uploads/news-icon.png" alt=""></div>
 												<h3>News</h3>
 											</div>
 											<li>News story number 1 News story number 1 News story number 1</li>
