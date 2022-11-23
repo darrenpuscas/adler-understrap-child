@@ -65,21 +65,21 @@ if ( is_front_page() ) {
 							<div class="row">
 								<div class="home-infoboxes-area col-xsm-12 col-sm-12 col-lg-12 offset-lg-0">
 									<?php while( have_rows('home_box') ): the_row();
-									//vars
-									//$image = get_sub_field('image');
+									$icon = get_sub_field('icon');
 									?>
-									<article class="home-infobox home-infobox1">
+									<article class="home-infobox">
 										<div class="infobox-textarea">
 											<div class="home-infobox-title">
-												<div class="home-infobox-image home-infobox-icon1">								
-											<!-- use the repeater subfield vars
-											<li>
-													<?php //echo wp_get_attachment_image( $image, 'full' ); ?>
-													<p><?php //the_sub_field('caption'); ?></p>
-											</li> -->
+												<div class="home-infobox-image">								
+													<img src="<?php echo $icon['url'];?>" alt="<?php echo $icon['alt'];?>">
 												</div>
+												<h3><?php the_sub_field('heading')?></h3>
 											</div>
+										<?php the_sub_field('content');?>
 										</div>
+											<a class="btn btn-secondary" href="<?php the_sub_field('button_url');?>" 
+												target="_blank" rel="noopener noreferrer"><?php the_sub_field('button');?>
+											</a>
 									</article>
 									<?php endwhile; ?>			
 								</div>
@@ -87,7 +87,7 @@ if ( is_front_page() ) {
 						</div>
 					</section>
 				<?php endif; ?>
-
+<!-- 
 
 									
 													<img src="http://adlerup.local/wp-content/uploads/news-icon.png" alt=""></div>
@@ -124,11 +124,12 @@ if ( is_front_page() ) {
 											<li></li>
 										</div>	
 										<button class="btn btn-secondary">Important Documents</button>
-									</article>
+									</article> -->
+<!-- 									
 								</div>
 							</div>
 						</div>		
-					</section>
+					</section> -->
 				</main><!-- #main -->
 
 			</div><!-- #primary -->
