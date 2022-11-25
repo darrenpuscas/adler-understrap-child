@@ -122,3 +122,8 @@ if( function_exists('acf_add_options_page') ) {
 	));
 	
 }
+
+function child_menus() {
+	register_nav_menu('footer-menu',__( 'Footer Menu' ));
+}
+add_action( 'init', 'child_menus' );

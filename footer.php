@@ -42,32 +42,39 @@ $container = get_theme_mod( 'understrap_container_type' );
 						</div>
 					
 						<div class="footer-resources">
+						<?php 
+								wp_nav_menu( 
+										array( 
+												'theme_location' => 'footer-menu'
+										) 
+								); 
+						?>
 							<div class="footer-resources1">	
-								<ul>
+								<!-- <ul>
 									<li>Why ADLER?</li>
 									<li>About ADLER?</li>
 									<li>Work at ADLER?</li>
 									<li>News & Events</li>
 									<li>Contact Us</li>
-								</ul>
+								</ul> -->
 							</div>
 							<div class="footer-resources2">	
 								
-								<ul>
+								<!-- <ul>
 									<li class="testbbb">Policy Statements</li>	
 									<li>Aoda</li>
 									<li>Statement on diversity</li>
 									<li>Covid Vaccination policy</li>
-								</ul>
+								</ul> -->
 							</div>
 							<div class="footer-resources3">	
 							
-								<ul>
+								<!-- <ul>
 									<li class="testbbb">Resources</li>
 									<li>GSAEC</li>
 									<li>Something Else!!!!</li>
 									<li>Find a coach</li>
-								</ul>
+								</ul> -->
 							</div>
 						</div>	
 						</div><!-- .site-info -->
