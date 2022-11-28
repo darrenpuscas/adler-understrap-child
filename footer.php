@@ -42,14 +42,18 @@ $container = get_theme_mod( 'understrap_container_type' );
 						</div>
 					
 						<div class="footer-resources">
-						<?php 
+
+							<div class="footer-resources1">	
+							<?php 
 								wp_nav_menu( 
 										array( 
-												'theme_location' => 'footer-menu'
+												'theme_location' => 'footer-menu-left',
+												'container' => 'nav',
+												'menu_class' => 'footer-menu footer-menu-left',
+												'menu-item' => 'footer-menu-left-item'
 										) 
 								); 
 						?>
-							<div class="footer-resources1">	
 								<!-- <ul>
 									<li>Why ADLER?</li>
 									<li>About ADLER?</li>
@@ -59,7 +63,16 @@ $container = get_theme_mod( 'understrap_container_type' );
 								</ul> -->
 							</div>
 							<div class="footer-resources2">	
-								
+							<?php 
+								wp_nav_menu( 
+										array( 
+												'theme_location' => 'footer-menu',
+												'container' => 'nav',
+												'menu_class' => 'footer-menu',
+												'menu-item' => 'footer-menu-item'
+										) 
+								); 
+						?>
 								<!-- <ul>
 									<li class="testbbb">Policy Statements</li>	
 									<li>Aoda</li>
@@ -68,7 +81,16 @@ $container = get_theme_mod( 'understrap_container_type' );
 								</ul> -->
 							</div>
 							<div class="footer-resources3">	
-							
+							<?php 
+								wp_nav_menu( 
+										array( 
+												'theme_location' => 'footer-menu-right',
+												'container' => 'nav',
+												'menu_class' => 'footer-menu-right',
+												'menu-item' => 'footer-menu-right-item'
+										) 
+								); 
+						?>
 								<!-- <ul>
 									<li class="testbbb">Resources</li>
 									<li>GSAEC</li>

@@ -69,7 +69,7 @@ if ( is_front_page() ) {
 												<h3 class="pb-2 pb-sm-1 pb-md-1">Who we are</h3>
 												<ul class="nav nav-tabs pt-2 pt-md-2" id="myTab" role="tablist">
 													<li class="nav-item" role="presentation">    
-														<div class="nav-link active" id="faculty-adler-tab" data-bs-toggle="tab" data-bs-target="#faculty-adler" type="button" role="tab" aria-controls="faculty-adler" aria-selected="true"><h6>Our Faculty and Facilitators</h6></button>
+														<div class="nav-link active" id="faculty-adler-tab" data-bs-toggle="tab" data-bs-target="#faculty-adler" type="button" role="tab" aria-controls="faculty-adler" aria-selected="true"><h6>Mission and Values</h6></button>
 													</li>
 													<li class="nav-item" role="presentation">
 														<div class="nav-link" id="administration-adler-tab" data-bs-toggle="tab" data-bs-target="#administration-adler" type="button" role="tab" aria-controls="administration-adler" aria-selected="false"><h6>Our Administration</h6></button>
@@ -80,7 +80,7 @@ if ( is_front_page() ) {
 												</ul>
 		
 												<div class="tab-content" id="myTabContent">
-													<div class="tab-pane fade show active" id="faculty-adler" role="tabpanel" aria-labelledby="faculty-adler-tab">adler faculty text.</div>
+													<div class="tab-pane fade show active" id="faculty-adler" role="tabpanel" aria-labelledby="faculty-adler-tab">Mission & Values</div>
 													<div class="tab-pane fade" id="administration-adler" role="tabpanel" aria-labelledby="administration-adler-tab">adler administration text...</div>
 													<div class="tab-pane fade" id="history-adler" role="tabpanel" aria-labelledby="history-adler-tab">adler history text</div>
 												</div>
@@ -90,13 +90,8 @@ if ( is_front_page() ) {
 										
 									</div>	
 									<div class="standard-masthead-image masthead-section">
-<<<<<<< HEAD
 										<img src="http://adlerup.local/wp-content/uploads/grad-image.png" class="cerfification-masthead" alt="">
 									</div>
-=======
-												<img src="http://adlerup.local/wp-content/uploads/2022/07/grad-image.png" class="cerfification-masthead" alt="">
-											</div>
->>>>>>> main
 								</div>	
 							</div>
 							<div class="entry-content col-md-10 offset-md-1 col-lg-8 offset-lg-2 pt-0 pb-3 container-xl">

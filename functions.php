@@ -124,6 +124,12 @@ if( function_exists('acf_add_options_page') ) {
 }
 
 function child_menus() {
-	register_nav_menu('footer-menu',__( 'Footer Menu' ));
+	register_nav_menus(
+			array(
+						'footer-menu-left' => _( 'Footer Menu Left' ),
+						'footer-menu'=> _( 'Footer Menu' ),
+						'footer-menu-right' => _( 'Footer Menu Right' )
+			)
+	);
 }
 add_action( 'init', 'child_menus' );
