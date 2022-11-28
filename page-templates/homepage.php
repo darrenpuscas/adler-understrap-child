@@ -63,7 +63,7 @@ if ( is_front_page() ) {
 					<section id="home-infoboxes">
 						<div class="home-infoboxes-container container-xl pt-6 pb-4">
 							<div class="row">
-								<div class="home-infoboxes-area col-xsm-12 col-sm-12 col-lg-12 offset-lg-0">
+							<div class="home-infoboxes-area col-xsm-12 col-sm-10 offset-sm-1 col-md-6 offset-md-3 col-lg-10 offset-lg-1 col-xl-12 offset-xl-0">
 									<?php while( have_rows('home_box') ): the_row();
 									$icon = get_sub_field('icon');
 									?>
