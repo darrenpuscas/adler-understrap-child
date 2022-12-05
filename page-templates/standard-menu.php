@@ -81,7 +81,35 @@ if ( is_front_page() ) {
 		
 												<div class="tab-content" id="myTabContent">
 													<div class="tab-pane fade show active" id="faculty-adler" role="tabpanel" aria-labelledby="faculty-adler-tab">Mission & Values</div>
-													<div class="tab-pane fade" id="administration-adler" role="tabpanel" aria-labelledby="administration-adler-tab">adler administration text...</div>
+													<div class="tab-pane fade" id="administration-adler" role="tabpanel" aria-labelledby="administration-adler-tab">
+														DB Query to Admin CPT
+														<?php
+														// WP_Query arguments
+														$args = array(
+															'post_type'              => array( 'staff' ),
+														);
+
+														// The Query
+														$query = new WP_Query( $args );
+
+														// The Loop
+														if ( $query->have_posts() ):												
+															while ( $query->have_posts() ):
+																$query->the_post();
+														?>
+																<p><?php the_ID() ?></p>
+																<p><?php the_title() ?></p>
+																<p><?php //the_excerpt() ?> </p>
+																<p><?php the_content() ?></p>
+														<?php
+														endwhile;
+														 else: ;
+															echo 'no staff found';
+														endif;
+														// Restore original Post Data
+														wp_reset_postdata();
+													?>
+													</div>
 													<div class="tab-pane fade" id="history-adler" role="tabpanel" aria-labelledby="history-adler-tab">adler history text</div>
 												</div>
 											</div>
@@ -90,6 +118,9 @@ if ( is_front_page() ) {
 										
 									</div>	
 									<div class="standard-masthead-image masthead-section">
+										<p>May move this image either on top of tabs or below and have it a landscape orientation</p>
+										<p>Or overlay text on landscape photo similar to homepage</p>
+										
 										<img src="http://adlerup.local/wp-content/uploads/grad-image.png" class="cerfification-masthead" alt="">
 									</div>
 								</div>	
