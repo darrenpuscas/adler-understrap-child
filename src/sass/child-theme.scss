@@ -11,7 +11,8 @@
 @import "theme/child_theme";
 @import "theme/child_footer_menu";                             // <------- Add your styles into this file
 @import "theme/psych_prog";                          // <------- For Psych program template
-@import "theme/michael";                              // <------- Michael's changes - can be merged into child_theme
+@import "theme/michael"; // <------- Michael's changes - can be merged into child_theme
+@import "about_us";      // <------------- About us template specific
 @import "assets/understrap/theme/colors";           // <-------- This creates the necessary bootstrap color classes.
 @import "assets/understrap/theme/blocks";           // <-------- This adds Bootstrap styles to blocks.
 //@import "assets/understrap/theme/contact-form7";    // <-------- Contact Form 7 - Bootstrap 4 support
