@@ -30,9 +30,9 @@ if ( is_front_page() ) {
 									<div class="home-masthead-text masthead-section">
 										<div class="main-statement display-1">
 										<?php $masthead = get_field('home_masthead'); ?> 
-											<h1><?php echo $masthead['text'];?>masthead text </h1>
+											<h1 class="text-stroke-base text-stroke-settings"><?php echo $masthead['text'];?></h1>
 										</div>
-										<div class="sub-statement display-3"><h3><?php echo $masthead['sub_text'];?></h3></div>
+										<div class="sub-statement display-3"><h3 class="text-stroke-base text-stroke-settings"><?php echo $masthead['sub_text'];?></h3></div>
 										<a href="<?php echo $masthead['button_url']; ?>" target="_blank" rel="noopener noreferrer">
 											<span class="btn btn-primary"><?php echo $masthead['button']; ?></span>							
 										</a>

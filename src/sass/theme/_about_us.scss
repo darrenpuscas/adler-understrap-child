@@ -14,3 +14,40 @@
 .blue-border {
 
 }
+
+// stroke text
+.main-statement, .sub-statement {
+  color: $white;
+  -webkit-text-stroke: 0;
+}
+.main-statement h1 {
+  font-weight: 700;
+  font-size: 1.6rem;
+      line-height: 1.1;
+      padding-bottom: 1em;
+}
+@media screen and (min-width: 768px) {
+  .main-statement h1 {
+      font-size: 3rem;
+      line-height: 1.1;
+      padding-bottom: 0.8em;
+     
+  }
+}
+
+.text-stroke-base {
+  display: table;
+  margin: 10px auto;
+  padding: 5px;
+  font-size: 20px;
+  color: #ffffff;
+  overflow:hidden;
+}
+
+.text-stroke-settings {
+
+  text-shadow: 0 0 5px $primary,0 0 5px $primary,
+               0 0 5px $primary,0 0 5px $primary,
+               0 0 5px $primary,0 0 5px $primary,
+               0 0 5px $primary,0 0 5px $primary;
+}
