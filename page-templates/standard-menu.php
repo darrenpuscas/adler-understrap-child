@@ -28,7 +28,7 @@ if ( is_front_page() ) {
 						
 						<div class="container-xl">
 							<div class="row">
-								<div class="menu-section masthead-section why-adler-masthead-content pt-4 pt-md-6 pb-4 pb-md-3 col-md-10 offset-md-1">
+								<div class="menu-section masthead-section menu-masthead-content pt-4 pt-md-6 pb-4 pb-md-3 col-md-10 offset-md-1">
 									<div class="page-menu">
 										<header class="entry-header why-adler-title">
 											<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
@@ -118,9 +118,6 @@ if ( is_front_page() ) {
 										
 									</div>	
 									<div class="standard-masthead-image masthead-section">
-										<p>May move this image either on top of tabs or below and have it a landscape orientation</p>
-										<p>Or overlay text on landscape photo similar to homepage</p>
-										
 										<img src="http://adlerup.local/wp-content/uploads/grad-image.png" class="cerfification-masthead" alt="">
 									</div>
 								</div>	

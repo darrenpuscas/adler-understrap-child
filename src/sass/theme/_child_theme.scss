@@ -463,19 +463,19 @@ $input-border-color:                    $gray-400 !default;
 //
 // Various Pages
 //
-.certification-masthead-content, .indiv-programs-masthead-content, .standard-masthead-content, .why-adler-masthead-content {
+.certification-masthead-content, .indiv-programs-masthead-content, .standard-masthead-content, .menu-masthead-content {
     display: grid;
     grid-template-columns: 1fr;
-}
-@media screen and (min-width: 565px) {
-    .certification-masthead-content, .indiv-programs-masthead-content, .standard-masthead-content {
-        grid-template-columns: 2fr 1fr;
-        column-gap: 60px;
-    }
 }
 .why-adler-masthead-content {
     grid-template-columns: 3fr 1fr;
     column-gap: 60px;
+}
+@media screen and (min-width: 565px) {
+    .certification-masthead-content, .indiv-programs-masthead-content, .standard-masthead-content, .menu-masthead-content {
+        grid-template-columns: 2fr 1fr;
+        column-gap: 60px; 
+    }
 }
 
 //
