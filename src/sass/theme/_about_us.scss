@@ -34,18 +34,8 @@
      
   }
 }
-
-.text-stroke-base {
-  display: table;
-  margin: 10px auto;
-  padding: 5px;
-  font-size: 20px;
-  color: #ffffff;
-  overflow:hidden;
-}
-
 .text-stroke-settings {
-
+  overflow:hidden;
   text-shadow: 0 0 5px $primary,0 0 5px $primary,
                0 0 5px $primary,0 0 5px $primary,
                0 0 5px $primary,0 0 5px $primary,
