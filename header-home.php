@@ -27,18 +27,6 @@ $navbar_type       = get_theme_mod( 'understrap_navbar_type', 'collapse' );
 	<?php wp_head(); ?>
 </head>
 
-<!-- add console log for php -->
-<?php
-function console_log($output, $with_script_tags = true) {
-    $js_code = 'console.log(' . json_encode($output, JSON_HEX_TAG) . 
-');';
-    if ($with_script_tags) {
-        $js_code = '<script>' . $js_code . '</script>';
-    }
-    echo $js_code;
-}
-// <?= console_log($var); ?>
-
 <body <?php body_class(); ?> <?php understrap_body_attributes(); ?>>
 <?php do_action( 'wp_body_open' ); ?>
 <div class="site" id="page">
