@@ -467,10 +467,6 @@ $input-border-color:                    $gray-400 !default;
     display: grid;
     grid-template-columns: 1fr;
 }
-.why-adler-masthead-content {
-    grid-template-columns: 3fr 1fr;
-    column-gap: 60px;
-}
 @media screen and (min-width: 565px) {
     .certification-masthead-content, .indiv-programs-masthead-content, .standard-masthead-content, .menu-masthead-content {
         grid-template-columns: 2fr 1fr;

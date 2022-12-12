@@ -1,3 +1,9 @@
+// moved from child_theme Various pages
+.why-adler-masthead-content {
+  grid-template-columns: 3fr 1fr;
+  column-gap: 60px;
+}
+// ----------------------------- My CSS
 .test-masthead-content {
   display: grid;
   grid-gap: 1em;
@@ -12,32 +18,8 @@
   border: 3px red solid;
 }
 .blue-border {
-
+  border: 3px blue solid;
 }
-
-// stroke text
-.main-statement, .sub-statement {
-  color: $white;
-  -webkit-text-stroke: 0;
-}
-.main-statement h1 {
-  font-weight: 700;
-  font-size: 1.6rem;
-      line-height: 1.1;
-      padding-bottom: 1em;
-}
-@media screen and (min-width: 768px) {
-  .main-statement h1 {
-      font-size: 3rem;
-      line-height: 1.1;
-      padding-bottom: 0.8em;
-     
-  }
-}
-.text-stroke-settings {
-  overflow:hidden;
-  text-shadow: 0 0 5px $primary,0 0 5px $primary,
-               0 0 5px $primary,0 0 5px $primary,
-               0 0 5px $primary,0 0 5px $primary,
-               0 0 5px $primary,0 0 5px $primary;
+.logo-text-grid {
+  display: grid;
 }
