@@ -35,40 +35,23 @@ if ( is_front_page() ) {
 
 							<div id="tab-group-1" class="page-menu-one page-tab-menu mb-0 pt-3 pt-sm-3 pb-4 pt-md-2 pb-md-2">
 									<!-- tab1.php goes here -->
+									<?php get_template_part('page-templates/about-us-parts/tab1'); ?>
 							</div><!-- tab group 2 end -->
 			
 							<div id="tab-group-2" class="page-menu-two page-tab-menu pb-0 pt-3 pt-sm-3 pb-5 pt-md-5 pb-md-4">
 									<!-- tab2.php goes here -->
+									<?php get_template_part('page-templates/about-us-parts/tab2');?>
 							</div><!-- id: tab group 2 -->
 	
 					
 					
 					
-
-
-
 						</div><!-- Why Adler masthead class -->				
 					</div><!-- row -->
-
-
-
-
-
 				</article>
 			</section>
-
-
-			<div class="page-menu-one">
-
-
-
-
-
-
 		</main><!-- #main -->
-</div>
 	</div><!-- #primary -->
-
 </div><!-- #full-width-page-wrapper -->
 
 <?php

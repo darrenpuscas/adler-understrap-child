@@ -46,7 +46,6 @@ $navbar_type       = get_theme_mod( 'understrap_navbar_type', 'collapse' );
 	<div class="<?php echo esc_attr( $container ); ?> container-xxl">
 
 		<?php $logo = get_field('home_logo', 'option'); ?>
-		<?= console_log($logo); ?>
 		<a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" itemprop="url">
 		<img class="home-masthead" src="<?php echo esc_url($logo['url']);?>" alt="<?php echo esc_attr($logo['alt']);?>">
 			<!-- <img src="http://adlerup.local/wp-content/uploads/ADLER-logo-white.png" class="home-masthead" alt=""> -->
