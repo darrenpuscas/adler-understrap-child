@@ -35,18 +35,18 @@ $group = get_field('group_1');
 	
 	<!-- Tab 3 repeater -->
 	<?php if( have_rows('logo-text') ): ?>
-		<p><?php the_field('logo-text-intro-heading');?></p>
 		<div 
-			class="tab-pane fade" id="community-initiatives" role="tabpanel"
-			aria-labelledby="community-initiatives-tab"
+		class="tab-pane fade" id="community-initiatives" role="tabpanel"
+		aria-labelledby="community-initiatives-tab"
 		>
+		<p><?php the_field('logo-text-intro-heading');?></p>
 		<?php while( have_rows('logo-text') ): the_row(); 
 			$logo = get_sub_field('logo');
 			$heading = get_sub_field('heading');
 			$text = get_sub_field('text');
 		?>
 			<section class="logo-text-grid">
-				<div class="flex-center">
+				<div class="flex-center mb-2">
 					<div class="centered-element">
 						<img src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>">
 					</div>

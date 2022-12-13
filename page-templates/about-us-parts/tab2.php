@@ -14,7 +14,19 @@
 
 <div class="tab-content" id="tab-2-content">
 	<div class="tab-pane fade show active" id="faculty-adler" role="tabpanel" aria-labelledby="faculty-adler-tab">
-		Mission & Values
+	<?php
+		// repeater in a group
+		if( have_rows('your_group') ): while ( have_rows('your_group') ) : the_row(); 
+
+				if( have_rows('your_repeater') ): while ( have_rows('your_repeater') ) : the_row();       
+
+						echo get_sub_field('repeater_sub_field');
+
+				endwhile; endif;
+
+		endwhile; endif;
+
+		?>
 	</div>
 	<div class="tab-pane fade" id="administration-adler" role="tabpanel" aria-labelledby="administration-adler-tab">
 		DB Query to Admin CPT
