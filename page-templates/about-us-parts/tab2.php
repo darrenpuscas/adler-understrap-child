@@ -17,10 +17,10 @@ if( $group2 ): ?>
 </ul>
 <div class="tab-content" id="tab-2-content">
 	<div class="tab-pane fade show active" id="mission-adler" role="tabpanel" aria-labelledby="mission-adler-tab">
-			mission and values text
+			<?php echo esc_attr( $group2['text_1']); ?>
+			<!-- need repeater for mission images and text -->
 	</div>
 	<div class="tab-pane fade" id="administration-adler" role="tabpanel" aria-labelledby="administration-adler-tab">
-		DB Query to Admin CPT
 		<?php
 			// WP_Query arguments
 			$args = array(
@@ -50,7 +50,7 @@ if( $group2 ): ?>
 	</div><!-- administration -->
 
 	<div class="tab-pane fade" id="history-adler" role="tabpanel" aria-labelledby="history-adler-tab">
-		adler history text
+	<?php echo esc_attr( $group2['label_1']); ?>
 	</div>		
 </div>
 

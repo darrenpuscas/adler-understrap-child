@@ -14,9 +14,11 @@
   font-family: 'AvenirNextRegular';
 }
 .image-box-container {
-  width: 40%;
+  text-align: center;
+  width: 33%;
   display: inline-block;
   background: $tertiary;
+  padding-top: 1em;
 }
 .red-border {
   border: 3px red solid;
