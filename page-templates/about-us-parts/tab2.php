@@ -50,8 +50,8 @@ if( $group2 ): ?>
 	</div><!-- administration -->
 
 	<div class="tab-pane fade" id="history-adler" role="tabpanel" aria-labelledby="history-adler-tab">
-	<?php echo esc_attr( $group2['label_1']); ?>
-	</div>		
+	<?php echo esc_attr( $group2['text_3']); ?>
+	</div>
 </div>
 
 <?php endif; ?>
