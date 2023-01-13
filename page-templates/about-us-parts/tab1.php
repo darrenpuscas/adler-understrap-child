@@ -26,10 +26,10 @@ $group = get_field('group_1');
 <div class="tab-content" id="tab-1-content">
 	<div 
 		class="tab-pane fade show active" id="about-adler" role="tabpanel" aria-labelledby="about-adler-tab">
-		<?php echo $group['text_1'] ;?>
+		<?php echo (acf_esc_html ($group['text_1'])) ;?>
 </div>
 	<div class="tab-pane fade" id="why-adler" role="tabpanel" aria-labelledby="why-adler-tab">
-		<?php echo $group['text_2'] ;?>
+		<?php echo (acf_esc_html ($group['text_2'])) ;?>
 	</div>
 
 	
@@ -48,12 +48,12 @@ $group = get_field('group_1');
 			<section class="logo-text-grid">
 				<div class="flex-center mb-2">
 					<div class="centered-element">
-						<img src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>">
+						<img src="<?php echo (acf_esc_html( $logo['url'])); ?>" alt="<?php echo (acf_esc_html ($logo['alt'])); ?>">
 					</div>
 				</div>
 				<div>
 					<h4><?php echo $heading; ?></h4>
-					<?php echo $text; ?>
+					<?php echo (acf_esc_html( $text)); ?>
 				</div>
 			</section>
 		<?php endwhile; ?>
