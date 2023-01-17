@@ -25,7 +25,7 @@ $group = get_field('group_1');
 
 <div class="tab-content" id="tab-1-content">
 	<div 
-		class="tab-pane fade show active" id="about-adler" role="tabpanel" aria-labelledby="about-adler-tab">
+		class="tab-pane fade show active mb-5" id="about-adler" role="tabpanel" aria-labelledby="about-adler-tab">
 		<?php echo (acf_esc_html ($group['text_1'])) ;?>
 </div>
 	<div class="tab-pane fade" id="why-adler" role="tabpanel" aria-labelledby="why-adler-tab">

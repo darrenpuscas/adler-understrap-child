@@ -18,8 +18,10 @@
   width: 33%;
   display: inline-block;
   background: $tertiary;
-  padding-top: 1em;
+  padding: 0.5em 0.5em 0;
 }
+
+
 .red-border {
   border: 3px red solid;
 }
@@ -31,7 +33,7 @@
   align-items: center;
   justify-content: center;
   height: auto;
-  border: #d6d4d4 0.1em solid;
+  // border: #d6d4d4 0.1em solid;
 }
 @include media-breakpoint-up(md) {
   .logo-text-grid {

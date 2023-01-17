@@ -41,11 +41,7 @@ if ( is_front_page() ) {
 							<div id="tab-group-2" class="page-menu-two page-tab-menu pb-0 pt-3 pt-sm-3 pb-5 pt-md-5 pb-md-4">
 									<!-- tab2.php goes here -->
 									<?php get_template_part('page-templates/about-us-parts/tab2');?>
-							</div><!-- id: tab group 2 -->
-	
-					
-					
-					
+							</div><!-- id: tab group 2 -->					
 						</div><!-- Why Adler masthead class -->				
 					</div><!-- row -->
 				</article>
