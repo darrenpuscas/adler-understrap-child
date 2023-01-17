@@ -49,7 +49,12 @@ if( $group2 ): ?>
 		?>
 	</div><!-- administration -->
 
+<<<<<<< HEAD
 	<div class="tab-pane fade mb-1" id="history-adler" role="tabpanel" aria-labelledby="history-adler-tab">
+=======
+	<div class="tab-pane fade" id="history-adler" role="tabpanel" aria-labelledby="history-adler-tab">
+		<!-- need left/right col - float(or use grid) image -->
+>>>>>>> michael-work
 		<aside class="image-box-container alignleft">
 			<figure>
 				<img src="<?php echo (acf_esc_html( $group2['tab_3_image']['url'])); ?>" alt="<?php echo (acf_esc_html( $group2['tab_3_image']['alt'])); ?>" />
