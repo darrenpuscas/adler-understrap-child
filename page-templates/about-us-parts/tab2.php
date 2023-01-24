@@ -19,22 +19,20 @@ if( $group2 ): ?>
 		<!-- Tab 1 repeater -->
 	<?php if( have_rows('img_text_mission') ): ?>
 	<div class="tab-pane fade show active" id="mission-adler" role="tabpanel" aria-labelledby="mission-adler-tab">
-		<p>What's Here?<?php the_field('logo-text-intro-heading');?></p>
+		<?php the_field('mission_intro');?>
 		<?php while( have_rows('img_text_mission') ): the_row(); 
 			$image = get_sub_field('image');
-			$heading = get_sub_field('heading');
+			$title = get_sub_field('image_title');
 			$text = get_sub_field('text');
 		?>
 		<section class="logo-text-grid">
 			<div class="flex-center mb-2">
 				<div class="centered-element">
 					<img src="<?php echo (acf_esc_html( $image['url'])); ?>" alt="<?php echo (acf_esc_html ($image['alt'])); ?>">
+          <h4 class="text-center"><?php echo $title; ?></h4>
 				</div>
 			</div>
-			<div>
-				<h4><?php echo $heading; ?></h4>
-					<?php echo (acf_esc_html( $text)); ?>
-			</div>
+			<div><?php echo (acf_esc_html( $text)); ?></div>
 		</section>
 	<?php endwhile; ?>
 	</div><!-- id=community-initiatives -->
