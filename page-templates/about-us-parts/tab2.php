@@ -16,10 +16,30 @@ if( $group2 ): ?>
 	</li>
 </ul>
 <div class="tab-content" id="tab-2-content">
+		<!-- Tab 1 repeater -->
+	<?php if( have_rows('img_text_mission') ): ?>
 	<div class="tab-pane fade show active" id="mission-adler" role="tabpanel" aria-labelledby="mission-adler-tab">
-			<?php echo (acf_esc_html($group2['text_1'])); ?>
-			<!-- need repeater for mission images and text -->
-	</div>
+		<p>What's Here?<?php the_field('logo-text-intro-heading');?></p>
+		<?php while( have_rows('img_text_mission') ): the_row(); 
+			$image = get_sub_field('image');
+			$heading = get_sub_field('heading');
+			$text = get_sub_field('text');
+		?>
+		<section class="logo-text-grid">
+			<div class="flex-center mb-2">
+				<div class="centered-element">
+					<img src="<?php echo (acf_esc_html( $image['url'])); ?>" alt="<?php echo (acf_esc_html ($image['alt'])); ?>">
+				</div>
+			</div>
+			<div>
+				<h4><?php echo $heading; ?></h4>
+					<?php echo (acf_esc_html( $text)); ?>
+			</div>
+		</section>
+	<?php endwhile; ?>
+	</div><!-- id=community-initiatives -->
+	<?php endif; ?>
+
 	<div class="tab-pane fade" id="administration-adler" role="tabpanel" aria-labelledby="administration-adler-tab">
 		<?php
 			// WP_Query arguments
