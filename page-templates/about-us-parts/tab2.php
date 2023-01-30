@@ -20,21 +20,21 @@ if( $group2 ): ?>
 	<?php if( have_rows('img_text_mission') ): ?>
 	<div class="tab-pane fade show active" id="mission-adler" role="tabpanel" aria-labelledby="mission-adler-tab">
 		<?php the_field('mission_intro');?>
-		<?php while( have_rows('img_text_mission') ): the_row(); 
+		<section class="logo-text-grid-3col">
+			<?php while( have_rows('img_text_mission') ): the_row(); 
 			$image = get_sub_field('image');
 			$title = get_sub_field('image_title');
 			$text = get_sub_field('text');
-		?>
-		<section class="logo-text-grid">
-			<div class="flex-center mb-2">
-				<div class="centered-element">
+			?>
+			<aside class="inner-box-border">
+				<div class="image-container-3col">
 					<img src="<?php echo (acf_esc_html( $image['url'])); ?>" alt="<?php echo (acf_esc_html ($image['alt'])); ?>">
-          <h4 class="text-center"><?php echo $title; ?></h4>
+					<h4 class="text-center"><?php echo $title; ?></h4>
 				</div>
-			</div>
-			<div><?php echo (acf_esc_html( $text)); ?></div>
-		</section>
-	<?php endwhile; ?>
+				<div><?php echo (acf_esc_html( $text)); ?></div>
+			</aside>
+		<?php endwhile; ?>
+		</section><!-- 3col -->
 	</div><!-- id=community-initiatives -->
 	<?php endif; ?>
 
@@ -69,10 +69,10 @@ if( $group2 ): ?>
 
 	<div class="tab-pane fade mb-1" id="history-adler" role="tabpanel" aria-labelledby="history-adler-tab">
 		<aside class="image-box-container alignleft">
-			<figure>
+			<figure class="tabs-figure">
 				<img src="<?php echo (acf_esc_html( $group2['tab_3_image']['url'])); ?>" alt="<?php echo (acf_esc_html( $group2['tab_3_image']['alt'])); ?>" />
-				<figcaption class="mt-1 p-2">
-				<h6><?php echo (acf_esc_html( $group2['tab_3_aside_title'])); ?></h6>
+				<figcaption class="mt-1">
+				<!-- <h6><?php //echo (acf_esc_html( $group2['tab_3_aside_title'])); ?></h6> -->
 				<p class="text-center"><?php echo (acf_esc_html( $group2['image_caption'])); ?></p>
 				</figcaption>
 			</figure>

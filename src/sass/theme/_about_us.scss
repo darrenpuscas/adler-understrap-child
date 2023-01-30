@@ -8,10 +8,14 @@
   display: grid;
   grid-gap: 1em;
 }
-
 .why-adler-title {
   text-align: center;
   font-family: 'AvenirNextRegular';
+}
+.inner-box-border {
+  border: 1px solid #a2d1ff;
+  border-radius: 8px;
+  padding: 8% 10%;
 }
 .image-box-container {
   text-align: center;
@@ -20,13 +24,41 @@
   //background: $tertiary;
   padding: 0.5em 0.5em 0;
 }
+.tabs-figure, .tabs-figure p {
+  margin-block-end: 0;
+  margin: 0 0 0;
+  padding: 0
 
-
-.red-border {
-  border: 3px red solid;
 }
-.blue-border {
-  border: 3px blue solid;
+// https://thegymnasium.com/courses/take5/creating-beautiful-and-accessible-drop-caps
+.drop-cap {
+  font-size: 6rem;
+  float: left;
+  line-height: 1;
+  background-color: $secondary;
+  color: $tertiary;
+  padding: .1em;
+  margin-right: .1em;
+}
+.drop-cap:before,
+.drop-cap:after {
+  content: "";
+  display: block;
+}
+.drop-cap:before {
+  margin-top: -0.2em;
+}
+.drop-cap:after {
+  margin-bottom: -0.15em;
+}
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 .flex-center {
   display: flex;
@@ -35,10 +67,19 @@
   height: auto;
   // border: #d6d4d4 0.1em solid;
 }
+.image-container-3col{
+  // width: 60%;
+  margin: auto;
+}
 @include media-breakpoint-up(md) {
   .logo-text-grid {
     display: grid;
     grid-gap: 1em;
     grid-template-columns: 1fr 2fr;
+  }
+  .logo-text-grid-3col{
+    display: grid;
+    grid-gap: .75em;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }

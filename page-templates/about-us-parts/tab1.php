@@ -39,14 +39,15 @@ $group = get_field('group_1');
 		class="tab-pane fade" id="community-initiatives" role="tabpanel"
 		aria-labelledby="community-initiatives-tab"
 		>
-		<p><?php the_field('logo-text-intro-heading');?></p>
+		<h6><?php the_field('logo-text-intro-heading');?></h6>
+		<hr class="separator-hr">
 		<?php while( have_rows('logo-text') ): the_row(); 
 			$logo = get_sub_field('logo');
 			$heading = get_sub_field('heading');
 			$text = get_sub_field('text');
 		?>
 			<section class="logo-text-grid">
-				<div class="flex-center mb-2">
+				<div class="flex-center">
 					<div class="centered-element">
 						<img src="<?php echo (acf_esc_html( $logo['url'])); ?>" alt="<?php echo (acf_esc_html ($logo['alt'])); ?>">
 					</div>
@@ -56,6 +57,7 @@ $group = get_field('group_1');
 					<?php echo (acf_esc_html( $text)); ?>
 				</div>
 			</section>
+			<hr class="separator-hr">
 		<?php endwhile; ?>
 	</div><!-- id=community-initiatives -->
 <?php endif; ?>

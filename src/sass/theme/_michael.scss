@@ -41,3 +41,8 @@
                0 0 5px $primary,0 0 5px $primary,
                0 0 5px $primary,0 0 5px $primary;
 }
+// utilities
+.separator-hr {
+  background-color: $border-blue;
+  opacity: 100%;
+}
