@@ -53,10 +53,28 @@ if( $group2 ): ?>
 				while ( $query->have_posts() ):
 					$query->the_post();
 		?>
-				<p><?php the_ID() ?></p>
-				<p><?php the_title() ?></p>
-				<p><?php //the_excerpt() ?> </p>
-				<p><?php the_content() ?></p>
+				<?php //the_ID() 
+          $image = get_field('staff_image');
+
+        ?>
+        <div class="logo-text-grid">
+          <div class="logo-text-logo">
+            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'];?>">
+          </div>
+          <div class="logo-text-text">
+            <?php the_field('first_name');?> <?php the_field('last_name');?></br>
+            <?php the_field('job_title');?></br></br>
+            <h6>In-person office hours:</h6>
+            <?php the_field('office_days');?>
+            <?php the_field('office_hours_begin');?> - <?php the_field('office_hours_end');?></br></br>
+            <?php
+              $content = get_field('staff_bio');
+              if ($content) {
+                echo $content;
+              }
+            ?>
+          </div>
+        </div>
 		<?php
 			endwhile;
 				else: ;
