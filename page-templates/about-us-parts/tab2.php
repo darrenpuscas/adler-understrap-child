@@ -42,7 +42,7 @@ if( $group2 ): ?>
 		<?php
 			// WP_Query arguments
 			$args = array(
-				'post_type'              => array( 'staff' ),
+				'post_type' => array( 'staff' ),
 			);
 
 			// The Query
@@ -57,15 +57,23 @@ if( $group2 ): ?>
           $image = get_field('staff_image');
 
         ?>
-        <div class="logo-text-grid">
+        <section class="logo-text-grid">
           <div class="logo-text-logo">
-            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'];?>">
+            <!-- <div class="image-container"> -->
+							<img class="rounded-circle" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'];?>">
+						<!-- </div> -->
           </div>
           <div class="logo-text-text">
             <?php the_field('first_name');?> <?php the_field('last_name');?></br>
             <?php the_field('job_title');?></br></br>
+						<h6>Working Hours:</h6>
+            <?php the_field('working_days');?></br>
+            <?php the_field('working_hours_begin');?> - <?php the_field('working_hours_end');?></br></br>
+
+
+
             <h6>In-person office hours:</h6>
-            <?php the_field('office_days');?>
+            <?php the_field('office_days');?></br>
             <?php the_field('office_hours_begin');?> - <?php the_field('office_hours_end');?></br></br>
             <?php
               $content = get_field('staff_bio');
@@ -74,7 +82,7 @@ if( $group2 ): ?>
               }
             ?>
           </div>
-        </div>
+				</section>
 		<?php
 			endwhile;
 				else: ;
@@ -86,7 +94,7 @@ if( $group2 ): ?>
 	</div><!-- administration -->
 
 	<div class="tab-pane fade mb-1" id="history-adler" role="tabpanel" aria-labelledby="history-adler-tab">
-		<aside class="image-box-container alignleft">
+		<aside class="callout-container alignleft">
 			<figure class="tabs-figure">
 				<img src="<?php echo (acf_esc_html( $group2['tab_3_image']['url'])); ?>" alt="<?php echo (acf_esc_html( $group2['tab_3_image']['alt'])); ?>" />
 				<figcaption class="mt-1">

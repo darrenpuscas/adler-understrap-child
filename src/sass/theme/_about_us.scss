@@ -17,7 +17,7 @@
   border-radius: 8px;
   padding: 8% 10%;
 }
-.image-box-container {
+.callout-container {
   text-align: center;
   width: 33%;
   display: inline-block;
@@ -28,7 +28,6 @@
   margin-block-end: 0;
   margin: 0 0 0;
   padding: 0
-
 }
 // https://thegymnasium.com/courses/take5/creating-beautiful-and-accessible-drop-caps
 .drop-cap {
@@ -71,6 +70,7 @@
   // width: 60%;
   margin: auto;
 }
+
 @include media-breakpoint-up(md) {
   .logo-text-grid {
     display: grid;
