@@ -536,6 +536,8 @@ $input-border-color:                    $gray-400 !default;
     margin-bottom: 1.6em;
     overflow: hidden;
 }
+//need in screen sizes: display: block;
+
 @media screen and (min-width: 600px) {
     .programs-course-mobile-image{
        display: block;
@@ -549,6 +551,7 @@ $input-border-color:                    $gray-400 !default;
     .programs-course {
         grid-template-columns: 5fr 3fr;
     }
+    
 }
 @media screen and (min-width: 680px) {
     .programs-course {
