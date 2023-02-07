@@ -372,20 +372,12 @@ $input-border-color:                    $gray-400 !default;
     .home-infobox {
         padding: 3em 6.1em;
         border-radius: 18px;
-
-        h3 {
-         
-        }    
     }
 }
 @media screen and (min-width: 768px) {
     .home-infobox {
         padding: 3em 3.5em;
         border-radius: 18px;
-
-        h3 {
-         
-        }    
     }
 }
 @media screen and (min-width: 992px) and (max-width: 1023px) {
@@ -398,12 +390,8 @@ $input-border-color:                    $gray-400 !default;
     .home-infobox {
         padding: 2.4em 2.1em;
         border-radius: 18px;
-    
         display: flex;
-        flex-wrap: wrap;
-        h3 {
-         
-        }    
+        flex-wrap: wrap;   
     }
 }
 @media screen and (min-width: 1210px) {
@@ -511,8 +499,6 @@ $input-border-color:                    $gray-400 !default;
 .certification-course-content {
     display: grid;
     grid-template-columns: 1fr;
-   
-
 }
 @media screen and (min-width: 768px) {
     .certification-course-content {
@@ -529,7 +515,6 @@ $input-border-color:                    $gray-400 !default;
 .programs-course-content {
     display: grid;
     grid-template-columns: 1fr;
-
 }
 
 @media screen and (min-width: 768px) {
@@ -551,9 +536,18 @@ $input-border-color:                    $gray-400 !default;
     margin-bottom: 1.6em;
     overflow: hidden;
 }
+@media screen and (min-width: 600px) {
+    .programs-course-mobile-image{
+       display: block;
+    }
+    .programs-course-image {
+       display: none;
+        grid-template-columns: 1fr;
+    }
+}
 @media screen and (min-width: 480px) {
     .programs-course {
-        grid-template-columns: 6fr 5fr;
+        grid-template-columns: 5fr 3fr;
     }
 }
 @media screen and (min-width: 680px) {
@@ -566,38 +560,38 @@ $input-border-color:                    $gray-400 !default;
 }
 @media screen and (min-width: 768px) {
     .programs-course {
-        grid-template-columns: 8fr 3fr;
+        grid-template-columns: 5fr 3fr;
         margin-bottom: 1.5em;
     }
 }
 @media screen and (min-width: 912px) {
     .programs-course {
-        grid-template-columns: 10fr 3fr;
+        grid-template-columns: 5fr 3fr;
     }
 }
 @media screen and (min-width: 1024px) {
     .programs-course {
-        grid-template-columns: 14fr 4fr;
+        grid-template-columns: 5fr 3fr;
         margin-bottom: 1.8em;
     }
 }
 @media screen and (min-width: 1168px) {
     .programs-course {
-        grid-template-columns: 9fr 3fr;
+        grid-template-columns: 5fr 3fr;
     }
 }
 @media screen and (min-width: 1220px) {
     .programs-course {
-        grid-template-columns: 5fr 4fr;
-        border: none;
+        grid-template-columns: 5fr 3fr;
+        // border: none;
         background-color: #fff;
-        border-radius: 0px;
+        // border-radius: 0px;
     }
 }
 .programs-course-image {
     display: none;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 780px) {
     .programs-course-image {
         display: block;
     }
@@ -606,7 +600,7 @@ $input-border-color:                    $gray-400 !default;
     display: block;
     margin-bottom: 1.5em;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 600px) {
     .programs-course-mobile-image {
         display: none;
     }
@@ -634,7 +628,7 @@ $input-border-color:                    $gray-400 !default;
 @media screen and (min-width: 768px) {
     .programs-course-text {
         padding: 6% 10% 6% 10%;
-        align-items: center;
+        // align-items: center;
     }
 }
 //
