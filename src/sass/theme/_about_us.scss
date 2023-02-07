@@ -71,6 +71,10 @@
   margin: auto;
 }
 
+.col2-withsub-grid {
+  display: grid;
+}
+
 @include media-breakpoint-up(md) {
   .logo-text-grid {
     display: grid;

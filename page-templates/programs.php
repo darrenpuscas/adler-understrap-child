@@ -44,104 +44,37 @@ if ( is_front_page() ) {
 
 
 			<div class="container-lg">
-				<div class="row">
-					<section id="programs">
-            <div class="programs-course-content standard-course-content pt-2 pt-md-6 pb-6 col-sm-12">
+				<!-- <div class="row">-->
+				<section id="programs" class="col2-withsub-grid">  
+					<div class="programs-course-content standard-course-content pt-2 pt-md-6 pb-6 col-sm-12">
 
-					<?php
-					$values = get_field('program_box');
-					if ( $values ) : ?>
+				<?php
+				$values = get_field('program_box');
+				if ( $values ) : ?>
 
-						<?php foreach($values as $value) : ?>
-            
-              <div class="programs-course">
-                <div class="programs-course-text standard-course-text">
-                  <div class="programs-course-text-inner">
-										<h4 class="text-uppercase"><?php echo $value['program_header']?></h5>
-										
-                    <p><?php echo $value['program_description']; ?></p>	
-                    <div class="programs-details">
-                      <h6 class="programs-details-title"><?php echo $value['sub_heading']; ?></h6>
-                      <?php echo $value['bullet_points_program_highlights']; ?>
-                    </div>
-                    <a href="<?php echo $value['button_url'];?>" class="btn btn-primary programs-button"><?php echo $value['button_label'];?></a>
-                  </div>	 
-                  </div>
-                <div class="programs-course-image programs-course-section">
-                  <img src="<?php echo $value['program_image']['url'];?>" class="cerfification-masthead" alt="">
-                </div>
-              </div>	
-<?php endforeach; ?>
-<?php endif; ?>
-
-              <!-- <div class="programs-course">
-                <div class="programs-course-text standard-course-text">
-                  <div class="programs-course-text-inner">
-                    <h4 class="text-uppercase">Master of Psychology (MPsy)</h5>
-                    <p>ADLER’s Master of Psychology degree* prepares students for registration as a Psychological Associate with the Ontario College of Psychologists, in clinical and counselling practice areas. The MPsy degree provides students with the knowledge, skills, and attitudes necessary in preparing them to offer psychological services in a variety of diagnostic, therapeutic, and assessment settings.</p>	
-                    <div class="programs-details">
-                      <h6 class="programs-details-title">ADLER MPsy Courses:</h6>
-                      <ul>
-                        <li>SED UT PERSPICIATIS</li>
-                        <li>NEQUE PORRO ENIM IPSAM</li>
-                      </ul>
-                    </div>
-                    <button class="btn btn-primary programs-button">Learn more</button>
-                  </div>	
-
-									</div>
-									<div class="programs-course-image programs-course-section">
-										<img src="http://adlerup.local/wp-content/uploads/cert-smiling.png" class="cerfification-masthead" alt="">
-									</div>
-								</div>
-
-								<div class="programs-course">
-									<div class="programs-course-text standard-course-text">
-										<div class="programs-course-text-inner">
-											<h4 class="text-uppercase">Master of Psychology (MPsy)</h5>
-											<p>ADLER’s Master of Psychology degree* prepares students for registration as a Psychological Associate with the Ontario College of Psychologists, in clinical and counselling practice areas. The MPsy degree provides students with the knowledge, skills, and attitudes necessary in preparing them to offer psychological services in a variety of diagnostic, therapeutic, and assessment settings.</p>	
-											<div class="programs-details">
-												<h6 class="programs-details-title">ADLER MPsy Courses:</h6>
-												<ul>
-													<li>SED UT PERSPICIATIS</li>
-													<li>NEQUE PORRO ENIM IPSAM</li>
-												</ul>
-											</div>
-											<button class="btn btn-primary programs-button">Learn more</button>
-										</div>	
-
-									</div>
-									<div class="programs-course-image programs-course-section">
-										<img src="http://adlerup.local/wp-content/uploads/cert-smiling.png" class="cerfification-masthead" alt="">
-									</div>
-								</div>
-
-								<div class="programs-course">
-									<div class="programs-course-text standard-course-text">
-										<div class="programs-course-text-inner">
-											<h4 class="text-uppercase">Master of Psychology (MPsy)</h5>
-											<p>ADLER’s Master of Psychology degree* prepares students for registration as a Psychological Associate with the Ontario College of Psychologists, in clinical and counselling practice areas. The MPsy degree provides students with the knowledge, skills, and attitudes necessary in preparing them to offer psychological services in a variety of diagnostic, therapeutic, and assessment settings.</p>	
-											<div class="programs-details">
-												<h6 class="programs-details-title">ADLER MPsy Courses:</h6>
-												<ul>
-													<li>SED UT PERSPICIATIS</li>
-													<li>NEQUE PORRO ENIM IPSAM</li>
-												</ul>
-											</div>
-											<button class="btn btn-primary programs-button">Learn more</button>
-										</div>
-
-									</div>
-									<div class="programs-course-image programs-course-section">
-										<img src="http://adlerup.local/wp-content/uploads/cert-smiling.png" class="cerfification-masthead" alt="">
-									</div>
-								</div>-->
-										
+					<?php foreach($values as $value) : ?>
+					
+						<div class="programs-course">
+							<div class="programs-course-text standard-course-text">
+								<div class="programs-course-text-inner">
+									<h4 class="text-uppercase"><?php echo $value['program_heading']?></h5>
 									
-								</div> 
-								
-					</section>
-				</div>
+									<p><?php echo $value['program_description']; ?></p>	
+									<div class="programs-details">
+										<h6 class="programs-details-title"><?php echo $value['sub_heading']; ?></h6>
+										<?php echo $value['bullet_points_program_highlights']; ?>
+									</div>
+									<a href="<?php echo $value['button_url'];?>" class="btn btn-primary programs-button"><?php echo $value['button_label'];?></a>
+								</div>	 
+								</div>
+							<div class="programs-course-image programs-course-section">
+								<img src="<?php echo $value['program_image']['url'];?>" class="cerfification-masthead" alt="">
+							</div>
+						</div>	
+						<?php endforeach; ?>
+						<?php endif; ?>
+				</section>
+			</div>
 
 			</div>
 
