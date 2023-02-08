@@ -27,14 +27,14 @@ if ( is_front_page() ) {
 						<div class="programs-masthead-content pt-4 pt-md-6 pt-lg-7 pb-2 pb-2 ">
 							<div class="programs-masthead-text masthead-section">
 								<div class="programs-main-header standard-main-header display-1"><h1><?php the_title(); ?></h1></div>
-								<div class="programs-text standard-text"><p><?php the_field('intro_paragraph');?></p></div>
+								<div class="programs-text standard-text"><p class="offset-centered"><?php the_field('intro_paragraph');?></p></div>
 								<div class="programs-course-mobile-image programs-course-section">
 									<?php $image = get_field ('mobile_image');?>
 									<img style="border-radius:8px;" src="<?php echo $image['url'];?>" class="cerfification-masthead" alt="<?php echo $image['alt'];?>" >
 								</div>
 							</div>	
-						</div>
-					<!-- </div> -->
+						<!-- </div> -->
+					</div>
 				</div>
 			</section>
 
