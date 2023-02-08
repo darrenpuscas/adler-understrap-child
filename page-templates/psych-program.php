@@ -83,35 +83,35 @@ if ( is_front_page() ) {
 						<div class="indiv-programs-additional standard-course-container container-xl">
 							<div class="row">
 								<div class="indiv-programs-additional-course-content standard-course-content pt-2 pt-md-5 pb-2 pb-md-5 col-md-10 col-lg-10 offset-md-1 col-sm-12"> 
-										<section class="indiv-programs-additional-course standard-course">
-											<?php $box2 = get_field('prog_box_2'); ?>
-											<div class="indiv-course-titlearea">
-												<img src="<?php echo esc_url( $box2['icon']['url'] ); ?>">
-												<h6 class="indiv-course-title text-uppercase"><?php echo $box2['title']; ?></h6>
-											</div>
-											<?php echo $box2['text'] ?>
-											<a class="btn btn-primary" href="<?php echo esc_url( $box2['button_url'] )?>"><?php echo $box2['button']?></a>
-										</section>
+                  <section class="indiv-programs-additional-course standard-course">
+                    <?php $box2 = get_field('prog_box_2'); ?>
+                    <div class="indiv-course-titlearea">
+                      <img src="<?php echo esc_url( $box2['icon']['url'] ); ?>">
+                      <h6 class="indiv-course-title text-uppercase"><?php echo $box2['title']; ?></h6>
+                    </div>
+                    <?php echo $box2['text'] ?>
+                    <a class="btn btn-primary" href="<?php echo esc_url( $box2['button_url'] )?>"><?php echo $box2['button']?></a>
+                  </section>
 
-										<section class="indiv-programs-additional-course standard-course">
-											<?php $box3 = get_field('prog_box_3'); ?>
-											<div class="indiv-course-titlearea">
-											<img src="<?php echo esc_url( $box3['icon']['url'] ); ?>">
-												<h6 class="indiv-course-title text-uppercase"><?php echo $box3['title']; ?></h6>
-											</div>
-											<?php echo $box3['text'] ?>
-											<a class="btn btn-primary" href="<?php echo esc_url( $box3['button_url'] )?>"><?php echo $box3['button']?></a>
-										</section>
+                  <section class="indiv-programs-additional-course standard-course">
+                    <?php $box3 = get_field('prog_box_3'); ?>
+                    <div class="indiv-course-titlearea">
+                    <img src="<?php echo esc_url( $box3['icon']['url'] ); ?>">
+                      <h6 class="indiv-course-title text-uppercase"><?php echo $box3['title']; ?></h6>
+                    </div>
+                    <?php echo $box3['text'] ?>
+                    <a class="btn btn-primary" href="<?php echo esc_url( $box3['button_url'] )?>"><?php echo $box3['button']?></a>
+                  </section>
 
-										<section class="indiv-programs-additional-course standard-course">
-											<?php $box4 = get_field('prog_box_4'); ?>
-											<div class="indiv-course-titlearea">
-											<img src="<?php echo esc_url( $box4['icon']['url'] ); ?>">
-												<h6 class="indiv-course-title text-uppercase"><?php echo $box4['title']; ?></h6>
-											</div>
-											<?php echo $box4['text'] ?>
-											<a class="btn btn-primary" href="<?php echo esc_url( $box4['button_url'] )?>"><?php echo $box4['button']?></a>
-										</section>
+                  <section class="indiv-programs-additional-course standard-course">
+                    <?php $box4 = get_field('prog_box_4'); ?>
+                    <div class="indiv-course-titlearea">
+                    <img src="<?php echo esc_url( $box4['icon']['url'] ); ?>">
+                      <h6 class="indiv-course-title text-uppercase"><?php echo $box4['title']; ?></h6>
+                    </div>
+                    <?php echo $box4['text'] ?>
+                    <a class="btn btn-primary" href="<?php echo esc_url( $box4['button_url'] )?>"><?php echo $box4['button']?></a>
+                  </section>
 								</div><!-- end column -->
 							</div><!-- end row -->
 						</div><!-- end container -->
@@ -233,7 +233,7 @@ if ( is_front_page() ) {
 														$question = get_sub_field('question');
 														$answer = get_sub_field('answer'); 
 										?>
-											<section class="indiv-programs-faq standard-faq col-md-8 col-lg-8 offset-md-2 col-sm-12">
+											<section class="indiv-programs-faq standard-faq">
 												<details>
 													<summary><?php echo $question ?></summary>
 													<?php echo $answer; ?>
