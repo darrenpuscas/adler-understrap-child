@@ -1,8 +1,8 @@
 <?php
 /**
- * Template Name: About Us
+ * Template Name: Flexible - About
  *
- * Template for the About Us.
+ * Template for the About us Flex.
  *
  * @package Understrap
  */
@@ -28,20 +28,9 @@ if ( is_front_page() ) {
 								<header class="entry-header why-adler-title">
 									<?php the_title( '<h1 class="text-uppercase">', '</h1>' ); ?>
 								</header><!-- .entry-header -->
-							<p><?php echo (acf_esc_html ($group['text_1'])) ;?></p>	
-
-							<div id="tab-group-1" class="page-menu-one page-tab-menu mb-0 pt-3 pt-sm-3 pb-4 pt-md-2 pb-md-2">
-									<!-- tab1.php goes here -->
-									<?php //get_template_part('page-templates/about-us-parts/tab1'); ?>
-							</div><!-- tab group 2 end -->
-			
-							<div id="tab-group-2" class="page-menu-two page-tab-menu pb-0 pt-3 pt-sm-3 pb-5 pt-md-5 pb-md-4">
-									<!-- tab2.php goes here -->
-									<?php //get_template_part('page-templates/about-us-parts/tab2');?>
-
-
-									
-							</div><!-- id: tab group 2 -->					
+							<p><?php echo (acf_esc_html ($group['text_1'])) ;?></p>								
+									<!-- Tabs -->
+									<?php get_template_part('page-templates/about-us-parts/flex'); ?>				
 						</div><!-- Why Adler masthead class -->				
 					</div><!-- row -->
 				</article>
