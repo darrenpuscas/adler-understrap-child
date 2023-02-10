@@ -25,13 +25,10 @@ if ( is_front_page() ) {
 				<article class="container-xl">
 					<div class="row">
 						<div class="menu-section masthead-section why-adler-masthead-content pt-4 pt-md-6 pb-4 pb-md-3 col-md-10 offset-md-1">
-							<!-- <div class="page-menu"> -->
 								<header class="entry-header why-adler-title">
 									<?php the_title( '<h1 class="text-uppercase">', '</h1>' ); ?>
-									<!-- class="entry-title -->
 								</header><!-- .entry-header -->
-								<!-- <div class=""> -->
-
+							<p><?php echo (acf_esc_html ($group['text_1'])) ;?></p>	
 
 							<div id="tab-group-1" class="page-menu-one page-tab-menu mb-0 pt-3 pt-sm-3 pb-4 pt-md-2 pb-md-2">
 									<!-- tab1.php goes here -->
