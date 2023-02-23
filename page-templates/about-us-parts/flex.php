@@ -1,21 +1,7 @@
 
-									<!-- tab1.php goes here -->
+<!-- <div id="tab-group-2" class="page-menu-two page-tab-menu pb-0 pt-3 pt-sm-3 pb-5 pt-md-5 pb-md-4"> -->
 
-<!-- tab group 2 end -->
-			
-<div id="tab-group-2" class="page-menu-two page-tab-menu pb-0 pt-3 pt-sm-3 pb-5 pt-md-5 pb-md-4">
-
-</div>
-
-
-
-
-
-
-
-
-
-
+<!-- </div> -->
 
 <?php if ( have_rows( 'about_us' ) ): ?>
 	<?php while ( have_rows( 'about_us' ) ) : the_row(); ?>
@@ -23,7 +9,28 @@
 
 
 		<?php if ( get_row_layout() == 'tab_group' ) : ?>
-			<?php the_sub_field( 'tab_label' ); ?>
+			<h3 class="pb-2 pb-sm-1 pb-md-1"><?php the_field('tab_label')?></h3>
+			<?php //the_sub_field( 'tab_label' ); ?>
+
+			<ul class="nav nav-tabs pt-2 pt-md-2" id="myTab" role="tablist">
+
+			<li class="nav-item" role="presentation">    
+		<button 
+			class="nav-link active" 
+			
+			
+			
+			
+			id="<?php the_sub_field('tab_name');?>-tab"
+			data-bs-toggle="tab" 
+			data-bs-target="#<?php the_sub_field('tab_name');?>" 
+			type="button" role="tab" 
+			aria-controls="<?php the_sub_field('tab_name');?>" 
+			aria-selected="true">
+				<h5><?php echo $group['label_1']?></h5>
+		</button>
+	</li>
+
 
 
 			<?php if ( have_rows( 'paragraph' ) ) : ?>

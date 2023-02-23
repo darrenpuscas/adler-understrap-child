@@ -23,16 +23,17 @@ if ( is_front_page() ) {
 		<main class="site-main" id="main" role="main">
 			<section id="standard-masthead" class="standard-with-menu">				
 				<article class="container-xl">
-					<div class="row">
-						<div class="menu-section masthead-section why-adler-masthead-content pt-4 pt-md-6 pb-4 pb-md-3 col-md-10 offset-md-1">
-								<header class="entry-header why-adler-title">
-									<?php the_title( '<h1 class="text-uppercase">', '</h1>' ); ?>
-								</header><!-- .entry-header -->
-							<p><?php echo (acf_esc_html ($group['text_1'])) ;?></p>								
-									<!-- Tabs -->
-									<?php get_template_part('page-templates/about-us-parts/flex'); ?>				
-						</div><!-- Why Adler masthead class -->				
-					</div><!-- row -->
+
+
+				
+					<div class="menu-section masthead-section why-adler-masthead-content pt-4 pt-md-6 pb-4 pb-md-3 col-md-10 offset-md-1">
+							<header class="entry-header why-adler-title">
+								<?php the_title( '<h1 class="text-uppercase">', '</h1>' ); ?>
+							</header><!-- .entry-header -->
+						<p><?php echo (acf_esc_html ($group['text_1'])) ;?></p>								
+								<!-- Tabs -->
+								<?php get_template_part('page-templates/about-us-parts/flex'); ?>				
+					</div><!-- Why Adler masthead class -->				
 				</article>
 			</section>
 		</main><!-- #main -->
