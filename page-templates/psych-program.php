@@ -118,7 +118,7 @@ if ( is_front_page() ) {
 					</article>
 
 
-					<article class="indiv-programs-additional-light">
+					<article class="section-tertiary-background">
 						<div class="indiv-programs-additonal-container standard-course-container container-xl pt-3 pb-3 pt-8 pb-6">
 							<div class="row">
 								<section>
