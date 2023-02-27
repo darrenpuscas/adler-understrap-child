@@ -1,0 +1,58 @@
+// Individual Programs pages
+//
+#indiv-programs-masthead, #indiv-programs-faq-main {
+  background-color: $tertiary;
+  color: $primary;
+}
+.indiv-programs-course-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  color: $primary;
+}
+@media screen and (min-width: 768px) {
+  .indiv-programs-course-content {
+    
+      grid-template-columns: 1fr 1fr;
+      column-gap: 60px;
+  }
+}
+.indiv-programs-additional-course-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 30px;
+  color: $primary;
+}
+@media screen and (min-width: 768px) {
+.indiv-programs-additional-course-content {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+}
+.indiv-course-timing {
+  padding-bottom: 0.6em;
+}
+.indiv-course-cost {
+  padding-bottom: 0.6em;
+}
+.indiv-course-details {
+  padding-bottom: 0.6em;
+}
+.indiv-course-details p {
+  line-height: 1.4;
+}
+.indiv-course-titlearea {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.8em;
+  gap: 0 12px;
+  align-items: center;
+  h6 {
+      margin-bottom: 0;
+      margin-top: 2px;
+  }
+  
+}
+.indiv-course-titlearea img {
+  width: 30px;
+  height: 30px;
+}
