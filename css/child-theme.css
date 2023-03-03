@@ -12700,6 +12700,13 @@ summary {
   color: #1C3A53;
 }
 
+.indiv-programs-img_l-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  -moz-column-gap: 60px;
+  column-gap: 60px;
+}
+
 .indiv-programs-course-content {
   display: grid;
   grid-template-columns: 1fr;

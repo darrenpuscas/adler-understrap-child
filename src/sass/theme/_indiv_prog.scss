@@ -4,6 +4,11 @@
   background-color: $tertiary;
   color: $primary;
 }
+.indiv-programs-img_l-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 60px; 
+}
 .indiv-programs-course-content {
   display: grid;
   grid-template-columns: 1fr;
