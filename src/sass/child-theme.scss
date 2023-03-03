@@ -11,7 +11,7 @@
 @import "theme/child_theme";
 @import "theme/child_footer_menu";                             // <------- Add your styles into this file
 @import "theme/psych_prog";
-@import "indiv_prog";                          // <------- For Psych program template
+@import "theme/indiv_prog";                          // <------- For Psych program template
 @import "theme/michael"; // <------- Michael's changes - can be merged into child_theme
 @import "theme/about_us";      // <------------- About us template specific
 @import "assets/understrap/theme/colors";           // <-------- This creates the necessary bootstrap color classes.

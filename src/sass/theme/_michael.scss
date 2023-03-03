@@ -50,3 +50,12 @@
   background-color: $border-blue;
   opacity: 100%;
 }
+
+.section-tertiary-background {
+  background-color: $tertiary;
+  color: $primary;
+}
+.section-white-background {
+  background-color: white;
+  color: $primary;
+}

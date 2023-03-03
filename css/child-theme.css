@@ -12602,71 +12602,6 @@ blockquote p {
   background: #E9F4FF;
 }
 
-#indiv-programs-masthead, #indiv-programs-faq-main {
-  background-color: #E9F4FF;
-  color: #1C3A53;
-}
-
-.indiv-programs-course-content {
-  display: grid;
-  grid-template-columns: 1fr;
-  color: #1C3A53;
-}
-
-@media screen and (min-width: 768px) {
-  .indiv-programs-course-content {
-    grid-template-columns: 1fr 1fr;
-    -moz-column-gap: 60px;
-    column-gap: 60px;
-  }
-}
-.indiv-programs-additional-course-content {
-  display: grid;
-  grid-template-columns: 1fr;
-  -moz-column-gap: 30px;
-  column-gap: 30px;
-  color: #1C3A53;
-}
-
-@media screen and (min-width: 768px) {
-  .indiv-programs-additional-course-content {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-.indiv-course-timing {
-  padding-bottom: 0.6em;
-}
-
-.indiv-course-cost {
-  padding-bottom: 0.6em;
-}
-
-.indiv-course-details {
-  padding-bottom: 0.6em;
-}
-
-.indiv-course-details p {
-  line-height: 1.4;
-}
-
-.indiv-course-titlearea {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 0.8em;
-  gap: 0 12px;
-  align-items: center;
-}
-.indiv-course-titlearea h6, .indiv-course-titlearea .h6 {
-  margin-bottom: 0;
-  margin-top: 2px;
-}
-
-.indiv-course-titlearea img {
-  width: 30px;
-  height: 30px;
-}
-
 .btn-primary {
   color: #fff;
   background-color: #EFAC30;
@@ -12753,16 +12688,76 @@ li::marker {
   color: white;
 }
 
-.section-tertiary-background {
-  background-color: #E9F4FF;
-  color: #1C3A53;
-}
-
 summary {
   font-size: 1.2rem;
   font-family: "Avenir Next", sans-serif;
   font-weight: 400;
   line-height: 1.2;
+}
+
+#indiv-programs-masthead, #indiv-programs-faq-main {
+  background-color: #E9F4FF;
+  color: #1C3A53;
+}
+
+.indiv-programs-course-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  color: #1C3A53;
+}
+
+@media screen and (min-width: 768px) {
+  .indiv-programs-course-content {
+    grid-template-columns: 1fr 1fr;
+    -moz-column-gap: 60px;
+    column-gap: 60px;
+  }
+}
+.indiv-programs-additional-course-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  -moz-column-gap: 30px;
+  column-gap: 30px;
+  color: #1C3A53;
+}
+
+@media screen and (min-width: 768px) {
+  .indiv-programs-additional-course-content {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+.indiv-course-timing {
+  padding-bottom: 0.6em;
+}
+
+.indiv-course-cost {
+  padding-bottom: 0.6em;
+}
+
+.indiv-course-details {
+  padding-bottom: 0.6em;
+}
+
+.indiv-course-details p {
+  line-height: 1.4;
+}
+
+.indiv-course-titlearea {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.8em;
+  gap: 0 12px;
+  align-items: center;
+}
+.indiv-course-titlearea h6, .indiv-course-titlearea .h6 {
+  margin-bottom: 0;
+  margin-top: 2px;
+}
+
+.indiv-course-titlearea img {
+  width: 30px;
+  height: 30px;
 }
 
 #main-menu li a.btn, #main-menu li .woocommerce-notices-wrapper .woocommerce-message a.button, .woocommerce-notices-wrapper .woocommerce-message #main-menu li a.button, #main-menu li .woocommerce-info a.button, .woocommerce-info #main-menu li a.button {
@@ -12814,6 +12809,16 @@ summary {
 .separator-hr {
   background-color: #a2d1ff;
   opacity: 100%;
+}
+
+.section-tertiary-background {
+  background-color: #E9F4FF;
+  color: #1C3A53;
+}
+
+.section-white-background {
+  background-color: white;
+  color: #1C3A53;
 }
 
 .why-adler-masthead-content {
