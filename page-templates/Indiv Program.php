@@ -116,27 +116,26 @@ if ( is_front_page() ) {
 					<div class="indiv-programs-additional standard-course-container container-xl">
 						<div class="indiv-programs-additional-course-content standard-course-content pt-2 pt-md-5 pb-2 pb-md-5 col-md-10 col-lg-10 offset-md-1 col-sm-12">
 
-						<?php if ( have_rows( 'course_2' ) ) : ?>
+						<?php if ( have_rows( 'course_grid' ) ) : ?>
 							
 							<aside class="indiv-programs-additional-course standard-course">
 
-							<?php while ( have_rows( 'course_2' ) ) : the_row(); ?>
+							<?php while ( have_rows( 'course_grid' ) ) : the_row(); ?>
 
 								<div class="indiv-course-titlearea">
-									<img src="http://adlerup.local/wp-content/uploads/noun-leaf.png">
+								<?php if ( $course_image ) : ?>
+			<img src="<?php echo esc_url( $course_image['url'] ); ?>" alt="<?php echo esc_attr( $course_image['alt'] ); ?>" />
+			<?php endif; ?>
 									<h6 class="indiv-course-title text-uppercase"><?php the_sub_field( 'course_title' ); ?></h6>
 								</div>	
 								<div class="indiv-course-timing"><?php the_sub_field( 'course_description' ); ?></div>
 								<a href="<?php the_sub_field( 'button_url' ); ?>" class="btn btn-primary"><?php the_sub_field( 'button_label' ); ?></a>
 								<?php endwhile; ?>
 							</aside>
+							<?php else : ?>
+								<?php // No rows found ?>
 						<?php endif; ?>
 
-
-
-
-
-						
 
 						</div>
 					</div>
