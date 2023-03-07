@@ -74,67 +74,51 @@ if ( is_front_page() ) {
 
 			</article>			
 
-		
-		<section class="section-tertiary-background">
-				<!-- Single Coaching Course -->
-				<div class="indiv-programs-course-container standard-course-container container-xl pt-6">
-					<p>Single Coaching Course</p>
-					<div class="indiv-programs1-intro standard-intro masthead-section">
-					<?php if ( have_rows( 'course_1' ) ) : ?>
-						<?php while ( have_rows( 'course_1' ) ) : the_row(); ?>
-						<div class="indiv-programs-course standard-course">
-							<h3><?php the_field( 'courses_title' ); ?></h3>
-									<h5 class="text-uppercase"><?php the_sub_field( 'course_title' ); ?></h5>
-								<p><?php the_sub_field( 'course_description' ); ?>	
-							<a href="<?php the_sub_field( 'button_url' ); ?>" class="btn btn-primary"><?php the_sub_field( 'button_label' ); ?></a href="">
+
+			<article class="section-tertiary-background">
+				<div class="container-xl">
+					<div id="coaching-grid-3x3" class="indiv-programs-masthead-content standard-masthead-content pt-6 pb-6 col-md-10 offset-md-1 ">
+
+					<section id="indiv-programs-additional">
+						<div class="standard-course-container container-xl">
+							<div class="indiv-programs-additional-course-content standard-course-content pt-2 pt-md-5 pb-2 pb-md-5 col-md-10 col-lg-10 offset-md-1 col-sm-12">
+
+							<?php if ( have_rows( 'course_grid' ) ) : ?>
+								
+								<aside class="indiv-programs-additional-course standard-course">
+
+								<?php while ( have_rows( 'course_grid' ) ) : the_row(); ?>
+
+									<div class="indiv-course-titlearea">
+									<?php if ( $course_image ) : ?>
+										<img src="<?php echo esc_url( $course_image['url'] ); ?>" alt="<?php echo esc_attr( $course_image['alt'] ); ?>" />
+									<?php endif; ?>
+										<h6 class="indiv-course-title text-uppercase"><?php the_sub_field( 'course_title' ); ?></h6>
+									</div>	
+									<div class="indiv-course-timing"><?php the_sub_field( 'course_description' ); ?></div>
+									<a href="<?php the_sub_field( 'button_url' ); ?>" class="btn btn-primary"><?php the_sub_field( 'button_label' ); ?></a>
+									<?php endwhile; ?>
+								</aside>
+								<?php else : ?>
+									<?php // No rows found ?>
+							<?php endif; ?>
+
+							</div>
 						</div>
-							<?php endwhile; ?>
-						<?php endif; ?>
-					</div>
-				</div>		
-			</section>
+
+					</section><!-- Invididual Course List: Modals -->
+
+				</div><!-- Coaching Grid 3x3 -->	
+			</div>
+		</article>
+
+			
 
 
 
 
 
 
-
-
-				<section id="indiv-programs-additional">
-					<p>Course 2</p>
-					<div class="indiv-programs-additional standard-course-container container-xl">
-						<div class="indiv-programs-additional-course-content standard-course-content pt-2 pt-md-5 pb-2 pb-md-5 col-md-10 col-lg-10 offset-md-1 col-sm-12">
-
-						<?php if ( have_rows( 'course_grid' ) ) : ?>
-							
-							<aside class="indiv-programs-additional-course standard-course">
-
-							<?php while ( have_rows( 'course_grid' ) ) : the_row(); ?>
-
-								<div class="indiv-course-titlearea">
-								<?php if ( $course_image ) : ?>
-			<img src="<?php echo esc_url( $course_image['url'] ); ?>" alt="<?php echo esc_attr( $course_image['alt'] ); ?>" />
-			<?php endif; ?>
-									<h6 class="indiv-course-title text-uppercase"><?php the_sub_field( 'course_title' ); ?></h6>
-								</div>	
-								<div class="indiv-course-timing"><?php the_sub_field( 'course_description' ); ?></div>
-								<a href="<?php the_sub_field( 'button_url' ); ?>" class="btn btn-primary"><?php the_sub_field( 'button_label' ); ?></a>
-								<?php endwhile; ?>
-							</aside>
-							<?php else : ?>
-								<?php // No rows found ?>
-						<?php endif; ?>
-
-
-						</div>
-					</div>
-
-				</section><!-- Invididual Course List: Modals -->
-
-				</div><!-- Coaching Grid -->
-
-			<!--</article> Masthead -->
 
 		</main><!-- #main -->
 
