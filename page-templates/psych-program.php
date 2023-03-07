@@ -23,7 +23,7 @@ if ( is_front_page() ) {
 
 				<main class="site-main" id="main" role="main">
 
-					<article id="indiv-programs-masthead">
+					<div id="indiv-programs-masthead">
 						<div class="indiv-programs-masthead-container container-xl">
 							<div class="row">
 								<div class="indiv-programs-masthead-content standard-masthead-content pt-6 pb-6 col-md-10 offset-md-1">
@@ -49,9 +49,9 @@ if ( is_front_page() ) {
 								</div><!-- end masthead content -->
 							</div><!-- end row -->
 						</div><!-- end masthead container -->
-					</article>
+					</div>
 
-					<article id="indiv-programs-1">
+					<div id="indiv-programs-1">
 						<div class="indiv-programs-course-container standard-course-container container-xl pt-6">
 							<div class="row">
 								<?php $title = get_field('prog_section_title_1');
@@ -77,9 +77,9 @@ if ( is_front_page() ) {
 								</div><!-- end column -->
 							</div><!-- end row -->
 						</div><!-- end container  -->
-					</article>
+					</div>
 
-					<article id="indiv-programs-additional">
+					<div id="indiv-programs-additional">
 						<div class="indiv-programs-additional standard-course-container container-xl">
 							<div class="row">
 								<div class="indiv-programs-additional-course-content standard-course-content pt-2 pt-md-5 pb-2 pb-md-5 col-md-10 col-lg-10 offset-md-1 col-sm-12"> 
@@ -115,10 +115,10 @@ if ( is_front_page() ) {
 								</div><!-- end column -->
 							</div><!-- end row -->
 						</div><!-- end container -->
-					</article>
+					</div>
 
 
-					<article class="section-tertiary-background">
+					<div class="section-tertiary-background">
 						<div class="indiv-programs-additonal-container standard-course-container container-xl pt-3 pb-3 pt-8 pb-6">
 							<div class="row">
 								<section>
@@ -129,9 +129,9 @@ if ( is_front_page() ) {
 								</section>
 							</div>
 						</div>
-					</article>
+					</div>
 
-					<article class="indiv-programs-additional">
+					<div class="indiv-programs-additional">
 						<div class="indiv-programs-additonal-container standard-course-container container-xl pt-3 pb-3 pt-8 pb-6">
 							<div class="row">
 								<section>
@@ -215,9 +215,9 @@ if ( is_front_page() ) {
 								</section>
 							</div>
 						</div>
-					</article>
+					</div>
 
-					<article id="indiv-programs-faq-main">
+					<div id="indiv-programs-faq-main">
 						<div class="indiv-programs-faq-container container-xl pt-3 pb-3 pt-8 pb-6">
 							<div class="row">
 								<section class="indiv-programs-faq standard-faq col-md-8 col-lg-8 offset-md-2 col-sm-12">
@@ -252,7 +252,7 @@ if ( is_front_page() ) {
 
 							</div><!-- end row -->
 						</div><!-- end container -->
-					</article>
+					</div>
 					
 				</main><!-- #main -->
 

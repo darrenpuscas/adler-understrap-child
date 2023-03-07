@@ -21,78 +21,61 @@ if ( is_front_page() ) {
 <div id="full-width-page-wrapper" class="wrapper">
 	<div class="col-md-12 content-area" id="primary">
 		<main class="site-main" id="main" role="main" >
-			<article id="indiv-programs-masthead">
-				<div id="coaching-grid-img_R1" class="indiv-programs-masthead-content standard-masthead-content pt-6 pb-6 col-md-10 offset-md-1">
+		
 
+			<article class="section-tertiary-background">
+				<div class="container-xl">
+					<div id="coaching-grid-img_R1" class="indiv-programs-masthead-content standard-masthead-content pt-6 pb-6 col-md-10 offset-md-1 ">
 
-				<section class="indiv-programs-masthead-text masthead-section">
-					<div class="indiv-programs-main-header standard-main-header display-1"><?php the_title( '<h1 class="text-uppercase">', '</h1>' ); ?></div>
+						<section class="indiv-programs-masthead-text masthead-section ">
+							<div class="indiv-programs-main-header standard-main-header display-1"><?php the_title( '<h1 class="text-uppercase">', '</h1>' ); ?></div>
 
-						<?php if ( have_rows( 'introduction' ) ) : ?>
-							<?php while ( have_rows( 'introduction' ) ) : the_row(); ?>
-						<div class="indiv-programs-sub-statement standard-sub-statement"><?php the_sub_field( 'sub_title' ); ?></div>
-						<div class="indiv-programs-text standard-text"><?php the_sub_field( 'introduction_text' ); ?></div>
-									
-				</section><!-- Section: Intro  -->
-				<figure class="indiv-programs-masthead-image masthead-section ">
-					<?php $introduction_image = get_sub_field( 'introduction_image' ); ?>
-						<?php if ( $introduction_image ) : ?>
-							<img src="<?php echo esc_url( $introduction_image['url'] ); ?>" alt="<?php echo esc_attr( $introduction_image['alt'] ); ?>" />
-					<?php endif; ?>
-				</figure>
+								<?php if ( have_rows( 'introduction' ) ) : ?>
+									<?php while ( have_rows( 'introduction' ) ) : the_row(); ?>
+								<div class="indiv-programs-sub-statement standard-sub-statement"><h2><?php the_sub_field( 'sub_title' ); ?></h2></div>
+								<div class="indiv-programs-text standard-text"><?php the_sub_field( 'introduction_text' ); ?></div>
+						</section><!-- Section: Intro  -->
+						<figure class="indiv-programs-masthead-image masthead-section ">
+							<?php $introduction_image = get_sub_field( 'introduction_image' ); ?>
+								<?php if ( $introduction_image ) : ?>
+									<img src="<?php echo esc_url( $introduction_image['url'] ); ?>" alt="<?php echo esc_attr( $introduction_image['alt'] ); ?>" />
+							<?php endif; ?>
+						</figure>
 
-						<?php endwhile; ?>
-						<?php endif; ?>
+							<?php endwhile; ?>
+							<?php endif; ?>
 
-			</div>
+					</div>
+				</div>
+			</article>
 			<!-- coaching grid -ImgR1 -->
-<!-- ------------------------------------------------------------------------------------ -->
-
 
 							<?php if ( have_rows( 'section 2' ) ) : ?>
 						<?php while ( have_rows( 'section 2' ) ) : the_row(); ?>
-			<div id="coaching-grid-img_L1" class="indiv-programs-img_l-grid offset-md-1 col-md-10">
-				<!-- Coach Eduction Image -->
-				<figure class="indiv-programs-course-container standard-course-container section-white-background container-xl pt-6">
-					<p>section image</p>
+					
+			<article class="pt-6">
+				<div class="container-xl">
+					<div id="coaching-grid-img_L1" class="offset-md-1 col-md-10 indiv-programs-masthead-container ">
+						<section class="indiv-programs-course-container standard-course-container section-white-background container-xl">
+							<div class="indiv-programs1-intro standard-intro masthead-section">
+							<?php if ( the_sub_field('section_title') ) : ?>
+								<h2 class="standard-intro-headline"><?php the_sub_field( 'section_title' ); ?></h2>
+							<?php endif ?>
+								<?php the_sub_field( 'section_text' ); ?>
+							</div>
+						</section>
 
-<!-- What I really want is to span this over the entire main grid row and float the image left -->
-				<?php $section_image = get_sub_field( 'section_image' ); ?>
-					<?php if ( $section_image ) : ?>					
-						<div class="indiv-programs-course-image certification-course-section">
-							<img src="<?php echo esc_url( $section_image['url'] ); ?>" alt="<?php echo esc_attr( $section_image['alt'] ); ?>" />
-						</div>
-					<?php endif; ?>
-				</figure>
+									<?php endwhile; ?>
+								<?php endif; ?>	
 
-
-
-
-
-
-				<section class="indiv-programs-course-container standard-course-container section-white-background container-xl pt-6">
-					<div class="indiv-programs1-intro standard-intro masthead-section">
-						<h3 class="standard-intro-headline"><?php the_sub_field( 'section_title' ); ?></h3>
-						<p>Section Title</p>
-						<?php the_sub_field( 'section_text' ); ?>
 					</div>
-				</section>
 
+				</div>
 
+			</article>			
 
-
-
-							<?php endwhile; ?>
-						<?php endif; ?>	
-
-			</div>
-		<!-- Grid #img_L1 -->
-
-
-
-
-	
-			<section class="section-tertiary-background">
+		
+		<section class="section-tertiary-background">
 				<!-- Single Coaching Course -->
 				<div class="indiv-programs-course-container standard-course-container container-xl pt-6">
 					<p>Single Coaching Course</p>
@@ -110,6 +93,13 @@ if ( is_front_page() ) {
 					</div>
 				</div>		
 			</section>
+
+
+
+
+
+
+
 
 				<section id="indiv-programs-additional">
 					<p>Course 2</p>
@@ -144,7 +134,7 @@ if ( is_front_page() ) {
 
 				</div><!-- Coaching Grid -->
 
-			</article><!-- Masthead -->
+			<!--</article> Masthead -->
 
 		</main><!-- #main -->
 
