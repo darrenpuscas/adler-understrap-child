@@ -1,8 +1,8 @@
 <?php
 /**
- * Template Name: Flexible - About
+ * Template Name: About - Flexible
  *
- * Template for the About us Flex.
+ * Template for the About Page - Flexible Content.
  *
  * @package Understrap
  */
@@ -23,15 +23,14 @@ if ( is_front_page() ) {
 		<main class="site-main" id="main" role="main">
 			<section id="standard-masthead" class="standard-with-menu">				
 				<article class="container-xl">
-
-
-				
 					<div class="menu-section masthead-section why-adler-masthead-content pt-4 pt-md-6 pb-4 pb-md-3 col-md-10 offset-md-1">
 							<header class="entry-header why-adler-title">
 								<?php the_title( '<h1 class="text-uppercase">', '</h1>' ); ?>
 							</header><!-- .entry-header -->
-						<p><?php echo (acf_esc_html ($group['text_1'])) ;?></p>								
-								<!-- Tabs -->
+
+
+								<!-- This will have both Tab Groups in them -->
+							
 								<?php get_template_part('page-templates/about-us-parts/flex'); ?>				
 					</div><!-- Why Adler masthead class -->				
 				</article>
@@ -40,5 +39,4 @@ if ( is_front_page() ) {
 	</div><!-- #primary -->
 </div><!-- #full-width-page-wrapper -->
 
-<?php
-get_footer();
+<?php get_footer(); ?>
