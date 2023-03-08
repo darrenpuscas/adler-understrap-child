@@ -54,13 +54,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 										) 
 								); 
 						?>
-								<!-- <ul>
-									<li>Why ADLER?</li>
-									<li>About ADLER?</li>
-									<li>Work at ADLER?</li>
-									<li>News & Events</li>
-									<li>Contact Us</li>
-								</ul> -->
 							</div>
 							<div class="footer-resources2">	
 							<?php 
@@ -73,12 +66,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 										) 
 								); 
 						?>
-								<!-- <ul>
-									<li class="testbbb">Policy Statements</li>	
-									<li>Aoda</li>
-									<li>Statement on diversity</li>
-									<li>Covid Vaccination policy</li>
-								</ul> -->
 							</div>
 							<div class="footer-resources3">	
 							<?php 
@@ -91,12 +78,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 										) 
 								); 
 						?>
-								<!-- <ul>
-									<li class="testbbb">Resources</li>
-									<li>GSAEC</li>
-									<li>Something Else!!!!</li>
-									<li>Find a coach</li>
-								</ul> -->
 							</div>
 						</div>	
 						</div><!-- .site-info -->

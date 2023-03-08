@@ -55,12 +55,16 @@ if ( is_front_page() ) {
 					
 			<article class="pt-6">
 				<div class="container-xl">
-					<div id="coaching-grid-img_L1" class="offset-md-1 col-md-10 indiv-programs-masthead-container ">
+					<div id="coaching-grid-img_L1" class="offset-md-1 col-md-10 indiv-programs-masthead-container indiv-programs-img_l-grid">
+						<figure>
+						<?php $image_left = get_sub_field( 'image_left' ); ?>
+							<?php if ( $image_left ) : ?>
+								<img src="<?php echo esc_url( $image_left['url'] ); ?>" alt="<?php echo esc_attr( $image_left['alt'] ); ?>" />
+							<?php endif; ?>
+						</figure>
 						<section class="indiv-programs-course-container standard-course-container section-white-background container-xl">
-							<div class="indiv-programs1-intro standard-intro masthead-section">
-							<?php if ( the_sub_field('section_title') ) : ?>
-								<h2 class="standard-intro-headline"><?php the_sub_field( 'section_title' ); ?></h2>
-							<?php endif ?>
+							<div class="indiv-programs1-intro standard-intro masthead-section">	
+								<h4 class="standard-intro-headline text-start"><?php the_sub_field( 'section_title' ); ?></h4>
 								<?php the_sub_field( 'section_text' ); ?>
 							</div>
 						</section>

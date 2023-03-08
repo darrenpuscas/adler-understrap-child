@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Individual Program
+ * Template Name: Individual Program - orig
  *
  * Template for the individual program pages.
  *
