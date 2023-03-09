@@ -1,17 +1,16 @@
 
-<?php if ( have_rows( 'about_us' ) ): ?>
-	<?php while ( have_rows( 'about_us' ) ) : the_row(); ?>
 
-<?php if ( get_row_layout() == 'tab_group' ) : ?>
-		<!-- Repeatable content - Each Tab Group -->
-<h3 class="pb-2 pb-sm-1 pb-md-1"><?php the_sub_field('tab_group_heading')?></h3>
 
-<!-- Tab List Repeater for ul -->
+<h3 class="pb-2 pb-sm-1 pb-md-1"><?php the_field( 'tab_group_heading' ); ?></h3>
+
 
 <?php if ( have_rows( 'tab_list' ) ) : ?>
-	
 	<ul class="nav nav-tabs pt-2 pt-md-2" id="myTab" role="tablist">
-		<?php while ( have_rows( 'tab_list' ) ) : the_row(); ?>
+
+	<?php while ( have_rows( 'tab_list' ) ) : the_row(); ?>
+
+
+	<!-- The problem I have is how to have the first li active and the rest of them inactive in the repeater. I would need some counter or variable on the LIs following the first. -->
 		
 			<li class="nav-item" role="presentation"> 
 				<button 
@@ -25,24 +24,41 @@
 					<h5><?php the_sub_field( 'tab_name' ); ?></h5>
 				</button>
 			</li>
-
-					<?php //the_sub_field( 'tab_name' ); ?>
-					<?php //the_sub_field( 'tab_label' ); ?>
-				<?php endwhile; ?>
-
-			</ul>
-			<?php else : ?>
-				<?php // No rows found ?>
-			<?php endif; ?>
+			
+			<?php endwhile; ?>
+</ul>
+<?php else : ?>
+	<?php echo('<p>No Tabs Found</p>') ?>
+<?php endif; ?>
 
 
 
 
 
 
-<!-- content section -->
 
-<?php if ( have_rows( 'paragraph' ) ) : ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<?php if ( have_rows( 'tab_group_1_content' ) ): ?>
+	<?php while ( have_rows( 'tab_group_1_content' ) ) : the_row(); ?>
+		<?php if ( get_row_layout() == 'tab_group' ) : ?>
+			<?php if ( have_rows( 'paragraph' ) ) : ?>
 				<?php while ( have_rows( 'paragraph' ) ) : the_row(); ?>
 					<?php the_sub_field( 'text' ); ?>
 					<?php the_sub_field( 'image_position' ); ?>

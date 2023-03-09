@@ -27,11 +27,12 @@ if ( is_front_page() ) {
 							<header class="entry-header why-adler-title">
 								<?php the_title( '<h1 class="text-uppercase">', '</h1>' ); ?>
 							</header><!-- .entry-header -->
-
-
-								<!-- This will have both Tab Groups in them -->
+							<!-- Group 1 Parts -->
 							
-								<?php get_template_part('page-templates/about-us-parts/flex'); ?>				
+								<?php get_template_part('page-templates/about-us-flex-parts/flex-1'); ?>
+								
+								<!-- Group 2 Part -->
+
 					</div><!-- Why Adler masthead class -->				
 				</article>
 			</section>
