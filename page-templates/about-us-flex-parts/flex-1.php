@@ -1,19 +1,12 @@
-
-
-
 <h3 class="pb-2 pb-sm-1 pb-md-1"><?php the_field( 'tab_group_heading' ); ?></h3>
-
-
 <?php if ( have_rows( 'tab_list' ) ) : ?>
 	<ul class="nav nav-tabs pt-2 pt-md-2" id="myTab" role="tablist">
 
 	<?php while ( have_rows( 'tab_list' ) ) : the_row(); ?>
-
-
-	<!-- The problem I have is how to have the first li active and the rest of them inactive in the repeater. I would need some counter or variable on the LIs following the first. -->
-		
+		<?php if ( get_sub_field( 'active' ) == 1 ) : ?>
+			<?php echo 'true'; ?>
 			<li class="nav-item" role="presentation"> 
-				<button 
+				<button
 					class="nav-link active" 
 					id="<?php the_sub_field('tab_label');?>-tab"
 					data-bs-toggle="tab" 
@@ -24,33 +17,26 @@
 					<h5><?php the_sub_field( 'tab_name' ); ?></h5>
 				</button>
 			</li>
-			
-			<?php endwhile; ?>
-</ul>
+		<?php else : ?>
+			<?php echo 'false'; ?>
+			<li class="nav-item" role="presentation"> 
+				<button
+					class="nav-link" 
+					id="<?php the_sub_field('tab_label');?>-tab"
+					data-bs-toggle="tab" 
+					data-bs-target="#<?php the_sub_field('tab_label');?>" 
+					type="button" role="tab" 
+					aria-controls="<?php the_sub_field('tab_label');?>" 
+					aria-selected="true">
+					<h5><?php the_sub_field( 'tab_name' ); ?></h5>
+				</button>
+			</li>
+		<?php endif; ?>
+	<?php endwhile; ?>
+	</ul>
 <?php else : ?>
 	<?php echo('<p>No Tabs Found</p>') ?>
 <?php endif; ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
