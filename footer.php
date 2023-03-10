@@ -27,7 +27,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 					<div class="site-info footer-sections">
 						<div class="footer-signup">
-							<h4>Keep up With ADLER</h4>
+							<h4>Signup for Adler's Newsletter</h4>
 							<form>
 								<div class="">
 									<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -36,8 +36,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 								</div>
 							</form>
 							<div class="footer-social">
-								<div class="footer-facebook"><img src="http://adlerup.local/wp-content/uploads/facebook.png"></div>
-								<div class="footer-twitter"><img src="http://adlerup.local/wp-content/uploads/twitter.png"></div>
+								<div class="footer-facebook"><img src="/wp-content/uploads/facebook.png"></div>
+								<div class="footer-twitter"><img src="/wp-content/uploads/twitter.png"></div>
 							</div>
 						</div>
 					

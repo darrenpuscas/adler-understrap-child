@@ -669,7 +669,7 @@ $input-border-color:                    $gray-400 !default;
 // Buttons
 //
 .btn-primary {
-    @include button-variant($yellow,$white,$white);
+    @include button-variant($yellow,$primary,black);
     border-radius: 0.5rem;
     padding-left: 2.8em;
     padding-right: 2.8em;

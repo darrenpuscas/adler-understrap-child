@@ -118,12 +118,12 @@ if ( is_front_page() ) {
 					</div>
 
 
+								<?php $image = get_field('prog_program_map_image');
+									if( !empty( $image ) ): ?>
 					<div class="section-tertiary-background">
 						<div class="indiv-programs-additonal-container standard-course-container container-xl pt-3 pb-3 pt-8 pb-6">
 							<div class="row">
 								<section>
-								<?php $image = get_field('prog_program_map_image');
-									if( !empty( $image ) ): ?>
 										<img src="<?php echo esc_url($image['url']); ?>" class="" alt="<?php echo esc_attr($image['alt']); ?>" />
 									<?php endif; ?>
 								</section>
@@ -131,7 +131,7 @@ if ( is_front_page() ) {
 						</div>
 					</div>
 
-					<div class="indiv-programs-additional">
+					<div class="indiv-programs-additional section-tertiary-background">
 						<div class="indiv-programs-additonal-container standard-course-container container-xl pt-3 pb-3 pt-8 pb-6">
 							<div class="row">
 								<section>
@@ -217,7 +217,7 @@ if ( is_front_page() ) {
 						</div>
 					</div>
 
-					<div id="indiv-programs-faq-main">
+					<div id="indiv-programs-faq-main section-white-background">
 						<div class="indiv-programs-faq-container container-xl pt-3 pb-3 pt-8 pb-6">
 							<div class="row">
 								<section class="indiv-programs-faq standard-faq col-md-8 col-lg-8 offset-md-2 col-sm-12">
