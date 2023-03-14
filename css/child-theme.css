@@ -12767,6 +12767,10 @@ summary {
   height: 30px;
 }
 
+.test-class {
+  color: red;
+}
+
 #main-menu li a.btn, #main-menu li .woocommerce-notices-wrapper .woocommerce-message a.button, .woocommerce-notices-wrapper .woocommerce-message #main-menu li a.button, #main-menu li .woocommerce-info a.button, .woocommerce-info #main-menu li a.button {
   padding: 1em;
 }

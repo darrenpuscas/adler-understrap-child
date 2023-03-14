@@ -23,14 +23,20 @@ if ( is_front_page() ) {
 		<main class="site-main" id="main" role="main" >
 			<div class="section-tertiary-background">
 				<div class="container-xl">
+					
+				
+				
 					<header class="indiv-programs-masthead-text masthead-section ">
 						<div class="display-1"><?php the_title( '<h1 class="text-uppercase">', '</h1>' ); ?></div>	
 					</header>
+
+
+
 					<section id="about-us-masthead" class="pt-6 pb-6 col-md-10 offset-md-1 ">
 						<?php the_field( 'page_introduction' ); ?>
 					</section>
 							<!-- Group 1 Parts -->
-					<section>
+					<section id="tab-group-1" class="page-menu-one page-tab-menu mb-0 pt-3 pt-sm-3 pb-4 pt-md-2 pb-md-2">
 						<?php get_template_part('page-templates/about-us-flex-parts/flex-1'); ?>
 				</section>
 								<!-- Group 2 Part -->		
