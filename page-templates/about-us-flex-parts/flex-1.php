@@ -46,12 +46,7 @@
 
 		<?php if ( get_row_layout() == 'tab_content' ) : ?>
 			<?php $tabName = get_sub_field( 'tab_name' ) ?>
-		<?php endif ?>
-
-
-		<?php if ( have_rows( 'tab_list' ) ) : the_row(); ?>
-			<?php if ( get_sub_field( 'active' ) == 1 ) : ?>
-				<?php $active = get_sub_field('active'); ?>
+		
 
 		<div 
 				class="tab-pane fade show active mb-5" 
@@ -59,48 +54,15 @@
 				role="tabpanel" 
 				aria-labelledby="<?php echo $tabName?>"
 			>
-			<p>Active = <?php echo $active;?></p>
+			<p><?php if ( get_sub_field( 'starts_selected' ) == 1 ) : ?>
+				<?php echo 'true'; ?></p>
 			<p>Tab Name: <?php echo $tabName?></p>
 			<?php //get_template_part('page-templates/about-us-parts/content'); ?>
-
-			<?php if ( get_row_layout() == 'tab_content' ) : ?>
-  <?php the_sub_field( 'tab_name' ); ?>
-in content.php
-
-  <?php if ( have_rows( 'paragraph' ) ) : ?>
-    <?php while ( have_rows( 'paragraph' ) ) : the_row(); ?>
-      <?php the_sub_field( 'text' ); ?>
-      <?php //the_sub_field( 'image_position' ); ?>
-      <?php //if ( get_sub_field( 'drop_cap' ) == 1 ) : ?>
-        <?php // echo 'true'; ?>
-      <?php //else : ?>
-        <?php // echo 'false'; ?>
-      <?php //endif; ?>
-
-    <?php endwhile; ?>
-  <?php else : ?>
-    <?php echo 'No rows found' ?>
-  <?php endif; ?>
-
-  <?php if ( have_rows( 'bullet_list' ) ) : ?>
-    <?php while ( have_rows( 'bullet_list' ) ) : the_row(); ?>
-      <?php the_sub_field( 'content' ); ?>
-    <?php endwhile; ?>
-  <?php else : ?>
-    <?php echo 'No rows found' ?>
-  <?php endif; ?>
-  <?php if ( have_rows( 'blockquote' ) ) : ?>
-    <?php while ( have_rows( 'blockquote' ) ) : the_row(); ?>
-      <?php the_sub_field( 'content' ); ?>
-    <?php endwhile; ?>
-  <?php else : ?>
-    <?php echo 'No rows found' ?>
-  <?php endif; ?>
-  <?php endif; ?>
 
 		</div>
 
 		<?php else : ?>
+				<?php echo 'false'; ?>			
 
 		<div 
 				class="tab-pane fade" 
@@ -112,44 +74,9 @@ in content.php
 			<p>Tab Name: <?php echo $tabName?></p>
 			<?php //get_template_part('page-templates/about-us-parts/content'); ?>
 
-			<?php if ( get_row_layout() == 'tab_content' ) : ?>
-  <?php //the_sub_field( 'tab_name' ); ?>
-in content.php
-
-  <?php if ( have_rows( 'paragraph' ) ) : ?>
-    <?php while ( have_rows( 'paragraph' ) ) : the_row(); ?>
-      <?php the_sub_field( 'text' ); ?>
-      <?php //the_sub_field( 'image_position' ); ?>
-      <?php //if ( get_sub_field( 'drop_cap' ) == 1 ) : ?>
-        <?php // echo 'true'; ?>
-      <?php //else : ?>
-        <?php // echo 'false'; ?>
-      <?php //endif; ?>
-
-    <?php endwhile; ?>
-  <?php else : ?>
-    <?php echo 'No rows found' ?>
-  <?php endif; ?>
-
-  <?php if ( have_rows( 'bullet_list' ) ) : ?>
-    <?php while ( have_rows( 'bullet_list' ) ) : the_row(); ?>
-      <?php the_sub_field( 'content' ); ?>
-    <?php endwhile; ?>
-  <?php else : ?>
-    <?php echo 'No rows found' ?>
-  <?php endif; ?>
-  <?php if ( have_rows( 'blockquote' ) ) : ?>
-    <?php while ( have_rows( 'blockquote' ) ) : the_row(); ?>
-      <?php the_sub_field( 'content' ); ?>
-    <?php endwhile; ?>
-  <?php else : ?>
-    <?php echo 'No rows found' ?>
-  <?php endif; ?>
-  <?php endif; ?>
 
 		</div>
-
-			<?php endif ?>
+		<?php endif ?>
 		<?php endif ?>
 
 	<?php endwhile; ?>
