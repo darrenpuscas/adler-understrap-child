@@ -52,7 +52,7 @@ if ( is_front_page() ) {
 						<div class="whyadler-container container-xl pt-6 pb-6 pt-md-7 pb-md-7 pt-lg-8 pb-lg-8">
 							<div class="row">
 								<div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2 col-sm-12">
-									<h2 class="text-uppercase"><?php the_field('home_heading');?></h2>
+									<h2><?php the_field('home_heading');?></h2>
 								<?php the_field('home_bullets'); ?>
 									<a class="btn btn-primary" href="<?php the_field('home_button_url');?>"><?php the_field('home_button');?></a>
 								</div>	

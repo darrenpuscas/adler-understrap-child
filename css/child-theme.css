@@ -52,7 +52,7 @@
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
-  --bs-body-font-size: 1rem;
+  --bs-body-font-size: 1.15rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
@@ -105,47 +105,52 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 }
 
 h1, .h1 {
-  font-size: calc(1.5rem + 3vw);
+  font-size: calc(1.55625rem + 3.675vw);
 }
 @media (min-width: 1200px) {
   h1, .h1 {
-    font-size: 3.75rem;
+    font-size: 4.3125rem;
   }
 }
 
 h2, .h2 {
-  font-size: calc(1.4rem + 1.8vw);
+  font-size: calc(1.44125rem + 2.295vw);
 }
 @media (min-width: 1200px) {
   h2, .h2 {
-    font-size: 2.75rem;
+    font-size: 3.1625rem;
   }
 }
 
 h3, .h3 {
-  font-size: calc(1.325rem + 0.9vw);
+  font-size: calc(1.355rem + 1.26vw);
 }
 @media (min-width: 1200px) {
   h3, .h3 {
-    font-size: 2rem;
+    font-size: 2.3rem;
   }
 }
 
 h4, .h4 {
-  font-size: calc(1.275rem + 0.3vw);
+  font-size: calc(1.2975rem + 0.57vw);
 }
 @media (min-width: 1200px) {
   h4, .h4 {
-    font-size: 1.5rem;
+    font-size: 1.725rem;
   }
 }
 
 h5, .h5 {
-  font-size: 1.25rem;
+  font-size: calc(1.26875rem + 0.225vw);
+}
+@media (min-width: 1200px) {
+  h5, .h5 {
+    font-size: 1.4375rem;
+  }
 }
 
 h6, .h6 {
-  font-size: 1rem;
+  font-size: 1.15rem;
 }
 
 p {
@@ -480,8 +485,13 @@ progress {
 }
 
 .lead {
-  font-size: 1.25rem;
+  font-size: calc(1.26875rem + 0.225vw);
   font-weight: 300;
+}
+@media (min-width: 1200px) {
+  .lead {
+    font-size: 1.4375rem;
+  }
 }
 
 .display-1 {
@@ -574,7 +584,12 @@ progress {
 
 .blockquote, .wp-block-quote {
   margin-bottom: 1rem;
-  font-size: 1.25rem;
+  font-size: calc(1.26875rem + 0.225vw);
+}
+@media (min-width: 1200px) {
+  .blockquote, .wp-block-quote {
+    font-size: 1.4375rem;
+  }
 }
 .blockquote > :last-child, .wp-block-quote > :last-child {
   margin-bottom: 0;
@@ -2139,13 +2154,18 @@ progress {
 .col-form-label-lg {
   padding-top: calc(0.5rem + 1px);
   padding-bottom: calc(0.5rem + 1px);
-  font-size: 1.25rem;
+  font-size: calc(1.26875rem + 0.225vw);
+}
+@media (min-width: 1200px) {
+  .col-form-label-lg {
+    font-size: 1.4375rem;
+  }
 }
 
 .col-form-label-sm {
   padding-top: calc(0.25rem + 1px);
   padding-bottom: calc(0.25rem + 1px);
-  font-size: 0.875rem;
+  font-size: 1.00625rem;
 }
 
 .form-text {
@@ -2159,7 +2179,7 @@ progress {
   display: block;
   width: 100%;
   padding: 0.6em 0.9em;
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
@@ -2287,7 +2307,7 @@ progress {
 .form-control-sm {
   min-height: calc(1.5em + 0.5rem + 2px);
   padding: 0.25rem 0.5rem;
-  font-size: 0.875rem;
+  font-size: 1.00625rem;
   border-radius: 0.2rem;
 }
 .form-control-sm::file-selector-button {
@@ -2306,8 +2326,13 @@ progress {
 .form-control-lg {
   min-height: calc(1.5em + 1rem + 2px);
   padding: 0.5rem 1rem;
-  font-size: 1.25rem;
+  font-size: calc(1.26875rem + 0.225vw);
   border-radius: 0.3rem;
+}
+@media (min-width: 1200px) {
+  .form-control-lg {
+    font-size: 1.4375rem;
+  }
 }
 .form-control-lg::file-selector-button {
   padding: 0.5rem 1rem;
@@ -2354,7 +2379,7 @@ textarea.form-control-lg {
   width: 100%;
   padding: 0.6em 2.7em 0.6em 0.9em;
   -moz-padding-start: calc(0.9em - 3px);
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
@@ -2396,19 +2421,24 @@ textarea.form-control-lg {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
   padding-left: 0.5rem;
-  font-size: 0.875rem;
+  font-size: 1.00625rem;
 }
 
 .form-select-lg {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 1rem;
-  font-size: 1.25rem;
+  font-size: calc(1.26875rem + 0.225vw);
+}
+@media (min-width: 1200px) {
+  .form-select-lg {
+    font-size: 1.4375rem;
+  }
 }
 
 .form-check {
   display: block;
-  min-height: 1.5rem;
+  min-height: 1.725rem;
   padding-left: 1.5em;
   margin-bottom: 0.125rem;
 }
@@ -2707,7 +2737,7 @@ textarea.form-control-lg {
   display: flex;
   align-items: center;
   padding: 0.6em 0.9em;
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
@@ -2726,8 +2756,19 @@ textarea.form-control-lg {
 .woocommerce-info .input-group-lg > a.button,
 .woocommerce-notices-wrapper .woocommerce-message .input-group-lg > a.button {
   padding: 0.5rem 1rem;
-  font-size: 1.25rem;
+  font-size: calc(1.26875rem + 0.225vw);
   border-radius: 0.3rem;
+}
+@media (min-width: 1200px) {
+  .input-group-lg > .form-control, .widget_categories .input-group-lg > select,
+  .widget_archive .input-group-lg > select,
+  .input-group-lg > .form-select,
+  .input-group-lg > .input-group-text,
+  .input-group-lg > .btn,
+  .woocommerce-info .input-group-lg > a.button,
+  .woocommerce-notices-wrapper .woocommerce-message .input-group-lg > a.button {
+    font-size: 1.4375rem;
+  }
 }
 
 .input-group-sm > .form-control, .widget_categories .input-group-sm > select,
@@ -2738,7 +2779,7 @@ textarea.form-control-lg {
 .woocommerce-info .input-group-sm > a.button,
 .woocommerce-notices-wrapper .woocommerce-message .input-group-sm > a.button {
   padding: 0.25rem 0.5rem;
-  font-size: 0.875rem;
+  font-size: 1.00625rem;
   border-radius: 0.2rem;
 }
 
@@ -2779,7 +2820,7 @@ textarea.form-control-lg {
   max-width: 100%;
   padding: 0.25rem 0.5rem;
   margin-top: 0.1rem;
-  font-size: 0.875rem;
+  font-size: 1.00625rem;
   color: #fff;
   background-color: rgba(25, 135, 84, 0.9);
   border-radius: 0.25rem;
@@ -2882,7 +2923,7 @@ textarea.form-control-lg {
   max-width: 100%;
   padding: 0.25rem 0.5rem;
   margin-top: 0.1rem;
-  font-size: 0.875rem;
+  font-size: 1.00625rem;
   color: #fff;
   background-color: rgba(220, 53, 69, 0.9);
   border-radius: 0.25rem;
@@ -2984,7 +3025,7 @@ textarea.form-control-lg {
   background-color: transparent;
   border: 1px solid transparent;
   padding: 0.6em 0.9em;
-  font-size: 0.875rem;
+  font-size: 1rem;
   border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
@@ -3459,13 +3500,18 @@ textarea.form-control-lg {
 
 .btn-lg, .btn-group-lg > .btn, .woocommerce-info .btn-group-lg > a.button, .woocommerce-notices-wrapper .woocommerce-message .btn-group-lg > a.button {
   padding: 0.5rem 1rem;
-  font-size: 1.25rem;
+  font-size: calc(1.26875rem + 0.225vw);
   border-radius: 0.3rem;
+}
+@media (min-width: 1200px) {
+  .btn-lg, .btn-group-lg > .btn, .woocommerce-info .btn-group-lg > a.button, .woocommerce-notices-wrapper .woocommerce-message .btn-group-lg > a.button {
+    font-size: 1.4375rem;
+  }
 }
 
 .btn-sm, .btn-group-sm > .btn, .woocommerce-info .btn-group-sm > a.button, .woocommerce-notices-wrapper .woocommerce-message .btn-group-sm > a.button {
   padding: 0.25rem 0.5rem;
-  font-size: 0.875rem;
+  font-size: 1.00625rem;
   border-radius: 0.2rem;
 }
 
@@ -3537,7 +3583,7 @@ textarea.form-control-lg {
   min-width: 10rem;
   padding: 0.5rem 0;
   margin: 0;
-  font-size: 1rem;
+  font-size: 1.15rem;
   color: #212529;
   text-align: left;
   list-style: none;
@@ -3767,7 +3813,7 @@ textarea.form-control-lg {
   display: block;
   padding: 0.5rem 1rem;
   margin-bottom: 0;
-  font-size: 0.875rem;
+  font-size: 1.00625rem;
   color: #6c757d;
   white-space: nowrap;
 }
@@ -4055,12 +4101,17 @@ textarea.form-control-lg {
   justify-content: space-between;
 }
 .navbar-brand {
-  padding-top: 0.3125rem;
-  padding-bottom: 0.3125rem;
+  padding-top: 0.284375rem;
+  padding-bottom: 0.284375rem;
   margin-right: 1rem;
-  font-size: 1.25rem;
+  font-size: calc(1.26875rem + 0.225vw);
   text-decoration: none;
   white-space: nowrap;
+}
+@media (min-width: 1200px) {
+  .navbar-brand {
+    font-size: 1.4375rem;
+  }
 }
 .navbar-nav {
   display: flex;
@@ -4090,12 +4141,17 @@ textarea.form-control-lg {
 
 .navbar-toggler {
   padding: 0.25rem 0.75rem;
-  font-size: 1.25rem;
+  font-size: calc(1.26875rem + 0.225vw);
   line-height: 1;
   background-color: transparent;
   border: 1px solid transparent;
   border-radius: 0.25rem;
   transition: box-shadow 0.15s ease-in-out;
+}
+@media (min-width: 1200px) {
+  .navbar-toggler {
+    font-size: 1.4375rem;
+  }
 }
 @media (prefers-reduced-motion: reduce) {
   .navbar-toggler {
@@ -4676,7 +4732,7 @@ textarea.form-control-lg {
   align-items: center;
   width: 100%;
   padding: 1rem 1.25rem;
-  font-size: 1rem;
+  font-size: 1.15rem;
   color: #212529;
   text-align: left;
   background-color: #fff;
@@ -4865,7 +4921,12 @@ textarea.form-control-lg {
 
 .pagination-lg .page-link {
   padding: 0.75rem 1.5rem;
-  font-size: 1.25rem;
+  font-size: calc(1.26875rem + 0.225vw);
+}
+@media (min-width: 1200px) {
+  .pagination-lg .page-link {
+    font-size: 1.4375rem;
+  }
 }
 .pagination-lg .page-item:first-child .page-link {
   border-top-left-radius: 0.3rem;
@@ -4878,7 +4939,7 @@ textarea.form-control-lg {
 
 .pagination-sm .page-link {
   padding: 0.25rem 0.5rem;
-  font-size: 0.875rem;
+  font-size: 1.00625rem;
 }
 .pagination-sm .page-item:first-child .page-link {
   border-top-left-radius: 0.2rem;
@@ -5018,7 +5079,7 @@ textarea.form-control-lg {
   display: flex;
   height: 1rem;
   overflow: hidden;
-  font-size: 0.75rem;
+  font-size: 0.8625rem;
   background-color: #e9ecef;
   border-radius: 0.25rem;
 }
@@ -5768,7 +5829,7 @@ textarea.form-control-lg {
   word-spacing: normal;
   white-space: normal;
   line-break: auto;
-  font-size: 0.875rem;
+  font-size: 1.00625rem;
   word-wrap: break-word;
   opacity: 0;
 }
@@ -5870,7 +5931,7 @@ textarea.form-control-lg {
   word-spacing: normal;
   white-space: normal;
   line-break: auto;
-  font-size: 0.875rem;
+  font-size: 1.00625rem;
   word-wrap: break-word;
   background-color: #fff;
   background-clip: padding-box;
@@ -5964,7 +6025,7 @@ textarea.form-control-lg {
 .popover-header {
   padding: 0.5rem 1rem;
   margin-bottom: 0;
-  font-size: 1rem;
+  font-size: 1.15rem;
   background-color: #f0f0f0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   border-top-left-radius: calc(0.3rem - 1px);
@@ -7804,27 +7865,27 @@ textarea.form-control-lg {
 }
 
 .fs-1 {
-  font-size: calc(1.5rem + 3vw) !important;
+  font-size: calc(1.55625rem + 3.675vw) !important;
 }
 
 .fs-2 {
-  font-size: calc(1.4rem + 1.8vw) !important;
+  font-size: calc(1.44125rem + 2.295vw) !important;
 }
 
 .fs-3 {
-  font-size: calc(1.325rem + 0.9vw) !important;
+  font-size: calc(1.355rem + 1.26vw) !important;
 }
 
 .fs-4 {
-  font-size: calc(1.275rem + 0.3vw) !important;
+  font-size: calc(1.2975rem + 0.57vw) !important;
 }
 
 .fs-5 {
-  font-size: 1.25rem !important;
+  font-size: calc(1.26875rem + 0.225vw) !important;
 }
 
 .fs-6 {
-  font-size: 1rem !important;
+  font-size: 1.15rem !important;
 }
 
 .fst-italic {
@@ -11641,16 +11702,19 @@ textarea.form-control-lg {
 }
 @media (min-width: 1200px) {
   .fs-1 {
-    font-size: 3.75rem !important;
+    font-size: 4.3125rem !important;
   }
   .fs-2 {
-    font-size: 2.75rem !important;
+    font-size: 3.1625rem !important;
   }
   .fs-3 {
-    font-size: 2rem !important;
+    font-size: 2.3rem !important;
   }
   .fs-4 {
-    font-size: 1.5rem !important;
+    font-size: 1.725rem !important;
+  }
+  .fs-5 {
+    font-size: 1.4375rem !important;
   }
 }
 @media print {
@@ -11949,7 +12013,6 @@ figure.woocommerce-product-gallery__wrapper {
 }
 
 p {
-  font-size: 15px;
   line-height: 1.6;
   padding-bottom: 0.6em;
 }
@@ -13259,7 +13322,7 @@ body.understrap-no-sidebar .wp-block-cover.alignwide .wp-block-cover__inner-cont
 
 .wp-block-buttons .wp-block-button .wp-block-button__link {
   padding: 0.6em 0.9em;
-  font-size: 0.875rem;
+  font-size: 1rem;
   border-radius: 0.25rem;
 }
 .wp-block-buttons .wp-block-button:not(.is-style-outline) .wp-block-button__link {
