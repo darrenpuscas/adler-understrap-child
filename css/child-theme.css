@@ -12766,6 +12766,10 @@ summary {
   height: 30px;
 }
 
+body {
+  font-size: 18px;
+}
+
 .test-class {
   color: red;
 }
