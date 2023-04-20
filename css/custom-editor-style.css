@@ -45,52 +45,47 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 }
 
 h1, .h1 {
-  font-size: calc(1.55625rem + 3.675vw);
+  font-size: calc(1.4302rem + 2.1624vw);
 }
 @media (min-width: 1200px) {
   h1, .h1 {
-    font-size: 4.3125rem;
+    font-size: 3.052rem;
   }
 }
 
 h2, .h2 {
-  font-size: calc(1.44125rem + 2.295vw);
+  font-size: calc(1.3691rem + 1.4292vw);
 }
 @media (min-width: 1200px) {
   h2, .h2 {
-    font-size: 3.1625rem;
+    font-size: 2.441rem;
   }
 }
 
 h3, .h3 {
-  font-size: calc(1.355rem + 1.26vw);
+  font-size: calc(1.3203rem + 0.8436vw);
 }
 @media (min-width: 1200px) {
   h3, .h3 {
-    font-size: 2.3rem;
+    font-size: 1.953rem;
   }
 }
 
 h4, .h4 {
-  font-size: calc(1.2975rem + 0.57vw);
+  font-size: calc(1.2813rem + 0.3756vw);
 }
 @media (min-width: 1200px) {
   h4, .h4 {
-    font-size: 1.725rem;
+    font-size: 1.563rem;
   }
 }
 
 h5, .h5 {
-  font-size: calc(1.26875rem + 0.225vw);
-}
-@media (min-width: 1200px) {
-  h5, .h5 {
-    font-size: 1.4375rem;
-  }
+  font-size: 1.25rem;
 }
 
 h6, .h6 {
-  font-size: 1.15rem;
+  font-size: 1rem;
 }
 
 p {
@@ -471,7 +466,7 @@ progress {
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
-  --bs-body-font-size: 1.15rem;
+  --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
@@ -703,13 +698,8 @@ progress {
 }
 
 .lead {
-  font-size: calc(1.26875rem + 0.225vw);
+  font-size: 1.25rem;
   font-weight: 300;
-}
-@media (min-width: 1200px) {
-  .lead {
-    font-size: 1.4375rem;
-  }
 }
 
 .display-1 {
@@ -802,12 +792,7 @@ progress {
 
 .blockquote, .wp-block-quote {
   margin-bottom: 1rem;
-  font-size: calc(1.26875rem + 0.225vw);
-}
-@media (min-width: 1200px) {
-  .blockquote, .wp-block-quote {
-    font-size: 1.4375rem;
-  }
+  font-size: 1.25rem;
 }
 .blockquote > :last-child, .wp-block-quote > :last-child {
   margin-bottom: 0;
@@ -1164,7 +1149,7 @@ body.understrap-no-sidebar .wp-block-cover.alignwide .wp-block-cover__inner-cont
 }
 
 .editor-post-title .editor-post-title__input {
-  font-size: 4.3125rem;
+  font-size: 3.052rem;
   font-weight: 700;
 }
 
