@@ -45,47 +45,52 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 }
 
 h1, .h1 {
-  font-size: calc(1.4302rem + 2.1624vw);
+  font-size: calc(1.4340375rem + 2.20845vw);
 }
 @media (min-width: 1200px) {
   h1, .h1 {
-    font-size: 3.052rem;
+    font-size: 3.090375rem;
   }
 }
 
 h2, .h2 {
-  font-size: calc(1.3691rem + 1.4292vw);
+  font-size: calc(1.3721625rem + 1.46595vw);
 }
 @media (min-width: 1200px) {
   h2, .h2 {
-    font-size: 2.441rem;
+    font-size: 2.471625rem;
   }
 }
 
 h3, .h3 {
-  font-size: calc(1.3203rem + 0.8436vw);
+  font-size: calc(1.322775rem + 0.8733vw);
 }
 @media (min-width: 1200px) {
   h3, .h3 {
-    font-size: 1.953rem;
+    font-size: 1.97775rem;
   }
 }
 
 h4, .h4 {
-  font-size: calc(1.2813rem + 0.3756vw);
+  font-size: calc(1.283175rem + 0.3981vw);
 }
 @media (min-width: 1200px) {
   h4, .h4 {
-    font-size: 1.563rem;
+    font-size: 1.58175rem;
   }
 }
 
 h5, .h5 {
-  font-size: 1.25rem;
+  font-size: calc(1.265625rem + 0.1875vw);
+}
+@media (min-width: 1200px) {
+  h5, .h5 {
+    font-size: 1.40625rem;
+  }
 }
 
 h6, .h6 {
-  font-size: 1rem;
+  font-size: 1.125rem;
 }
 
 p {
@@ -466,7 +471,7 @@ progress {
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
-  --bs-body-font-size: 1rem;
+  --bs-body-font-size: 1.125rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
@@ -698,8 +703,13 @@ progress {
 }
 
 .lead {
-  font-size: 1.25rem;
+  font-size: calc(1.265625rem + 0.1875vw);
   font-weight: 300;
+}
+@media (min-width: 1200px) {
+  .lead {
+    font-size: 1.40625rem;
+  }
 }
 
 .display-1 {
@@ -792,7 +802,12 @@ progress {
 
 .blockquote, .wp-block-quote {
   margin-bottom: 1rem;
-  font-size: 1.25rem;
+  font-size: calc(1.265625rem + 0.1875vw);
+}
+@media (min-width: 1200px) {
+  .blockquote, .wp-block-quote {
+    font-size: 1.40625rem;
+  }
 }
 .blockquote > :last-child, .wp-block-quote > :last-child {
   margin-bottom: 0;
@@ -1149,7 +1164,7 @@ body.understrap-no-sidebar .wp-block-cover.alignwide .wp-block-cover__inner-cont
 }
 
 .editor-post-title .editor-post-title__input {
-  font-size: 3.052rem;
+  font-size: 3.090375rem;
   font-weight: 700;
 }
 
