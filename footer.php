@@ -28,21 +28,17 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<div class="site-info footer-sections">
 						<div class="footer-signup">
 							<h4>Signup for Adler's Newsletter</h4>
-							<?php //gravity_form(3, false, false, ) ?>
-							<!-- (title, display_description, display_inactive, field_values, ajax, tabindex, echo, ) -->
-
-							<!-- <form>
-								<div class="">
-									<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-									<div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-									<label for="exampleInputEmail1" class="form-label"></label>
-								</div>
-							</form> -->
-							<div class="footer-social">
-								<div class="footer-facebook"><img src="/wp-content/uploads/facebook.png"></div>
-								<div class="footer-twitter"><img src="/wp-content/uploads/twitter.png"></div>
-							</div>
-						</div>
+							<?php gravity_form(3, false, false, ) ?>
+							<!-- (title, display_description, display_inactive, field_values, ajax, tabindex, echo, ) -->												
+            <?php if( have_rows('footer_social_media', 'option') ): ?>
+             <div class="footer-social">
+                <?php while( have_rows('footer_social_media', 'option') ): the_row(); ?>
+                  <a href="<?php the_sub_field('social_url', 'option')?>"><i class="fa fa-<?php the_sub_field('social_image', 'option'); ?>"></i></a>
+                  <?php endwhile; ?>
+                  
+              <?php endif; ?>
+							</div><!-- footer social -->
+						</div><!-- footersignup -->
 					
 						<div class="footer-resources">
 

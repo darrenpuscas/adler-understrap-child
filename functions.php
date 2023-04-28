@@ -133,3 +133,11 @@ function child_menus() {
 	);
 }
 add_action( 'init', 'child_menus' );
+
+//* insert custom css class into submit button */
+// https://gist.github.com/michaelcarwile/127e39fdfb4a1469eecb
+
+add_filter( 'gform_submit_button', 'form_submit_button', 10, 2 );
+function form_submit_button($button, $form) {
+    return '<input type="submit" class="btn btn-primary" id="gform_submit_button_' . $form['id'] . '" value="' . $form['button']['text'] . '">';
+}

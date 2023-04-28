@@ -199,18 +199,10 @@ font-weight: 100;
     display: flex;
     gap: 0 20px;
 }
-.footer-facebook img, .footer-twitter img  {
-    width: 100%;
-    height: auto;
+.footer-social a {
+    color: white;
 }
-.footer-facebook {
-    width: 10px;
-    height: 33px;
-}
-.footer-twitter {
-    width: 24px;
-    height: 33px;
-}
+
 //
 // General form controls (plus a few specific high-level interventions)
 //
