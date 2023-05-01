@@ -72,7 +72,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 										array( 
 												'theme_location' => 'footer-menu-right',
 												'container' => 'nav',
-												'menu_class' => 'footer-menu-right',
+												'menu_class' => 'footer-menu footer-menu-right',
 												'menu-item' => 'footer-menu-right-item'
 										) 
 								); 
