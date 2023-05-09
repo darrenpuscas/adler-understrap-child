@@ -29,6 +29,28 @@
   margin: 0 0 0;
   padding: 0
 }
+.bio-grid {  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 1em 1em;
+  grid-auto-flow: row;
+  align-items: center;
+  grid-template-areas:
+    ". ."
+    ". ."
+    ". ."
+    ". ."
+    ". ."
+    ". ."
+    ". ."
+    ". ."
+    ". .";
+}
+.bio-grid img {
+  height: 266px;
+  width: auto;
+}
+
 // https://thegymnasium.com/courses/take5/creating-beautiful-and-accessible-drop-caps
 .drop-cap {
   font-size: 6rem;
