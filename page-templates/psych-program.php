@@ -220,7 +220,7 @@ if ( is_front_page() ) {
 					<div id="indiv-programs-faq-main section-white-background">
 						<div class="indiv-programs-faq-container container-xl pt-3 pb-3 pt-8 pb-6">
 							<div class="row">
-								<section class="indiv-programs-faq standard-faq col-md-8 col-lg-8 offset-md-2 col-sm-12">
+								<section id="faq" class="indiv-programs-faq standard-faq col-md-8 col-lg-8 offset-md-2 col-sm-12">
 									<h5><?php the_field('psych_faq_title'); ?></h5>
 									<?php
 										// Check if rows exists.
