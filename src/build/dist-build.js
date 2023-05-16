@@ -11,6 +11,7 @@ async function copyDir( src, dest ) {
 		'node_modules',
 		'src',
 		'vendor',
+		'html-snippets',
 		'composer.json',
 		'composer.lock',
 		'package.json',
