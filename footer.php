@@ -29,7 +29,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<div class="footer-signup">
 							<h4>Signup for Adler's Newsletter</h4>
 							<?php gravity_form(3, false, false, ) ?>
-							<!-- (title, display_description, display_inactive, field_values, ajax, tabindex, echo, ) -->												
+																		
             <?php if( have_rows('footer_social_media', 'option') ): ?>
              <div class="footer-social">
                 <?php while( have_rows('footer_social_media', 'option') ): the_row(); ?>
@@ -72,7 +72,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 										array( 
 												'theme_location' => 'footer-menu-right',
 												'container' => 'nav',
-												'menu_class' => 'footer-menu footer-menu-right',
+												'menu_class' => 'footer-menu-right',
 												'menu-item' => 'footer-menu-right-item'
 										) 
 								); 
