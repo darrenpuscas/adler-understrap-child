@@ -10,7 +10,7 @@ summary {
   justify-items: center;
   align-items: center;
   gap: 1em 1em;
-  grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+  // grid-template-columns: repeat(auto-fill, minmax(170px,1fr));
 }
 
 .trimester {
@@ -23,29 +23,31 @@ summary {
 }
 .course {
   display: flex;
-  background-color: $blue;
-  color: white;
+  background-color: #1c3a53;
+  color: #fff;
   align-items: center;
+  justify-content: center;
   text-align: center;
-  min-height: 3em;
+  height: 100%;
+  width: 100%;
   
 }
-// @media screen and (min-width: 540px) {
-// }
-// @media screen and (min-width: 768px) {
-//   .map-container {  
-//     grid-template-columns: repeat(2, 1fr);
-//   }
-// }
-// @media screen and (min-width: 992px) and (max-width: 1023px) {
-//   .map-container {  
-//     grid-template-columns: repeat(3, 1fr);
-//   }
-// }
-// @media screen and (min-width: 1024px) {
-//   .map-container {  
-//     grid-template-columns: repeat(6, 1fr);
-//   }
-// }
-// @media screen and (min-width: 1210px) {
-// }
+@media screen and (min-width: 540px) {
+}
+@media screen and (min-width: 768px) {
+  .map-container {  
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1023px) {
+  .map-container {  
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .map-container {  
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+@media screen and (min-width: 1210px) {
+}
