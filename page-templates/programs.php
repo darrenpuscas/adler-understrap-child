@@ -45,7 +45,6 @@ if ( is_front_page() ) {
 				<!-- <div class="row">-->
 				<!-- <section id="programs" class="col2-withsub-grid">   -->
 				<section class="programs-course-content standard-course-content pt-2 pt-md-6 pb-6 col-sm-12">
-
 				<?php
 				$values = get_field('program_box');
 				if ( $values ) : ?>
