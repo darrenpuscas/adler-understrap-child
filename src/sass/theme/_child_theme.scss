@@ -83,8 +83,8 @@ blockquote {
 .standard-sub-statement {
 padding-bottom: 1em;
 }
-.standard-text {
-
+.standard-white-text {
+    color: $white;
 }
 
 .standard-intro {
@@ -144,8 +144,20 @@ background-color: $tertiary;
 //
 // Footer CSS
 //
+.site-footer {
+    margin-top:1em;
+}
 #wrapper-footer {
     background-color: $blue;
+}
+.text-standout {
+    color: $blue;
+    text-align: center;
+    margin: auto;
+    width: 75%;
+    display: block;
+    background-color: $white;
+    font-family: "Avenir Next", sans-serif;
 }
 .footer-sections {
  
@@ -192,7 +204,7 @@ font-weight: 100;
     text-transform: uppercase;
 }
 .footer-resources li {
-    font-size: 10px;
+    font-size: .75em;
     padding-bottom: 5px;
 }
 .footer-social {
