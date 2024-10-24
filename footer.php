@@ -24,24 +24,22 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<div class="col-md-12">
 
 				<footer class="site-footer" id="colophon">
-
+					<span class="text-standout"><?php the_field('text_standout_text', 'option'); ?></span>
 					<div class="site-info footer-sections">
 						<div class="footer-signup">
 							<h4>Signup for Adler's Newsletter</h4>
-							<?php gravity_form(3, false, false, ) ?>
+							<?php gravity_form(6, false, false, ) ?>
 																		
             <?php if( have_rows('footer_social_media', 'option') ): ?>
              <div class="footer-social">
                 <?php while( have_rows('footer_social_media', 'option') ): the_row(); ?>
                   <a href="<?php the_sub_field('social_url', 'option')?>"><i class="fa fa-<?php the_sub_field('social_image', 'option'); ?>"></i></a>
                   <?php endwhile; ?>
-                  
               <?php endif; ?>
 							</div><!-- footer social -->
 						</div><!-- footersignup -->
 					
 						<div class="footer-resources">
-
 							<div class="footer-resources1">	
 							<?php 
 								wp_nav_menu( 
@@ -72,7 +70,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 										array( 
 												'theme_location' => 'footer-menu-right',
 												'container' => 'nav',
-												'menu_class' => 'footer-menu-right',
+												'menu_class' => 'footer-menu',
 												'menu-item' => 'footer-menu-right-item'
 										) 
 								); 
