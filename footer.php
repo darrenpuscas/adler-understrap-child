@@ -24,7 +24,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<div class="col-md-12">
 
 				<footer class="site-footer" id="colophon">
-					<span class="text-standout"><?php the_field('text_standout_text', 'option'); ?></span>
+					
+				<section class="text-standout">
+					<?php the_field('text_standout_text', 'option' ); ?>
+				</section>	
 					<div class="site-info footer-sections">
 						<div class="footer-signup">
 							<h4>Signup for Adler's Newsletter</h4>
