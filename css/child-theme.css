@@ -15241,6 +15241,19 @@ blockquote p {
   background-color: transparent;
 }
 
+.bio-masthead-container {
+  background-color: #fff;
+}
+
+.bio-masthead-content {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  place-items: center;
+  min-height: 80vh;
+  -moz-column-gap: 2.5em;
+  column-gap: 2.5em;
+}
+
 @media screen and (min-width: 768px) {
   .home-masthead-content {
     display: grid;
@@ -15955,6 +15968,19 @@ summary {
 .section-white-background {
   background-color: white;
   color: #1C3A53;
+}
+
+.sticky-element {
+  position: sticky;
+  top: 0px;
+}
+
+.indent-list {
+  margin-left: 2em;
+}
+
+.nested-list li {
+  padding-bottom: 0;
 }
 
 .why-adler-masthead-content {

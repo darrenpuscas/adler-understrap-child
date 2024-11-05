@@ -226,11 +226,23 @@ $input-border-color:                    $gray-400 !default;
 }
 
 //
+// Bio Page CSS
+//
+.bio-masthead-container {
+    background-color: $white;
+}
+.bio-masthead-content {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    place-items: center;
+    min-height: 80vh;
+    column-gap: 2.5em;
+}
+
+//
 // Homepage CSS
 //
 @media screen and (min-width: 768px) {
-    .home-masthead-content {
-    }
     .home-masthead-content {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;

@@ -59,3 +59,14 @@
   background-color: white;
   color: $primary;
 }
+// Academic Calendar
+.sticky-element {
+  position: sticky;
+  top: 0px;
+}
+.indent-list {
+  margin-left: 2em;
+}
+.nested-list li {
+  padding-bottom: 0;
+}
