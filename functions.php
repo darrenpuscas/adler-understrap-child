@@ -23,6 +23,21 @@ function understrap_remove_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'understrap_remove_scripts', 20 );
 
+<?php
+
+/**
+ * Changing the `docs` slug to something else
+ *
+ * @param array $args 
+ *
+ * @return array 
+ */
+add_filter( 'wedocs_post_type', function($args) {
+
+    $args['rewrite']['slug'] = 'documentation';
+
+    return $args;
+} );
 
 
 /**
