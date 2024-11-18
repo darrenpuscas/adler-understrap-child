@@ -15973,6 +15973,7 @@ summary {
 .sticky-element {
   position: sticky;
   top: 0px;
+  overflow-y: scroll;
 }
 
 .indent-list {

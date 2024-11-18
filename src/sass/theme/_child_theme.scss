@@ -86,10 +86,6 @@ padding-bottom: 1em;
 .standard-white-text {
     color: $white;
 }
-
-.standard-intro {
-   
-}
 .standard-intro-headline {
     text-align: center;
     padding-bottom: $spacer * 2.5;
@@ -160,7 +156,6 @@ background-color: $tertiary;
     font-family: "Avenir Next", sans-serif;
 }
 .footer-sections {
- 
     gap: 10px;
     padding: 4em 0;
     justify-content: space-between;
@@ -287,11 +282,11 @@ $input-border-color:                    $gray-400 !default;
     list-style-position: outside;
 }
 @media screen and (min-width: 768px) {
-.whyadler-container li::marker {
-    font-size: 24px;
-    margin-top: 15px;
-    
-}
+    .whyadler-container li::marker {
+        font-size: 24px;
+        margin-top: 15px;
+        
+    }
 }
 .whyadler-container .btn {
     margin-top: 2em;

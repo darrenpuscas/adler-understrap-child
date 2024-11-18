@@ -63,6 +63,7 @@
 .sticky-element {
   position: sticky;
   top: 0px;
+  overflow-y: scroll;
 }
 .indent-list {
   margin-left: 2em;
@@ -70,3 +71,11 @@
 .nested-list li {
   padding-bottom: 0;
 }
+// list types
+.lower-alpha-list {
+  list-style: lower-alpha;
+}
+.lower-roman {
+  list-style: lower-roman;
+}
+
