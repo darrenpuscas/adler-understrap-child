@@ -72,10 +72,16 @@
   padding-bottom: 0;
 }
 // list types
+.upper-alpha-list {
+  list-style-type: upper-alpha;
+}
 .lower-alpha-list {
   list-style: lower-alpha;
 }
 .lower-roman {
   list-style: lower-roman;
+}
+.upper-roman-list {
+  list-style: upper-roman;
 }
 

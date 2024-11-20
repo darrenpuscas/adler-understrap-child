@@ -23,8 +23,6 @@ function understrap_remove_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'understrap_remove_scripts', 20 );
 
-<?php
-
 /**
  * Changing the `docs` slug to something else
  *
@@ -34,7 +32,7 @@ add_action( 'wp_enqueue_scripts', 'understrap_remove_scripts', 20 );
  */
 add_filter( 'wedocs_post_type', function($args) {
 
-    $args['rewrite']['slug'] = 'documentation';
+    $args['rewrite']['slug'] = 'academic-calendar';
 
     return $args;
 } );
