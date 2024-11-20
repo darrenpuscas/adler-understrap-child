@@ -15992,7 +15992,7 @@ summary {
 }
 
 .upper-alpha-list {
-  list-style-type: upper-alpha;
+  list-style: upper-alpha;
 }
 
 .lower-alpha-list {
