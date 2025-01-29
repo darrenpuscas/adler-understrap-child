@@ -21,6 +21,10 @@ h1.entry-title {
     text-transform: uppercase;
     color: $primary;
 }
+ul {
+    list-style-type: circle;
+}
+
 // blockquote from CSS Tricks
 // https://css-tricks.com/snippets/css/simple-and-nice-blockquote-styling/
 blockquote {

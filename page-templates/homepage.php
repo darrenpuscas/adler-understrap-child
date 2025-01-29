@@ -30,7 +30,7 @@ if ( is_front_page() ) {
 									<div class="home-masthead-text masthead-section">
 										<div class="main-statement display-1">
 										<?php $masthead = get_field('home_masthead'); ?> 
-											<h1 class="text-stroke-base text-stroke-settings"><?php echo $masthead['text'];?></h1>
+											<h1 class="text-stroke-base text-stroke-settings"><?php echo $masthead['text'];?>Fiddle sticks</h1>
 										</div>
 										<div class="sub-statement display-3"><h3 class="text-stroke-base text-stroke-settings"><?php echo $masthead['sub_text'];?></h3></div>
 										<a href="<?php echo $masthead['button_url']; ?>" target="_blank" rel="noopener noreferrer">
@@ -52,6 +52,7 @@ if ( is_front_page() ) {
 						<div class="whyadler-container container-xl pt-6 pb-6 pt-md-7 pb-md-7 pt-lg-8 pb-lg-8">
 							<div class="row">
 								<div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2 col-sm-12">
+									
 									<h2><?php the_field('home_heading');?></h2>
 								<?php the_field('home_bullets'); ?>
 									<a class="btn btn-primary" href="<?php the_field('home_button_url');?>"><?php the_field('home_button');?></a>

