@@ -22,7 +22,10 @@ h1.entry-title {
     color: $primary;
 }
 ul {
-    list-style-type: circle;
+    list-style-type: disc;
+}
+ol {
+    list-style-type: decimal;
 }
 
 // blockquote from CSS Tricks
