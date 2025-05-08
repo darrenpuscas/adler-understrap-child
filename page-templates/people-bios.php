@@ -44,8 +44,17 @@ $container = get_theme_mod( 'understrap_container_type' );
 										}
 									?>
 								</div>
-							<div>		
-								<p> <?php echo wp_kses_post( wpautop(get_sub_field('bio_text') ) ); ?></p>
+								
+								
+							<div>
+								<h1>Alison Hunt - r</h1>
+								<?php echo wp_kses_post( wpautop(get_sub_field('name') ) ); ?>
+								<?php echo wp_kses_post( wpautop(get_sub_field('credentials') ) ); ?>
+								<?php echo wp_kses_post( wpautop(get_sub_field('bio_text') ) ); ?>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut risus sed tortor consectetur fringilla ac sit amet nulla. In nulla lacus, pellentesque ut scelerisque quis, mattis eu risus. Maecenas iaculis mi vel massa cursus fringilla. Phasellus enim leo, pretium vel ullamcorper id, consectetur eget sem. Praesent efficitur sollicitudin sagittis. Pellentesque tristique lobortis nisl, eget pretium tortor volutpat non. Nunc tempor turpis mauris, quis lobortis felis tristique viverra. Cras in rhoncus ante.</p>
+<p>Vivamus ultrices nulla eu diam sodales, eget blandit ex elementum. Mauris imperdiet et lorem id faucibus. Maecenas id vulputate ligula, tincidunt semper diam. Integer suscipit tempus interdum. Proin non gravida enim. Donec at lacus a dui dignissim scelerisque in sed nunc. Integer pharetra urna ac eros posuere varius. Ut venenatis pulvinar tortor, et imperdiet sem consequat ac. END OF HARDCODED</p>
+<?php echo wp_kses_post( wpautop(get_sub_field('bio_text') ) ); ?>
+<p>Ut velit odio, pulvinar eget neque ut, egestas aliquam metus. Ut ac porttitor felis, a efficitur metus. Vestibulum magna dui, rutrum et aliquam ac, pharetra eu tellus. Maecenas ac eleifend sapien. Vestibulum pulvinar risus sed ante fringilla ullamcorper. Pellentesque dignissim ultrices dui, eu porta enim aliquam faucibus. Quisque erat mi, hendrerit eget sapien in, auctor ultricies velit.</p>
 								<?php endwhile; ?>
 								<?php endif; ?>
 							</div>
