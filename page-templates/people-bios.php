@@ -34,24 +34,25 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<div class="masthead-container min-vh-100 container-xl">				
 							<div class="bio-masthead-content col-md-10 offset-md-1">
 								<?php if( have_rows('bios') ): ?>
-								<div>
-									<?php while( have_rows('bios') ): the_row(); 
-										$image = get_sub_field('bio_image');
-									?>
-									<?php $size = 'full'; // (thumbnail, medium, large, full or custom size)
-										if( $image ) {
-											echo wp_get_attachment_image( $image, $size );
-										}
-									?>
-								</div>
-							<div>
-								<h1>Alison Hunt - r</h1>
-								<?php echo wp_kses_post( wpautop(get_sub_field('name') ) ); ?>
-								<?php echo wp_kses_post( wpautop(get_sub_field('credentials') ) ); ?>
-								<?php echo wp_kses_post( wpautop(get_sub_field('bio_text') ) ); ?>
-								<?php endwhile; ?>
+								
+									<?php while( have_rows('bios') ): the_row(); ?>
+									<div>
+										<?php $image = get_sub_field('bio_image'); ?>
+										<?php $size = 'full'; // (thumbnail, medium, large, full or custom size)
+											if( $image ) {
+												echo wp_get_attachment_image( $image, $size );
+											}
+											else { ?>
+												<div>&nbsp;</div>
+											<?php } ?>
+									</div>
+									<div class="bio-body-spacer">
+										<h1><?php echo esc_html( get_sub_field('name') );?></h1>
+										<h2><?php echo esc_html( get_sub_field('credentials') );?></h2>
+										<?php echo ( get_sub_field('bio_text') );?>
+									</div>
+									<?php endwhile; ?>
 								<?php endif; ?>
-							</div>
 						</div>
 					</section>
 
