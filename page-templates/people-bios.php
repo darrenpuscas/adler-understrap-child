@@ -12,23 +12,21 @@ defined( 'ABSPATH' ) || exit;
 
 get_header();
 $container = get_theme_mod( 'understrap_container_type' );
-
-//$wrapper_id = 'full-width-page-wrapper';
-//if ( is_page_template( 'page-templates/no-title.php' ) ) {
-//	$wrapper_id = 'no-title-page-wrapper';
-//}
-
 ?>
 
 <div class="wrapper" id="<?php echo $wrapper_id; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- ok. ?>">
 
 	<div class="<?php echo esc_attr( $container ); ?>" id="content">
-
+						
+		
 		<div class="row">
-
+			
 			<div class="col-md-12 content-area" id="primary">
-
+				
 				<main class="site-main" id="main" role="main">
+					<header class="programs-main-header standard-main-header display-1">
+						<?php the_title( '<h1 class="text-uppercase">', '</h1>' ); ?>	
+					</header>
 <!-- Understrap structure ends -->
 					<section id="bio-masthead" class="bio-masthead-container">
 						<div class="masthead-container min-vh-100 container-xl">				
@@ -46,9 +44,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 												<div>&nbsp;</div>
 											<?php } ?>
 									</div>
-									<div class="bio-body-spacer">
-										<h1><?php echo esc_html( get_sub_field('name') );?></h1>
-										<h2><?php echo esc_html( get_sub_field('credentials') );?></h2>
+									<div >
+										<h2><?php echo wp_kses_post( get_sub_field('name') );?></h2>
+										<h3><?php echo wp_kses_post( get_sub_field('credentials') );?></h3>
+										<h3><?php echo wp_kses_post( get_sub_field('programs_and_titles') );?></h3>
 										<?php echo ( get_sub_field('bio_text') );?>
 									</div>
 									<?php endwhile; ?>

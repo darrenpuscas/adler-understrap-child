@@ -240,8 +240,14 @@ $input-border-color:                    $gray-400 !default;
     min-height: 80vh;
     column-gap: 2.5em;
 }
-.bio-body-spacer {
+.bio-body {
     margin-bottom: 1.2em;
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+.sub-heading {
+    font-size: 1.5em;
 }
 
 //
