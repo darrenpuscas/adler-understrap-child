@@ -34,9 +34,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 								<?php if( have_rows('bios') ): ?>
 								
 									<?php while( have_rows('bios') ): the_row(); ?>
-									<div>
+									<div class="bio-image">
 										<?php $image = get_sub_field('bio_image'); ?>
-										<?php $size = 'full'; // (thumbnail, medium, large, full or custom size)
+										<?php $size = 'medium'; // (thumbnail, medium, large, full or custom size)
 											if( $image ) {
 												echo wp_get_attachment_image( $image, $size );
 											}
@@ -44,10 +44,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 												<div>&nbsp;</div>
 											<?php } ?>
 									</div>
-									<div >
+									<div class="bio-body">
 										<h2><?php echo wp_kses_post( get_sub_field('name') );?></h2>
 										<h3><?php echo wp_kses_post( get_sub_field('credentials') );?></h3>
-										<h3><?php echo wp_kses_post( get_sub_field('programs_and_titles') );?></h3>
+										<h4><?php echo wp_kses_post( get_sub_field('programs_and_titles') );?></h4>
 										<?php echo ( get_sub_field('bio_text') );?>
 									</div>
 									<?php endwhile; ?>
