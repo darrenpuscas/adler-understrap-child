@@ -47,8 +47,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 									<div class="bio-body">
 										<h2><?php echo wp_kses_post( get_sub_field('name') );?></h2>
 										<h3><?php echo wp_kses_post( get_sub_field('credentials') );?></h3>
-										<h4><?php echo wp_kses_post( get_sub_field('programs_and_titles') );?></h4>
+										<h4>
+											<?php echo wp_kses_post( get_sub_field('programs_and_titles') );?>
+										</h4>
 										<?php echo ( get_sub_field('bio_text') );?>
+										<hr>
 									</div>
 									<?php endwhile; ?>
 								<?php endif; ?>

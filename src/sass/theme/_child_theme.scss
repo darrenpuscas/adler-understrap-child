@@ -251,6 +251,10 @@ $input-border-color:                    $gray-400 !default;
     }
     h4 {
         font-size: 1.15em;
+        margin-left: .5em;
+    }
+    h4 p {
+        line-height: 1.4;
     }
 }
 .sub-heading {
