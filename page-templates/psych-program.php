@@ -118,8 +118,8 @@ if ( is_front_page() ) {
 					</div>
 
 
-								<?php $image = get_field('prog_program_map_image');
-									if( !empty( $image ) ): ?>
+					<?php $image = get_field('prog_program_map_image');
+						if( !empty( $image ) ): ?>
 					<div class="section-tertiary-background">
 						<div class="indiv-programs-additonal-container standard-course-container container-xl pt-3 pb-3 pt-8 pb-6">
 							<div class="row">
@@ -131,6 +131,8 @@ if ( is_front_page() ) {
 						</div>
 					</div>
 
+					<?php // Check if rows exists.
+					if( have_rows('prog_info_tables') ): ?>
 					<div class="indiv-programs-additional section-tertiary-background">
 						<div class="indiv-programs-additonal-container standard-course-container container-xl pt-3 pb-3 pt-8 pb-6">
 							<div class="row">
@@ -142,73 +144,64 @@ if ( is_front_page() ) {
 
 								<?php
 
-									// Check if rows exists.
-									if( have_rows('prog_info_tables') ):
+									// Loop through rows.
+									while( have_rows('prog_info_tables') ) : the_row();
 
-
-											// Loop through rows.
-											while( have_rows('prog_info_tables') ) : the_row();
-
-													// Load sub field value.
-													//$sub_value = get_sub_field('sub_field');
-													// Do something...
-
-													$table = get_sub_field( 'prog_info_table' );
-													if ( ! empty ( $table ) ): ?>
-														<h4><?php the_sub_field('table_name'); ?></h4>
-				
-														<?php	echo '<table class="table table-striped" border="1">';
-				
-																	if ( ! empty( $table['caption'] ) ) {
-																	
-																			echo '<caption>' . $table['caption'] . '</caption>';
-																	}
-															if ( ! empty( $table['header'] ) ) {
-																
-															echo '<thead>';
-				
-																	echo '<tr>';
-				
-																			foreach ( $table['header'] as $th ) {
-				
-																					echo '<th>';
-																							echo $th['c'];
-																					echo '</th>';
-																			}
-				
-																	echo '</tr>';
-				
-															echo '</thead>';
-														}
-															//end header if
-				
-															echo '<tbody>';
-				
-															foreach ( $table['body'] as $tr ) {
-																	
-																	echo '<tr>';
-				
-																			foreach ( $tr as $td ) {
-				
-																					echo '<td>';
-																							echo $td['c'];
-																					echo '</td>';
-																			}
-				
-																	echo '</tr>'; 
-															} 
-															echo '</tbody>';
-															echo '</table>'; 
-														endif;
-													//end table if
-				
-											// End Repeater loop.
-											endwhile;
-
-									// No value in table repeater.
-									else :
+											// Load sub field value.
+											//$sub_value = get_sub_field('sub_field');
 											// Do something...
-											echo 'no table date entered';
+
+											$table = get_sub_field( 'prog_info_table' );
+											if ( ! empty ( $table ) ): ?>
+												<h4><?php the_sub_field('table_name'); ?></h4>
+		
+												<?php	echo '<table class="table table-striped" border="1">';
+		
+															if ( ! empty( $table['caption'] ) ) {
+															
+																	echo '<caption>' . $table['caption'] . '</caption>';
+															}
+													if ( ! empty( $table['header'] ) ) {
+														
+													echo '<thead>';
+		
+															echo '<tr>';
+		
+																	foreach ( $table['header'] as $th ) {
+		
+																			echo '<th>';
+																					echo $th['c'];
+																			echo '</th>';
+																	}
+		
+															echo '</tr>';
+		
+													echo '</thead>';
+												}
+													//end header if
+		
+													echo '<tbody>';
+		
+													foreach ( $table['body'] as $tr ) {
+															
+															echo '<tr>';
+		
+																	foreach ( $tr as $td ) {
+		
+																			echo '<td>';
+																					echo $td['c'];
+																			echo '</td>';
+																	}
+		
+															echo '</tr>'; 
+													} 
+													echo '</tbody>';
+													echo '</table>'; 
+												endif;
+											//end table if
+		
+									// End Repeater loop.
+									endwhile;
 									endif; ?>
 								
 								<?php the_field('prog_after_table'); ?>

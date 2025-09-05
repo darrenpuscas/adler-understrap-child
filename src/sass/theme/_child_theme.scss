@@ -257,6 +257,9 @@ $input-border-color:                    $gray-400 !default;
         line-height: 1.4;
     }
 }
+div.bio-body img {
+    border-radius: 6em;
+}
 .sub-heading {
     font-size: 1.5em;
 }
