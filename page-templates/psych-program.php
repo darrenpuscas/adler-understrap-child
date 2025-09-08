@@ -204,7 +204,7 @@ if ( is_front_page() ) {
 									endwhile;
 									endif; ?>
 								
-								<?php the_field('prog_after_table'); ?>
+								<?php the_field('prog_after_table'); ?> 
 								</section>
 							</div>
 						</div>
