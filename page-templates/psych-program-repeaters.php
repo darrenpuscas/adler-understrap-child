@@ -79,43 +79,48 @@ if ( is_front_page() ) {
 						</div><!-- end container  -->
 					</div>
 
+<!-- New repeater for Info boxes -->
+						<?php
+
+							// Check rows exists.
+							if( have_rows('rp_prog_boxes') ):?>
 					<div id="indiv-programs-additional">
 						<div class="indiv-programs-additional standard-course-container container-xl">
 							<div class="row">
 								<div class="indiv-programs-additional-course-content standard-course-content pt-2 pt-md-5 pb-2 pb-md-5 col-md-10 col-lg-10 offset-md-1 col-sm-12"> 
-                  <section class="indiv-programs-additional-course standard-course">
-                    <?php $box2 = get_field('prog_box_2'); ?>
-                    <div class="indiv-course-titlearea">
-                      <img src="<?php echo esc_url( $box2['icon']['url'] ); ?>">
-                      <h6 class="indiv-course-title text-uppercase"><?php echo $box2['title']; ?></h6>
-                    </div>
-                    <?php echo $box2['text'] ?>
-                    <a class="btn btn-primary" href="<?php echo esc_url( $box2['button_url'] )?>"><?php echo $box2['button']?></a>
-                  </section>
+                  					
+								<?php // Loop through rows.
+								while( have_rows('rp_prog_boxes') ) : the_row();?>
+								<!-- each info box start -->
+								<section class="indiv-programs-additional-course standard-course">
+									<?php
 
-                  <section class="indiv-programs-additional-course standard-course">
-                    <?php $box3 = get_field('prog_box_3'); ?>
-                    <div class="indiv-course-titlearea">
-                    <img src="<?php echo esc_url( $box3['icon']['url'] ); ?>">
-                      <h6 class="indiv-course-title text-uppercase"><?php echo $box3['title']; ?></h6>
-                    </div>
-                    <?php echo $box3['text'] ?>
-                    <a class="btn btn-primary" href="<?php echo esc_url( $box3['button_url'] )?>"><?php echo $box3['button']?></a>
-                  </section>
+									// Load sub field value.
+									$icon = get_sub_field('rp_icon');
+									$title = get_sub_field('rp_title');
+									$text = get_sub_field('rp_text');
+									$button = get_sub_field('rp_button');
+									$url = get_sub_field('rp_button_url');?>
+									<div class="indiv-course-titlearea">
+										<img src="<?php echo esc_url( $icon['url'] ); ?>">
+										<h6 class="indiv-course-title text-uppercase"><?php echo $title; ?></h6>
+									</div>
+										<?php echo $text ?>
+									<a class="btn btn-primary" href="<?php echo esc_url( $url )?>"><?php echo $button?></a>
+								</section>
 
-                  <section class="indiv-programs-additional-course standard-course">
-                    <?php $box4 = get_field('prog_box_4'); ?>
-                    <div class="indiv-course-titlearea">
-                    <img src="<?php echo esc_url( $box4['icon']['url'] ); ?>">
-                      <h6 class="indiv-course-title text-uppercase"><?php echo $box4['title']; ?></h6>
-                    </div>
-                    <?php echo $box4['text'] ?>
-                    <a class="btn btn-primary" href="<?php echo esc_url( $box4['button_url'] )?>"><?php echo $box4['button']?></a>
-                  </section>
-								</div><!-- end column -->
-							</div><!-- end row -->
-						</div><!-- end container -->
+
+							<?php
+								// End loop.
+								endwhile;
+							// No value.?>
 					</div>
+						</div>
+							</div>
+							
+						<?php endif;?>
+
+
 
 
 					<?php $image = get_field('prog_program_map_image');
